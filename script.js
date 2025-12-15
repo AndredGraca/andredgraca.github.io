@@ -1,55 +1,59 @@
 const translations = {
     pt: {
-        nav_home: "Início",
-        nav_profile: "Sobre Mim",
+        nav_profile: "Perfil",
         nav_skills: "Competências",
         nav_tools: "Ferramentas",
-        nav_certs: "Certificações",
+        btn_lang: "EN",
+        
         hero_title: "André Graça",
         hero_role: "Engenheiro de Cibersegurança",
-        hero_summary: "Um profissional de cibersegurança versátil. Faço a ponte entre a segurança ofensiva, operações defensivas e engenharia estratégica.", // [cite: 25, 26]
-        contact_title: "Contactos",
-        btn_lang: "EN",
-        // Profile Page Data
-        exp_title: "Experiência Profissional",
-        exp_role: "Engenheiro de Cibersegurança @ Noesis (2020 - Presente)", // [cite: 29, 30]
-        exp_desc_1: "Liderança de Equipa: Redução do MTTR em 15%.", // [cite: 31]
-        exp_desc_2: "SIEM/XDR: Redução de falsos positivos em 30% (ArcSight, Cortex, Sentinel).", // 
-        exp_desc_3: "Gestão de Vulnerabilidades: Remediação de +500 vulnerabilidades críticas.", // 
-        exp_desc_4: "Automação SOAR: Poupança de 15 horas semanais via automação.", // [cite: 34]
-        // Skills Page Data
-        skill_cat_def: "Segurança Defensiva",
-        skill_cat_off: "Segurança Ofensiva",
-        skill_cat_grc: "GRC e Conformidade",
-        skill_cat_eng: "Engenharia e Automação",
-        // Certs
-        certs_title: "Certificações"
+        hero_sub: "Defesa | Ataque | Automação | Engenharia",
+        
+        // Category 1: SecOps [cite: 16, 32, 40]
+        cat_secops_title: "Operações de Segurança (SecOps)",
+        cat_secops_desc: "Especialista em detecção de ameaças e resposta a incidentes. Experiência em redução de MTTR e otimização de SIEM/XDR para detectar ameaças sofisticadas.",
+        
+        // Category 2: Engineering [cite: 19, 34]
+        cat_eng_title: "Engenharia e Automação",
+        cat_eng_desc: "Desenvolvimento de Playbooks SOAR e scripting em Python. Foco em reduzir o trabalho manual e integrar ferramentas via API (Gitlab, Jira).",
+        
+        // Category 3: GRC [cite: 17, 33, 38]
+        cat_grc_title: "GRC e Gestão de Risco",
+        cat_grc_desc: "Gestão de vulnerabilidades e conformidade. Experiência com frameworks NIST, ISO27001, PCI DSS e relatórios de auditoria técnica.",
+        
+        // Category 4: Cloud [cite: 18, 35, 46]
+        cat_cloud_title: "Segurança Cloud e Endpoint",
+        cat_cloud_desc: "Implementação de políticas de segurança no Microsoft Defender e Intune. Proteção de ambientes híbridos e onboarding de ativos.",
+
+        contact_text: "Entre em contacto via Email ou LinkedIn."
     },
     en: {
-        nav_home: "Home",
-        nav_profile: "About Me",
+        nav_profile: "Profile",
         nav_skills: "Skills",
         nav_tools: "Tools",
-        nav_certs: "Certifications",
+        btn_lang: "PT",
+        
         hero_title: "André Graça",
         hero_role: "Cybersecurity Engineer",
-        hero_summary: "A versatile cybersecurity professional. Bridging the gap between offensive security, defensive operations, and strategic engineering.", // [cite: 25, 26]
-        contact_title: "Contact",
-        btn_lang: "PT",
-        // Profile Page Data
-        exp_title: "Professional Experience",
-        exp_role: "Cybersecurity Engineer @ Noesis (2020 - Present)", // [cite: 29, 30]
-        exp_desc_1: "Team Leadership: Reduced MTTR by 15%.", // [cite: 31]
-        exp_desc_2: "SIEM/XDR: Reduced false positives by 30% (ArcSight, Cortex, Sentinel).", // 
-        exp_desc_3: "Vuln Management: Remediated 500+ critical vulnerabilities.", // 
-        exp_desc_4: "SOAR Automation: Saved 15+ manual hours/week via automation.", // [cite: 34]
-        // Skills Page Data
-        skill_cat_def: "Defensive Security",
-        skill_cat_off: "Offensive Security",
-        skill_cat_grc: "GRC & Compliance",
-        skill_cat_eng: "Engineering & Automation",
-        // Certs
-        certs_title: "Certifications"
+        hero_sub: "Defense | Offense | Automation | Engineering",
+
+        // Category 1: SecOps [cite: 16, 32, 40]
+        cat_secops_title: "Security Operations (SecOps)",
+        cat_secops_desc: "Specialist in threat detection and incident response. Proven track record in reducing MTTR and optimizing SIEM/XDR for sophisticated threats.",
+
+        // Category 2: Engineering [cite: 19, 34]
+        cat_eng_title: "Engineering & Automation",
+        cat_eng_desc: "Development of SOAR Playbooks and Python scripting. Focus on reducing manual toil and API tool integration (Gitlab, Jira).",
+
+        // Category 3: GRC [cite: 17, 33, 38]
+        cat_grc_title: "GRC & Risk Management",
+        cat_grc_desc: "Vulnerability management and compliance. Experience with NIST, ISO27001, PCI DSS frameworks and technical audit reporting.",
+
+        // Category 4: Cloud [cite: 18, 35, 46]
+        cat_cloud_title: "Cloud & Endpoint Security",
+        cat_cloud_desc: "Implementation of security policies in Microsoft Defender and Intune. Securing hybrid environments and asset onboarding.",
+
+        contact_text: "Get in touch via Email or LinkedIn."
     }
 };
 
@@ -57,7 +61,6 @@ function changeLanguage(lang) {
     localStorage.setItem('lang', lang);
     document.documentElement.lang = lang;
     
-    // Update all elements with data-i18n attribute
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translations[lang][key]) {
@@ -66,14 +69,12 @@ function changeLanguage(lang) {
     });
 }
 
-// Toggle Button Logic
 document.getElementById('lang-toggle').addEventListener('click', () => {
     const currentLang = localStorage.getItem('lang') || 'en';
     const newLang = currentLang === 'en' ? 'pt' : 'en';
     changeLanguage(newLang);
 });
 
-// Load saved language on startup
 document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('lang') || 'en';
     changeLanguage(savedLang);
