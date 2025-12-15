@@ -9,21 +9,29 @@ const translations = {
         hero_role: "Engenheiro de Cibersegurança",
         hero_sub: "Defesa | Ataque | Automação | Engenharia",
         
-        // Category 1: SecOps [cite: 16, 32, 40]
+        // Category 1: SecOps
         cat_secops_title: "Operações de Segurança (SecOps)",
         cat_secops_desc: "Especialista em detecção de ameaças e resposta a incidentes. Experiência em redução de MTTR e otimização de SIEM/XDR para detectar ameaças sofisticadas.",
         
-        // Category 2: Engineering [cite: 19, 34]
+        // Category 2: Engineering
         cat_eng_title: "Engenharia e Automação",
         cat_eng_desc: "Desenvolvimento de Playbooks SOAR e scripting em Python. Foco em reduzir o trabalho manual e integrar ferramentas via API (Gitlab, Jira).",
         
-        // Category 3: GRC [cite: 17, 33, 38]
-        cat_grc_title: "GRC e Gestão de Risco",
-        cat_grc_desc: "Gestão de vulnerabilidades e conformidade. Experiência com frameworks NIST, ISO27001, PCI DSS e relatórios de auditoria técnica.",
+        // Category 3: GRC
+        cat_grc_title: "GRC e Conformidade",
+        cat_grc_desc: "Adesão a frameworks NIST, ISO27001 e GDPR. Criação de relatórios de auditoria técnica e evidências de conformidade.",
         
-        // Category 4: Cloud [cite: 18, 35, 46]
+        // Category 4: Cloud
         cat_cloud_title: "Segurança Cloud e Endpoint",
         cat_cloud_desc: "Implementação de políticas de segurança no Microsoft Defender e Intune. Proteção de ambientes híbridos e onboarding de ativos.",
+
+        // Category 5: Vulnerability Management (NEW)
+        cat_vuln_title: "Gestão de Vulnerabilidades",
+        cat_vuln_desc: "Liderança de programas proativos usando Tenable.io e Landsweeper. Identificação e remediação de mais de 500 vulnerabilidades críticas.",
+
+        // Category 6: Network Security (NEW)
+        cat_net_title: "Segurança de Rede",
+        cat_net_desc: "Defesa de infraestrutura com Darktrace e Palo Alto. Monitorização de tráfego (NDR) e integração de soluções de segurança na rede corporativa.",
 
         contact_text: "Entre em contacto via Email ou LinkedIn."
     },
@@ -37,21 +45,29 @@ const translations = {
         hero_role: "Cybersecurity Engineer",
         hero_sub: "Defense | Offense | Automation | Engineering",
 
-        // Category 1: SecOps [cite: 16, 32, 40]
+        // Category 1: SecOps
         cat_secops_title: "Security Operations (SecOps)",
         cat_secops_desc: "Specialist in threat detection and incident response. Proven track record in reducing MTTR and optimizing SIEM/XDR for sophisticated threats.",
 
-        // Category 2: Engineering [cite: 19, 34]
+        // Category 2: Engineering
         cat_eng_title: "Engineering & Automation",
         cat_eng_desc: "Development of SOAR Playbooks and Python scripting. Focus on reducing manual toil and API tool integration (Gitlab, Jira).",
 
-        // Category 3: GRC [cite: 17, 33, 38]
-        cat_grc_title: "GRC & Risk Management",
-        cat_grc_desc: "Vulnerability management and compliance. Experience with NIST, ISO27001, PCI DSS frameworks and technical audit reporting.",
+        // Category 3: GRC
+        cat_grc_title: "GRC & Compliance",
+        cat_grc_desc: "Adherence to NIST, ISO27001, and GDPR frameworks. Creation of technical audit reports and compliance evidence.",
 
-        // Category 4: Cloud [cite: 18, 35, 46]
+        // Category 4: Cloud
         cat_cloud_title: "Cloud & Endpoint Security",
         cat_cloud_desc: "Implementation of security policies in Microsoft Defender and Intune. Securing hybrid environments and asset onboarding.",
+
+        // Category 5: Vulnerability Management (NEW)
+        cat_vuln_title: "Vulnerability Management",
+        cat_vuln_desc: "Leading proactive programs using Tenable.io and Landsweeper. Identification and remediation of over 500 critical vulnerabilities.",
+
+        // Category 6: Network Security (NEW)
+        cat_net_title: "Network Security",
+        cat_net_desc: "Infrastructure defense with Darktrace and Palo Alto. Traffic monitoring (NDR) and integration of security solutions into corporate networks.",
 
         contact_text: "Get in touch via Email or LinkedIn."
     }
