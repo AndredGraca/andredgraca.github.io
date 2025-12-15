@@ -3,51 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>André Graça - Portfolio</title>
+    <title>André Graça | CyberSec</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <nav>
         <ul>
-            <li><a href="/profile/" data-i18n="nav_profile">About Me</a></li>
-            <li><a href="/skills/" data-i18n="nav_skills">Skills</a></li>
-            <li><a href="/tools/" data-i18n="nav_tools">Tools</a></li>
-            <li><a href="/certifications/" data-i18n="nav_certs">Certifications</a></li>
+            <li><a href="profile/index.html" data-i18n="nav_profile">Profile</a></li>
+            <li><a href="skills/index.html" data-i18n="nav_skills">Skills</a></li>
+            <li><a href="tools/index.html" data-i18n="nav_tools">Tools</a></li>
         </ul>
         <button id="lang-toggle" data-i18n="btn_lang">PT</button>
     </nav>
 
-    <div class="container">
-        <header class="profile-header">
-            <img src="assets/profile.jpg" alt="André Graça" class="profile-img">
-            <h1 data-i18n="hero_title">André Graça</h1>
-            <h3 data-i18n="hero_role">Cybersecurity Engineer</h3>
-            <p data-i18n="hero_summary">Versatile professional bridging offensive and defensive security.</p>
-        </header>
+    <header class="hero">
+        <h1 data-i18n="hero_title">André Graça</h1>
+        <h2 data-i18n="hero_role">Cybersecurity Engineer</h2>
+        <p style="color: #888;" data-i18n="hero_sub">Defense | Offense | Automation | Engineering</p>
+    </header>
 
-        <section>
-            <h2 data-i18n="nav_skills">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h4 data-i18n="skill_cat_eng">Engineering & Automation</h4>
-                    <p>Python, SOAR, Playbooks</p> </div>
-                <div class="skill-card">
-                    <h4 data-i18n="skill_cat_def">Defensive Security</h4>
-                    <p>SIEM, XDR, Threat Hunting</p> </div>
-                <div class="skill-card">
-                    <h4 data-i18n="skill_cat_off">Offensive Security</h4>
-                    <p>Pentesting, Red Teaming</p> </div>
-                <div class="skill-card">
-                    <h4 data-i18n="skill_cat_grc">Compliance</h4>
-                    <p>NIST, ISO27001, GDPR</p> </div>
-            </div>
-        </section>
-    </div>
+    <main class="category-grid">
+        
+        <div class="card">
+            <h3 data-i18n="cat_secops_title">Security Operations</h3>
+            <p data-i18n="cat_secops_desc">Loading...</p>
+        </div>
+
+        <div class="card">
+            <h3 data-i18n="cat_eng_title">Engineering & Automation</h3>
+            <p data-i18n="cat_eng_desc">Loading...</p>
+        </div>
+
+        <div class="card">
+            <h3 data-i18n="cat_grc_title">GRC & Risk</h3>
+            <p data-i18n="cat_grc_desc">Loading...</p>
+        </div>
+
+        <div class="card">
+            <h3 data-i18n="cat_cloud_title">Cloud Security</h3>
+            <p data-i18n="cat_cloud_desc">Loading...</p>
+        </div>
+
+    </main>
 
     <footer>
-        <h3 data-i18n="contact_title">Contact</h3>
-        <p>Email: andre.d.graca@gmail.com</p> <p>Mobile: +351 969714953</p> <p>Location: Bombarral, Leiria</p> </footer>
+        <p data-i18n="contact_text">Get in touch via Email.</p>
+        <p>Email: <a href="mailto:andre.d.graca@gmail.com" style="color: var(--accent-cyan);">andre.d.graca@gmail.com</a></p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
