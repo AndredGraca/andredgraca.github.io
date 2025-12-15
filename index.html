@@ -1,33 +1,70 @@
-<main class="category-grid">
-        
-        <div class="card">
-            <h3 data-i18n="cat_secops_title">Security Operations</h3>
-            <p data-i18n="cat_secops_desc">Loading...</p>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>André Graça | CyberSec Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-        <div class="card">
-            <h3 data-i18n="cat_eng_title">Engineering & Automation</h3>
-            <p data-i18n="cat_eng_desc">Loading...</p>
-        </div>
+    <nav>
+        <ul>
+            <li><a href="profile/index.html" data-i18n="nav_profile">Profile</a></li>
+            <li><a href="skills/index.html" data-i18n="nav_skills">Skills</a></li>
+            <li><a href="tools/index.html" data-i18n="nav_tools">Tools</a></li>
+            <li><a href="certifications/index.html" data-i18n="nav_certs">Certs</a></li>
+        </ul>
+        <button id="lang-toggle" data-i18n="btn_lang">PT</button>
+    </nav>
 
-        <div class="card">
-            <h3 data-i18n="cat_vuln_title">Vulnerability Management</h3>
-            <p data-i18n="cat_vuln_desc">Loading...</p>
-        </div>
+    <header class="hero">
+        <h1 data-i18n="hero_title">André Graça</h1>
+        <h2 data-i18n="hero_role">Cybersecurity Engineer</h2>
+        <p style="color: #888; font-family: var(--font-tech);" data-i18n="hero_sub">Defense | Offense | Automation</p>
+    </header>
 
-        <div class="card">
-            <h3 data-i18n="cat_net_title">Network Security</h3>
-            <p data-i18n="cat_net_desc">Loading...</p>
-        </div>
+    <div class="container">
+        <div class="grid">
+            
+            <div class="card">
+                <h3 data-i18n="cat_secops_title">SecOps</h3>
+                <p data-i18n="cat_secops_desc">Loading...</p>
+            </div>
 
-        <div class="card">
-            <h3 data-i18n="cat_grc_title">GRC & Risk</h3>
-            <p data-i18n="cat_grc_desc">Loading...</p>
-        </div>
+            <div class="card">
+                <h3 data-i18n="cat_eng_title">Engineering</h3>
+                <p data-i18n="cat_eng_desc">Loading...</p>
+            </div>
 
-        <div class="card">
-            <h3 data-i18n="cat_cloud_title">Cloud Security</h3>
-            <p data-i18n="cat_cloud_desc">Loading...</p>
-        </div>
+            <div class="card">
+                <h3 data-i18n="cat_vuln_title">Vuln Management</h3>
+                <p data-i18n="cat_vuln_desc">Loading...</p>
+            </div>
 
-    </main>
+            <div class="card">
+                <h3 data-i18n="cat_net_title">Network Security</h3>
+                <p data-i18n="cat_net_desc">Loading...</p>
+            </div>
+
+            <div class="card">
+                <h3 data-i18n="cat_grc_title">GRC</h3>
+                <p data-i18n="cat_grc_desc">Loading...</p>
+            </div>
+
+            <div class="card">
+                <h3 data-i18n="cat_cloud_title">Cloud</h3>
+                <p data-i18n="cat_cloud_desc">Loading...</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p data-i18n="footer_contact">Get in touch via Email.</p>
+        <p>Email: <a href="mailto:andre.d.graca@gmail.com" style="color: var(--accent-cyan);">andre.d.graca@gmail.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
