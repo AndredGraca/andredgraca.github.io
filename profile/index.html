@@ -38,39 +38,127 @@
 
             <main class="profile-content">
                 
-                <div class="log-entry" style="border-left-color: var(--accent-cyan);">
+                <div class="log-entry reveal-entry" style="border-left-color: var(--accent-cyan);">
                     <h2 data-i18n="bio_title" style="color: white; margin-top:0;">About Me</h2>
                     <p data-i18n="bio_subtitle" style="font-style: italic; color: #888;">A journey of resilience...</p>
                 </div>
 
-                <div class="log-entry">
+                <div class="log-entry reveal-entry">
                     <div class="log-header">
                         <h2 class="log-title" data-i18n="story_start_title">The Beginning</h2>
-                        <span class="log-number">LOG_01</span>
+                        <span class="log-number">LOG_01 [INIT]</span>
                     </div>
                     <p class="log-text" data-i18n="story_start_text">Loading...</p>
                 </div>
 
-                <div class="log-entry">
+                <div class="log-entry reveal-entry">
                     <div class="log-header">
                         <h2 class="log-title" data-i18n="story_struggle_title">Resilience</h2>
-                        <span class="log-number">LOG_02</span>
+                        <span class="log-number">LOG_02 [WARN]</span>
                     </div>
                     <p class="log-text" data-i18n="story_struggle_text">Loading...</p>
                 </div>
 
-                <div class="log-entry">
+                <div class="log-entry reveal-entry">
                     <div class="log-header">
                         <h2 class="log-title" data-i18n="story_return_title">The Return</h2>
-                        <span class="log-number">LOG_03</span>
+                        <span class="log-number">LOG_03 [EXEC]</span>
                     </div>
                     <p class="log-text" data-i18n="story_return_text">Loading...</p>
                 </div>
 
-                <div class="log-entry">
+                <div class="log-entry reveal-entry">
                     <div class="log-header">
                         <h2 class="log-title" data-i18n="story_current_title">Cybersec Pivot</h2>
-                        <span class="log-number">LOG_04</span>
+                        <span class="log-number">LOG_04 [SECURE]</span>
+                    </div>
+                    <p class="log-text" data-i18n="story_current_text">Loading...</p>
+                </div>
+
+            </main>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>Email: <a href="mailto:andre.d.graca@gmail.com" style="color: var(--accent-cyan);">andre.d.graca@gmail.com</a></p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | André Graça</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="../skills/index.html" data-i18n="nav_skills">Skills</a></li>
+            <li><a href="../tools/index.html" data-i18n="nav_tools">Tools</a></li>
+        </ul>
+        <button id="lang-toggle" data-i18n="btn_lang">PT</button>
+    </nav>
+
+    <div class="container">
+        
+        <div class="profile-wrapper">
+            
+            <aside class="profile-sidebar">
+                <img src="../images/profileimg.png" alt="André Graça" class="sidebar-img">
+                <h1 class="sidebar-name" data-i18n="hero_title">André Graça</h1>
+                <div class="sidebar-role" data-i18n="hero_role">Cybersecurity Engineer</div>
+                
+                <div class="tech-specs">
+                    <h3 data-i18n="edu_title">Education</h3>
+                    <ul>
+                        <li data-i18n="edu_1">Post-Grad: ISTEC</li>
+                        <li data-i18n="edu_2">BSc: Lusófona</li>
+                        <li data-i18n="edu_3">CET: Tech</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <main class="profile-content">
+                
+                <div class="log-entry reveal-entry" style="border-left-color: var(--accent-cyan);">
+                    <h2 data-i18n="bio_title" style="color: white; margin-top:0;">About Me</h2>
+                    <p data-i18n="bio_subtitle" style="font-style: italic; color: #888;">A journey of resilience...</p>
+                </div>
+
+                <div class="log-entry reveal-entry">
+                    <div class="log-header">
+                        <h2 class="log-title" data-i18n="story_start_title">The Beginning</h2>
+                        <span class="log-number">LOG_01 [INIT]</span>
+                    </div>
+                    <p class="log-text" data-i18n="story_start_text">Loading...</p>
+                </div>
+
+                <div class="log-entry reveal-entry">
+                    <div class="log-header">
+                        <h2 class="log-title" data-i18n="story_struggle_title">Resilience</h2>
+                        <span class="log-number">LOG_02 [WARN]</span>
+                    </div>
+                    <p class="log-text" data-i18n="story_struggle_text">Loading...</p>
+                </div>
+
+                <div class="log-entry reveal-entry">
+                    <div class="log-header">
+                        <h2 class="log-title" data-i18n="story_return_title">The Return</h2>
+                        <span class="log-number">LOG_03 [EXEC]</span>
+                    </div>
+                    <p class="log-text" data-i18n="story_return_text">Loading...</p>
+                </div>
+
+                <div class="log-entry reveal-entry">
+                    <div class="log-header">
+                        <h2 class="log-title" data-i18n="story_current_title">Cybersec Pivot</h2>
+                        <span class="log-number">LOG_04 [SECURE]</span>
                     </div>
                     <p class="log-text" data-i18n="story_current_text">Loading...</p>
                 </div>
