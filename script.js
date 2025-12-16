@@ -88,9 +88,9 @@ const translations = {
         btn_lang: "PT",
         
         // HERO
-        hero_badge: "CYBERSECURITY ENGINEER",
+        hero_badge: "Portfolio & Bio",
         hero_title: "ANDRÉ GRAÇA",
-        hero_desc: "Portfolio & Bio", // Updated
+        hero_desc: "CYBERSECURITY ENGINEER", // Updated
 
         // CARDS
         c1_title: "Defense (SecOps)",
