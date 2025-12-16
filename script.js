@@ -7,30 +7,30 @@ const translations = {
         btn_lang: "EN",
         
         // HERO
-        hero_sub: "ENGENHEIRO DE CIBERSEGURANÇA",
-        hero_title: "ANDRÉ GRAÇA",
-        hero_desc: "Especialista em Proteção de Infraestruturas, Resposta a Incidentes e Automação de Segurança.",
+        hero_badge: "ENGENHEIRO DE CIBERSEGURANÇA",
+        hero_title: "Segurança de Infraestruturas & Operações",
+        hero_desc: "Especialista em construir sistemas resilientes, automatizar defesas e gerir incidentes críticos.",
 
-        // MASTERY CARDS
-        card_1_title: "Defesa (Blue Team)",
-        card_1_desc: "Monitorização ativa de ameaças, engenharia de deteção em SIEM/XDR e resposta rápida a incidentes.",
+        // CARDS
+        c1_title: "Defesa (SecOps)",
+        c1_desc: "Monitorização 24/7, engenharia de deteção em SIEM e resposta a incidentes em tempo real.",
         
-        card_2_title: "Ataque (Red Team)",
-        card_2_desc: "Utilização de táticas ofensivas e pentesting para identificar falhas e fortalecer as defesas.",
+        c2_title: "Engenharia",
+        c2_desc: "Automação de segurança (SOAR) e desenvolvimento de scripts Python para otimização de processos.",
 
-        card_3_title: "Automação & Eng.",
-        card_3_desc: "Criação de scripts Python e Playbooks SOAR para eliminar tarefas repetitivas e acelerar respostas.",
+        c3_title: "Ofensiva (Red Team)",
+        c3_desc: "Simulação de ataques e testes de penetração para identificar pontos cegos na infraestrutura.",
 
-        card_4_title: "Gestão de Vuln",
-        card_4_desc: "Identificação, análise e remediação de vulnerabilidades críticas em toda a infraestrutura.",
+        c4_title: "Gestão de Vuln",
+        c4_desc: "Identificação proativa e remediação de vulnerabilidades críticas com Tenable e scanners avançados.",
 
-        card_5_title: "Segurança de Rede",
-        card_5_desc: "Proteção de perímetro, segmentação de rede e análise de tráfego (NDR/EDR).",
+        c5_title: "Rede e Cloud",
+        c5_desc: "Defesa de perímetro, segmentação de rede e hardening de ambientes Azure/Hybrid.",
 
-        card_6_title: "GRC & Compliance",
-        card_6_desc: "Alinhamento estratégico com normas internacionais ISO27001, NIST e regulamentos GDPR.",
+        c6_title: "GRC",
+        c6_desc: "Conformidade técnica com normas ISO27001, NIST e auditorias de segurança.",
 
-        footer_contact: "Entre em contacto via Email."
+        footer: "Entre em contacto via Email."
     },
     en: {
         nav_home: "Home",
@@ -40,34 +40,33 @@ const translations = {
         btn_lang: "PT",
         
         // HERO
-        hero_sub: "CYBERSECURITY ENGINEER",
-        hero_title: "ANDRÉ GRAÇA",
-        hero_desc: "Specialist in Infrastructure Protection, Incident Response, and Security Automation.",
+        hero_badge: "CYBERSECURITY ENGINEER",
+        hero_title: "Infrastructure Security & Operations",
+        hero_desc: "Specialist in building resilient systems, automating defenses, and managing critical incidents.",
 
-        // MASTERY CARDS
-        card_1_title: "Defense (Blue Team)",
-        card_1_desc: "Active threat monitoring, detection engineering on SIEM/XDR, and rapid incident response.",
+        // CARDS
+        c1_title: "Defense (SecOps)",
+        c1_desc: "24/7 monitoring, SIEM detection engineering, and real-time incident response.",
         
-        card_2_title: "Offense (Red Team)",
-        card_2_desc: "Using offensive tactics and pentesting to identify gaps and harden defenses.",
+        c2_title: "Engineering",
+        c2_desc: "Security automation (SOAR) and Python script development for process optimization.",
 
-        card_3_title: "Automation & Eng.",
-        card_3_desc: "Creating Python scripts and SOAR Playbooks to eliminate repetitive tasks and speed up response.",
+        c3_title: "Offensive (Red Team)",
+        c3_desc: "Attack simulation and penetration testing to identify blind spots in infrastructure.",
 
-        card_4_title: "Vuln Management",
-        card_4_desc: "Identification, analysis, and remediation of critical vulnerabilities across the infrastructure.",
+        c4_title: "Vuln Management",
+        c4_desc: "Proactive identification and remediation of critical vulnerabilities using Tenable.",
 
-        card_5_title: "Network Security",
-        card_5_desc: "Perimeter protection, network segmentation, and traffic analysis (NDR/EDR).",
+        c5_title: "Network & Cloud",
+        c5_desc: "Perimeter defense, network segmentation, and hardening of Azure/Hybrid environments.",
 
-        card_6_title: "GRC & Compliance",
-        card_6_desc: "Strategic alignment with international standards ISO27001, NIST, and GDPR regulations.",
+        c6_title: "GRC",
+        c6_desc: "Technical compliance with ISO27001, NIST standards, and security audits.",
 
-        footer_contact: "Get in touch via Email."
+        footer: "Get in touch via Email."
     }
 };
 
-// --- LANGUAGE LOGIC ---
 function changeLanguage(lang) {
     localStorage.setItem('lang', lang);
     document.documentElement.lang = lang;
@@ -77,21 +76,6 @@ function changeLanguage(lang) {
     });
 }
 
-// --- ANIMATION OBSERVER ---
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: "0px 0px -50px 0px"
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target); // Play animation once
-        }
-    });
-}, observerOptions);
-
 document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('lang') || 'en';
     changeLanguage(savedLang);
@@ -100,8 +84,4 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentLang = localStorage.getItem('lang') || 'en';
         changeLanguage(currentLang === 'en' ? 'pt' : 'en');
     });
-
-    // Initialize Animations
-    const animatedElements = document.querySelectorAll('.animate-on-scroll, .mastery-card');
-    animatedElements.forEach(el => observer.observe(el));
 });
