@@ -17,7 +17,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    overflow-x: hidden; /* Prevent horizontal scroll bars from animations */
+    overflow-x: hidden;
 }
 
 /* --- NAVIGATION --- */
@@ -80,7 +80,7 @@ nav a:hover {
     padding: 40px 20px;
 }
 
-/* --- HOME PAGE GRID (Used in index.html) --- */
+/* --- HERO & GRID (Home Page) --- */
 .hero {
     text-align: center;
     padding: 80px 20px;
@@ -111,35 +111,34 @@ nav a:hover {
 }
 .card h3 { color: var(--accent-cyan); font-family: var(--font-tech); margin-top: 0; border-bottom: 1px solid #333; padding-bottom: 10px;}
 
-/* --- PROFILE DASHBOARD LAYOUT (The New Structure) --- */
-
+/* --- PROFILE DASHBOARD LAYOUT --- */
 .profile-wrapper {
     display: grid;
-    grid-template-columns: 350px 1fr; /* Fixed Sidebar + Flexible Content */
+    grid-template-columns: 350px 1fr;
     gap: 50px;
     align-items: start;
     margin-top: 20px;
 }
 
-/* Left Sidebar styling */
 .profile-sidebar {
     background: var(--card-bg);
     padding: 30px;
     border-radius: 12px;
     border: 1px solid #333;
     position: sticky;
-    top: 100px; /* Sticks to top when scrolling */
+    top: 100px;
     text-align: center;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
     z-index: 10;
 }
 
+/* UPDATED IMAGE STYLE (Square) */
 .sidebar-img {
     width: 100%;
-    max-width: 200px;
-    border-radius: 50%;
+    max-width: 250px;
+    border-radius: 12px;    /* Square with rounded corners */
     border: 3px solid var(--accent-cyan);
-    background: #000; /* Dark bg for PNG transparency */
+    background: transparent;
     box-shadow: 0 0 25px rgba(102, 252, 241, 0.2);
     margin-bottom: 20px;
 }
@@ -159,7 +158,6 @@ nav a:hover {
     letter-spacing: 1px;
 }
 
-/* "Tech Specs" Box inside Sidebar */
 .tech-specs {
     text-align: left;
     background: rgba(0,0,0,0.3);
@@ -251,21 +249,9 @@ footer {
     font-size: 0.9rem;
 }
 
-/* --- RESPONSIVE MEDIA QUERIES --- */
+/* --- RESPONSIVE --- */
 @media (max-width: 900px) {
-    .profile-wrapper {
-        grid-template-columns: 1fr; /* Stack vertically */
-    }
-    .profile-sidebar {
-        position: relative; /* Stop sticking */
-        top: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .log-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-    }
+    .profile-wrapper { grid-template-columns: 1fr; }
+    .profile-sidebar { position: relative; top: 0; display: flex; flex-direction: column; align-items: center; }
+    .log-header { flex-direction: column; align-items: flex-start; gap: 5px; }
 }

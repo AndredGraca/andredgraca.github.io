@@ -5,7 +5,6 @@ const translations = {
         nav_profile: "Perfil",
         nav_skills: "Competências",
         nav_tools: "Ferramentas",
-        nav_certs: "Certificações",
         btn_lang: "EN",
         
         // Identity
@@ -31,29 +30,25 @@ const translations = {
         bio_title: "Sobre Mim",
         bio_subtitle: "Uma jornada de resiliência: Do chão de fábrica à Engenharia de Cibersegurança.",
         
-        // Log 1
-        story_start_title: "O Início & A Paixão",
-        story_start_text: "A minha jornada começou na Escola José Saramago em Mafra, no curso profissional de Técnico de Gestão e Programação de Sistemas Informáticos. Foi aqui que descobri a minha paixão pela tecnologia.",
+        // Log 1: Origins
+        log1_title: "A Origem",
+        log1_text: "Tudo começou na Escola José Saramago em Mafra. Foi no curso profissional de Gestão e Programação de Sistemas Informáticos que toquei na primeira linha de código e descobri a minha paixão. Sabia que era este o meu caminho.",
         
-        // Log 2
-        story_struggle_title: "Resiliência na Crise",
-        story_struggle_text: "Com a crise de 2011, fui forçado a trabalhar em fábricas e fiz um curso de CNC no IEFP. O ponto de viragem foi numa fábrica de queijo: após quase perder a vida três vezes numa semana e ver o tratamento precário dos trabalhadores, decidi que aquela vida não era para mim. Juntei cada Euro que tinha e voltei a estudar.",
+        // Log 2: The Hardship
+        log2_title: "A Crise e o Desvio",
+        log2_text: "A crise financeira de 2011 atingiu Portugal com força. Fui obrigado a pausar os estudos e trabalhar em fábricas e escritórios para sobreviver. Em 2012, fiz um curso de CNC no IEFP, mas sentia que não estava onde pertencia.",
         
-        // Log 3
-        story_return_title: "O Regresso à Engenharia",
-        story_return_text: "Completei o CET e a Licenciatura na Universidade Lusófona. No projeto final, criei o 'Gaming Out of Depression' (proposto por uma psicóloga): um sistema estilo Discord com vídeo/voz em tempo real para ajudar pessoas isoladas a socializar.",
+        // Log 3: The Catalyst (Cheese Factory)
+        log3_title: "O Ponto de Viragem",
+        log3_text: "O momento decisivo aconteceu numa fábrica de queijo. As condições eram desumanas e, numa única semana, quase perdi a vida três vezes em acidentes de trabalho. Percebi que aquela vida não era para mim. Juntei cada Euro que tinha poupado, demiti-me e decidi voltar a estudar.",
         
-        // Log 4
-        story_current_title: "A Evolução Cyber",
-        story_current_text: "Durante a pós-graduação no ISTEC, entrei na Noesis. Comecei em OutSystems, mas aceitei o desafio de migrar para Cibersegurança. Hoje sou um profissional sólido, focado em manter-me à frente das ameaças emergentes.",
+        // Log 4: The Return & The Project
+        log4_title: "O Regresso: Gaming Out of Depression",
+        log4_text: "Voltei à Universidade Lusófona (CET e Licenciatura). O meu projeto final foi o 'Gaming Out of Depression', proposto por uma psicóloga: criei uma plataforma completa (estilo Discord) com chat de voz e vídeo em tempo real para ajudar pessoas isoladas a socializar. Finalizei o curso em 2019.",
 
-        // Log 5 (NEW) - Leadership
-        story_lead_title: "Liderança e Estratégia",
-        story_lead_text: "Na Noesis, assumi a liderança de equipas de analistas, focando na mentoria e otimização de processos. Consegui reduzir o Tempo Médio de Resposta (MTTR) em 15% e diminuí os falsos positivos de SIEM em 30%, elevando a eficiência operacional da organização[cite: 31, 32].",
-
-        // Log 6 (NEW) - Engineering Impact
-        story_impact_title: "Impacto Técnico Real",
-        story_impact_text: "Não me limito a gerir; construo. Implementei automação SOAR que poupa mais de 15 horas manuais por semana e liderei o onboarding de segurança para mais de 2.000 endpoints (Microsoft Defender/Intune), remediando mais de 500 vulnerabilidades críticas na infraestrutura[cite: 34, 35].",
+        // Log 5: The Pivot
+        log5_title: "A Evolução na Noesis",
+        log5_text: "Durante a pós-graduação no ISTEC, entrei na Noesis. Comecei a trabalhar com OutSystems, mas quando surgiu o desafio de mudar para Cibersegurança, aceitei sem hesitar. Moldei-me através de formação intensiva e tornei-me no engenheiro sólido que sou hoje.",
 
         // Education Sidebar
         edu_title: "Formação Académica",
@@ -70,7 +65,6 @@ const translations = {
         nav_profile: "Profile",
         nav_skills: "Skills",
         nav_tools: "Tools",
-        nav_certs: "Certs",
         btn_lang: "PT",
         
         // Identity
@@ -97,28 +91,24 @@ const translations = {
         bio_subtitle: "A journey of resilience: From the factory floor to Cybersecurity Engineering.",
 
         // Log 1
-        story_start_title: "The Beginning",
-        story_start_text: "My journey started at Escola José Saramago in Mafra, taking a professional course in IT Systems. This is where I found my true passion for technology.",
+        log1_title: "The Origin",
+        log1_text: "It started at Escola José Saramago in Mafra. During my professional course in IT Systems Management & Programming, I wrote my first lines of code and found my passion. I knew this was my path.",
 
         // Log 2
-        story_struggle_title: "Resilience in Crisis",
-        story_struggle_text: "Due to the 2011 crisis, I worked blue-collar jobs and took a CNC course. The turning point was at a cheese factory: after nearly losing my life three times in a week, I decided that life wasn't for me. I saved every single Euro I had and went back to college.",
+        log2_title: "Crisis & Detour",
+        log2_text: "The 2011 financial crisis hit Portugal hard. I was forced to pause my studies and work in factories to survive. In 2012, I took a CNC course at IEFP, but I knew deep down I didn't belong there.",
 
         // Log 3
-        story_return_title: "Return to Engineering",
-        story_return_text: "I completed my BSc at Lusófona University. For my final project, I built 'Gaming Out of Depression' (proposed by a psychologist): a real-time voice/video chat system (Discord-style) designed to help isolated people socialize.",
+        log3_title: "The Turning Point",
+        log3_text: "The deciding moment happened at a cheese factory. Conditions were inhumane, and in a single week, I nearly lost my life three times in work accidents. I realized that life wasn't for me. I scraped together every single Euro I had saved, quit, and went back to school.",
 
         // Log 4
-        story_current_title: "The Cyber Pivot",
-        story_current_text: "During my Post-Grad at ISTEC, I joined Noesis. I started with OutSystems but accepted a challenge to pivot to Cybersecurity. I am now a solid professional, always staying ahead of the curve.",
+        log4_title: "The Return: Gaming Out of Depression",
+        log4_text: "I returned to Lusófona University. My final project was 'Gaming Out of Depression', proposed by a psychologist: I built a full-stack platform (Discord-style) with real-time video/voice chat to help isolated people socialize. I graduated in 2019.",
 
-        // Log 5 (NEW) - Leadership
-        story_lead_title: "Leadership & Strategy",
-        story_lead_text: "At Noesis, I stepped up to lead analyst teams, focusing on mentorship and process optimization. I successfully reduced Mean Time to Respond (MTTR) by 15% and cut SIEM false positives by 30%, significantly boosting organizational efficiency[cite: 31, 32].",
-
-        // Log 6 (NEW) - Engineering Impact
-        story_impact_title: "Real Technical Impact",
-        story_impact_text: "I don't just manage; I build. I engineered SOAR automation saving 15+ manual hours weekly and led the security onboarding for over 2,000 endpoints (Microsoft Defender/Intune), remediating 500+ critical vulnerabilities across the infrastructure[cite: 34, 35].",
+        // Log 5
+        log5_title: "The Pivot at Noesis",
+        log5_text: "During my Post-Grad at ISTEC, I joined Noesis. I started with OutSystems, but when the challenge to pivot to Cybersecurity appeared, I took it. Through intense training and experience, I molded myself into the solid engineer I am today.",
 
         // Education Sidebar
         edu_title: "Education",
@@ -146,7 +136,7 @@ function changeLanguage(lang) {
 
 // --- SCROLL ANIMATION LOGIC ---
 const observerOptions = {
-    threshold: 0.15, // Trigger when 15% visible
+    threshold: 0.15,
     rootMargin: "0px 0px -50px 0px"
 };
 
@@ -154,18 +144,15 @@ const scrollObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('active');
-            scrollObserver.unobserve(entry.target); // Run once
+            scrollObserver.unobserve(entry.target);
         }
     });
 }, observerOptions);
 
-// --- INITIALIZATION ---
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Load Language
     const savedLang = localStorage.getItem('lang') || 'en';
     changeLanguage(savedLang);
     
-    // 2. Setup Toggle Button
     const btn = document.getElementById('lang-toggle');
     if(btn) {
         btn.addEventListener('click', () => {
@@ -175,7 +162,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. Setup Animations
     const hiddenElements = document.querySelectorAll('.reveal-entry');
     hiddenElements.forEach((el) => scrollObserver.observe(el));
 });
