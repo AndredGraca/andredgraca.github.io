@@ -9,7 +9,7 @@ const translations = {
         // HERO
         hero_badge: "ENGENHEIRO DE CIBERSEGURANÇA",
         hero_title: "ANDRÉ GRAÇA",
-        hero_desc: "Proteção de Infraestruturas & Operações de Segurança.",
+        hero_desc: "Portfólio e Biografia", // Updated
 
         // CARDS (15 Items)
         c1_title: "Defesa (SecOps)",
@@ -90,7 +90,7 @@ const translations = {
         // HERO
         hero_badge: "CYBERSECURITY ENGINEER",
         hero_title: "ANDRÉ GRAÇA",
-        hero_desc: "Infrastructure Security & Security Operations.",
+        hero_desc: "Portfolio & Bio", // Updated
 
         // CARDS
         c1_title: "Defense (SecOps)",

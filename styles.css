@@ -35,7 +35,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000; /* Increased z-index to stay on top */
+    z-index: 1000;
 }
 
 nav ul { list-style: none; display: flex; gap: 40px; margin: 0; padding: 0; }
@@ -66,10 +66,10 @@ nav a:hover { color: var(--primary-cyan); }
 
 /* --- LAYOUT UTILITIES --- */
 .container {
-    max-width: 1600px; /* Wider to fit 5 cards comfortably */
+    max-width: 1600px;
     margin: 0 auto;
-    /* CHANGED: Increased to 140px to prevent Hero Badge from hiding behind Nav */
-    padding: 140px 20px 40px; 
+    /* CHANGED: Increased from 140px to 200px to forcefully push content down */
+    padding: 200px 20px 40px; 
 }
 
 /* =========================================
@@ -77,12 +77,13 @@ nav a:hover { color: var(--primary-cyan); }
    ========================================= */
 
 .hero {
-    /* Removed min-height centering to ensure top padding works reliably */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding-bottom: 50px;
+    /* CHANGED: Added margin to ensure spacing from nav */
+    margin-top: 20px; 
     margin-bottom: 20px;
 }
 
@@ -107,13 +108,14 @@ nav a:hover { color: var(--primary-cyan); }
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Slightly larger for "Portfolio & Bio" */
     color: var(--text-muted);
     max-width: 600px;
     margin: 0 auto;
+    font-weight: 300;
 }
 
-/* GRID UPDATED FOR 5 COLUMNS */
+/* GRID LAYOUT (5 Columns) */
 .grid-container {
     display: grid;
     /* Default fallback */
@@ -287,14 +289,14 @@ footer a { color: var(--primary-cyan); text-decoration: none; }
 
 /* --- RESPONSIVE GRID (Specific 5-column Logic) --- */
 
-/* For large desktops (100% zoom on 1080p+), force 5 columns */
+/* Force 5 columns on large screens */
 @media (min-width: 1400px) {
     .grid-container {
         grid-template-columns: repeat(5, 1fr);
     }
 }
 
-/* For smaller laptops, drop to 4 */
+/* 4 columns on smaller laptops */
 @media (max-width: 1399px) {
     .grid-container {
         grid-template-columns: repeat(4, 1fr);
