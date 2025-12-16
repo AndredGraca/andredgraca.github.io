@@ -8,27 +8,43 @@ const translations = {
         
         // HERO
         hero_badge: "ENGENHEIRO DE CIBERSEGURANÇA",
-        hero_title: "Segurança de Infraestruturas & Operações",
-        hero_desc: "Especialista em construir sistemas resilientes, automatizar defesas e gerir incidentes críticos.",
+        hero_title: "ANDRÉ GRAÇA",
+        hero_desc: "Proteção de Infraestruturas & Operações de Segurança.",
+
+        // PROFILE / LOGS
+        edu_title: "Formação Académica",
+        edu_1: "Pós-Graduação: Cloud e Virtualização (ISTEC)",
+        edu_2: "Licenciatura: Eng. Informática (Lusófona)",
+        edu_3: "CET: Tecnologia de Sistemas (Lusófona)",
+
+        log1_title: "A Origem",
+        log1_text: "A minha jornada começou na Escola José Saramago em Mafra. Foi durante o Curso Profissional de Gestão e Programação de Sistemas Informáticos que descobri a minha verdadeira vocação tecnológica. Apesar das dificuldades financeiras iniciais, sabia que queria ser um profissional 'self-made' na área tecnológica e comecei a juntar dinheiro para investir na minha formação superior.",
+        
+        log2_title: "A Crise e o Desvio",
+        log2_text: "A crise financeira de 2011 atingiu Portugal com brutalidade. Fui forçado a interromper os estudos e a trabalhar em fábricas e escritórios para sobreviver. Em 2012, tentei um novo rumo com um curso de CNC no IEFP, mas sentia um vazio profissional. Não era o meu chamamento, mas precisava de continuar a lutar.",
+        
+        log3_title: "O Ponto de Viragem",
+        log3_text: "O ponto de rutura aconteceu numa fábrica de queijo. As condições eram desumanas e, numa única semana, escapei da morte em três acidentes de trabalho distintos. Naquele momento, decidi: 'Esta vida não é para mim'. Juntei cada cêntimo que tinha poupado, demiti-me e investi tudo no meu regresso à universidade.",
+        
+        log4_title: "O Regresso",
+        log4_text: "Regressei à Universidade Lusófona com determinação total (CET e Licenciatura). O meu projeto final, 'Gaming Out of Depression', foi proposto por uma psicóloga: desenvolvi um sistema complexo de Backend e Frontend (estilo Discord) com comunicação de voz e vídeo em tempo real, desenhado especificamente para ajudar pessoas isoladas a socializar.",
+
+        log5_title: "A Evolução Cyber",
+        log5_text: "Durante a pós-graduação no ISTEC, ingressei na Noesis. Iniciei em OutSystems, mas quando surgiu o desafio de migrar para a Cibersegurança, aceitei sem hesitar. Através de formação contínua, moldei-me no engenheiro sólido que sou hoje.",
 
         // CARDS
         c1_title: "Defesa (SecOps)",
-        c1_desc: "Monitorização 24/7, engenharia de deteção em SIEM e resposta a incidentes em tempo real.",
-        
+        c1_desc: "Monitorização 24/7 e resposta a incidentes.",
         c2_title: "Engenharia",
-        c2_desc: "Automação de segurança (SOAR) e desenvolvimento de scripts Python para otimização de processos.",
-
-        c3_title: "Ofensiva (Red Team)",
-        c3_desc: "Simulação de ataques e testes de penetração para identificar pontos cegos na infraestrutura.",
-
+        c2_desc: "Automação SOAR e scripting Python.",
+        c3_title: "Ofensiva",
+        c3_desc: "Pentesting e simulação de ataques.",
         c4_title: "Gestão de Vuln",
-        c4_desc: "Identificação proativa e remediação de vulnerabilidades críticas com Tenable e scanners avançados.",
-
-        c5_title: "Rede e Cloud",
-        c5_desc: "Defesa de perímetro, segmentação de rede e hardening de ambientes Azure/Hybrid.",
-
+        c4_desc: "Remediação proativa de vulnerabilidades.",
+        c5_title: "Rede",
+        c5_desc: "Defesa de perímetro e firewalling.",
         c6_title: "GRC",
-        c6_desc: "Conformidade técnica com normas ISO27001, NIST e auditorias de segurança.",
+        c6_desc: "Conformidade ISO27001 e NIST.",
 
         footer: "Entre em contacto via Email."
     },
@@ -41,27 +57,43 @@ const translations = {
         
         // HERO
         hero_badge: "CYBERSECURITY ENGINEER",
-        hero_title: "Infrastructure Security & Operations",
-        hero_desc: "Specialist in building resilient systems, automating defenses, and managing critical incidents.",
+        hero_title: "ANDRÉ GRAÇA",
+        hero_desc: "Infrastructure Security & Security Operations.",
+
+        // PROFILE / LOGS
+        edu_title: "Education",
+        edu_1: "Post-Grad: Cloud & Virtualization (ISTEC)",
+        edu_2: "BSc: Computer Engineering (Lusófona)",
+        edu_3: "CET: Systems Technology (Lusófona)",
+
+        log1_title: "The Origin",
+        log1_text: "My journey began at Escola José Saramago in Mafra, where I discovered my true vocation during a Professional Course in IT Systems. Despite early financial hurdles, I was determined to become a self-made professional in the tech world and started saving money to fund my higher education.",
+        
+        log2_title: "Crisis & Detour",
+        log2_text: "The 2011 financial crisis hit Portugal hard. I was forced to pause my studies and take on various factory jobs just to survive. In 2012, I tried a CNC course at IEFP, but I felt professionally unfulfilled. I knew deep down this wasn't my calling, but I had to keep fighting.",
+        
+        log3_title: "The Turning Point",
+        log3_text: "The breaking point was at a cheese factory. After nearly three serious accidents in one week and facing inhumane conditions, I decided: 'This life is not for me.' I scraped together every single Euro I had saved, quit, and invested everything into returning to college.",
+        
+        log4_title: "The Return",
+        log4_text: "I returned to Lusófona University with total focus. My final project, 'Gaming Out of Depression' (proposed by a psychologist), was a complex Full-Stack system (Discord-style) featuring real-time voice and video communication, specifically designed to help isolated individuals socialize.",
+
+        log5_title: "The Cyber Pivot",
+        log5_text: "During my Post-Grad at ISTEC, I joined Noesis. I started with OutSystems, but when the challenge to pivot to Cybersecurity arose, I took it without hesitation. Through continuous training, I molded myself into the solid engineer I am today.",
 
         // CARDS
         c1_title: "Defense (SecOps)",
-        c1_desc: "24/7 monitoring, SIEM detection engineering, and real-time incident response.",
-        
+        c1_desc: "24/7 monitoring and incident response.",
         c2_title: "Engineering",
-        c2_desc: "Security automation (SOAR) and Python script development for process optimization.",
-
-        c3_title: "Offensive (Red Team)",
-        c3_desc: "Attack simulation and penetration testing to identify blind spots in infrastructure.",
-
+        c2_desc: "SOAR automation and Python scripting.",
+        c3_title: "Offensive",
+        c3_desc: "Pentesting and attack simulation.",
         c4_title: "Vuln Management",
-        c4_desc: "Proactive identification and remediation of critical vulnerabilities using Tenable.",
-
-        c5_title: "Network & Cloud",
-        c5_desc: "Perimeter defense, network segmentation, and hardening of Azure/Hybrid environments.",
-
+        c4_desc: "Proactive vulnerability remediation.",
+        c5_title: "Network",
+        c5_desc: "Perimeter defense and firewalling.",
         c6_title: "GRC",
-        c6_desc: "Technical compliance with ISO27001, NIST standards, and security audits.",
+        c6_desc: "ISO27001 and NIST compliance.",
 
         footer: "Get in touch via Email."
     }
@@ -76,6 +108,17 @@ function changeLanguage(lang) {
     });
 }
 
+// Scroll Animation Observer
+const observerOptions = { threshold: 0.15, rootMargin: "0px 0px -50px 0px" };
+const scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            scrollObserver.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
 document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('lang') || 'en';
     changeLanguage(savedLang);
@@ -84,4 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentLang = localStorage.getItem('lang') || 'en';
         changeLanguage(currentLang === 'en' ? 'pt' : 'en');
     });
+
+    // Observe reveal elements
+    document.querySelectorAll('.reveal-entry, .fade-up').forEach(el => scrollObserver.observe(el));
 });

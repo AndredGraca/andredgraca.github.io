@@ -4,7 +4,6 @@
     --card-surface: #121212;
     --card-border: #333;
     --primary-cyan: #00f0ff; /* Cyberpunk Cyan */
-    --secondary-blue: #0066ff;
     --text-main: #e0e0e0;
     --text-muted: #888;
     --font-head: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -64,20 +63,27 @@ nav a:hover { color: var(--primary-cyan); }
     transition: all 0.3s;
 }
 
-#lang-toggle:hover {
-    background: var(--primary-cyan);
-    color: black;
+#lang-toggle:hover { background: var(--primary-cyan); color: black; }
+
+/* --- LAYOUT UTILITIES --- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px 40px; /* Top padding accounts for fixed nav */
 }
 
-/* --- HERO SECTION --- */
+/* =========================================
+   HOMEPAGE STYLES
+   ========================================= */
+
 .hero {
-    min-height: 60vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 120px 20px 60px;
+    padding-bottom: 60px;
 }
 
 .hero-badge {
@@ -94,11 +100,10 @@ nav a:hover { color: var(--primary-cyan); }
 .hero h1 {
     font-size: 4rem;
     line-height: 1.1;
-    margin: 0 0 20px 0;
-    background: linear-gradient(to right, #fff, #888);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin: 0 0 10px 0;
+    color: white;
     font-weight: 800;
+    text-transform: uppercase;
 }
 
 .hero p {
@@ -108,14 +113,11 @@ nav a:hover { color: var(--primary-cyan); }
     margin: 0 auto;
 }
 
-/* --- MASTERY GRID (Bento Style) --- */
 .grid-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px 100px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 25px;
+    padding-bottom: 60px;
 }
 
 .card {
@@ -127,7 +129,6 @@ nav a:hover { color: var(--primary-cyan); }
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    overflow: hidden;
 }
 
 .card:hover {
@@ -135,70 +136,162 @@ nav a:hover { color: var(--primary-cyan); }
     border-color: var(--primary-cyan);
 }
 
-/* Subtle glow effect on hover */
-.card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; width: 4px; height: 100%;
-    background: var(--primary-cyan);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.card:hover::before { opacity: 1; }
-
 .icon-box {
-    width: 50px; height: 50px;
+    width: 40px; height: 40px;
     margin-bottom: 25px;
-    fill: var(--primary-cyan); /* SVG Color */
+    fill: var(--primary-cyan);
 }
 
-.card h3 {
-    font-size: 1.5rem;
-    margin: 0 0 15px 0;
+.card h3 { margin: 0 0 15px 0; color: #fff; font-size: 1.3rem; }
+.card p { color: var(--text-muted); margin: 0; font-size: 0.95rem; }
+
+/* =========================================
+   PROFILE PAGE STYLES (Restored & Unified)
+   ========================================= */
+
+.profile-wrapper {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 50px;
+    align-items: start;
+    margin-top: 40px;
+}
+
+/* Sidebar */
+.profile-sidebar {
+    background: var(--card-surface);
+    border: 1px solid var(--card-border);
+    padding: 30px;
+    position: sticky;
+    top: 100px;
+    text-align: center;
+}
+
+.sidebar-img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 12px; /* Square with rounded corners */
+    border: 2px solid var(--primary-cyan);
+    margin-bottom: 20px;
+    background: #000;
+}
+
+.sidebar-name {
+    font-size: 1.8rem;
     color: #fff;
+    margin: 10px 0;
+    font-weight: 700;
 }
 
-.card p {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    line-height: 1.6;
+.sidebar-role {
+    color: var(--primary-cyan);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Tech Specs (Education) */
+.tech-specs {
+    text-align: left;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-left: 2px solid var(--primary-cyan);
+}
+
+.tech-specs h3 {
+    color: #fff;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.tech-specs ul { list-style: none; padding: 0; font-size: 0.85rem; color: #ccc; }
+.tech-specs li { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #222; }
+.tech-specs li:last-child { border-bottom: none; margin: 0; padding: 0; }
+
+/* Logs / Timeline */
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.log-entry {
+    background: var(--card-surface);
+    border: 1px solid var(--card-border);
+    padding: 30px;
+    border-left: 4px solid var(--card-border); /* Default border */
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.log-entry:hover {
+    border-left-color: var(--primary-cyan);
+    transform: translateX(5px);
+}
+
+.log-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.log-title {
+    color: var(--primary-cyan);
+    font-family: var(--font-mono);
     margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
-/* --- ANIMATION CLASSES --- */
-.fade-up {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 0.8s forwards;
+.log-number {
+    color: #555;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    border: 1px solid #333;
+    padding: 2px 6px;
 }
 
-@keyframes fadeInUp {
-    to { opacity: 1; transform: translateY(0); }
-}
+.log-text { color: var(--text-muted); font-size: 1rem; line-height: 1.7; }
 
-/* Stagger delays */
+/* =========================================
+   ANIMATIONS & FOOTER
+   ========================================= */
+
+.fade-up { opacity: 0; transform: translateY(30px); animation: fadeInUp 0.8s forwards; }
+@keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+
+/* Delays */
 .delay-1 { animation-delay: 0.1s; }
 .delay-2 { animation-delay: 0.2s; }
 .delay-3 { animation-delay: 0.3s; }
 .delay-4 { animation-delay: 0.4s; }
 .delay-5 { animation-delay: 0.5s; }
-.delay-6 { animation-delay: 0.6s; }
 
-/* --- FOOTER --- */
+/* Profile Scroll Animation Classes */
+.reveal-entry { opacity: 0; transform: translateX(30px); transition: all 0.6s ease; }
+.reveal-entry.active { opacity: 1; transform: translateX(0); }
+
 footer {
     border-top: 1px solid #222;
     padding: 40px;
     text-align: center;
     color: #555;
     font-size: 0.9rem;
+    margin-top: 60px;
 }
 footer a { color: var(--primary-cyan); text-decoration: none; }
 
-/* --- MOBILE --- */
-@media (max-width: 768px) {
-    .hero h1 { font-size: 2.5rem; }
-    nav { padding: 15px 20px; }
-    nav ul { gap: 20px; }
+/* Mobile */
+@media (max-width: 900px) {
+    .profile-wrapper { grid-template-columns: 1fr; }
+    .profile-sidebar { position: relative; top: 0; margin-bottom: 30px; }
     .grid-container { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 2.5rem; }
 }
