@@ -47,6 +47,14 @@ const translations = {
         story_current_title: "A Evolução Cyber",
         story_current_text: "Durante a pós-graduação no ISTEC, entrei na Noesis. Comecei em OutSystems, mas aceitei o desafio de migrar para Cibersegurança. Hoje sou um profissional sólido, focado em manter-me à frente das ameaças emergentes.",
 
+        // Log 5 (NEW) - Leadership
+        story_lead_title: "Liderança e Estratégia",
+        story_lead_text: "Na Noesis, assumi a liderança de equipas de analistas, focando na mentoria e otimização de processos. Consegui reduzir o Tempo Médio de Resposta (MTTR) em 15% e diminuí os falsos positivos de SIEM em 30%, elevando a eficiência operacional da organização[cite: 31, 32].",
+
+        // Log 6 (NEW) - Engineering Impact
+        story_impact_title: "Impacto Técnico Real",
+        story_impact_text: "Não me limito a gerir; construo. Implementei automação SOAR que poupa mais de 15 horas manuais por semana e liderei o onboarding de segurança para mais de 2.000 endpoints (Microsoft Defender/Intune), remediando mais de 500 vulnerabilidades críticas na infraestrutura[cite: 34, 35].",
+
         // Education Sidebar
         edu_title: "Formação Académica",
         edu_1: "Pós-Graduação: Cloud e Virtualização (ISTEC)",
@@ -103,6 +111,14 @@ const translations = {
         // Log 4
         story_current_title: "The Cyber Pivot",
         story_current_text: "During my Post-Grad at ISTEC, I joined Noesis. I started with OutSystems but accepted a challenge to pivot to Cybersecurity. I am now a solid professional, always staying ahead of the curve.",
+
+        // Log 5 (NEW) - Leadership
+        story_lead_title: "Leadership & Strategy",
+        story_lead_text: "At Noesis, I stepped up to lead analyst teams, focusing on mentorship and process optimization. I successfully reduced Mean Time to Respond (MTTR) by 15% and cut SIEM false positives by 30%, significantly boosting organizational efficiency[cite: 31, 32].",
+
+        // Log 6 (NEW) - Engineering Impact
+        story_impact_title: "Real Technical Impact",
+        story_impact_text: "I don't just manage; I build. I engineered SOAR automation saving 15+ manual hours weekly and led the security onboarding for over 2,000 endpoints (Microsoft Defender/Intune), remediating 500+ critical vulnerabilities across the infrastructure[cite: 34, 35].",
 
         // Education Sidebar
         edu_title: "Education",
