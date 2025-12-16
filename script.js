@@ -127,6 +127,32 @@ function changeLanguage(lang) {
     });
 }
 
+/* --- ANIMATION LOGIC --- */
+
+// 1. Scroll Observer (Triggers when items appear on screen)
+const observerOptions = {
+    threshold: 0.15, // Trigger when 15% of the item is visible
+    rootMargin: "0px 0px -50px 0px" // Trigger slightly before bottom
+};
+
+const scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            // Optional: Stop observing once active (remove line below to replay on scroll up)
+            scrollObserver.unobserve(entry.target); 
+        }
+    });
+}, observerOptions);
+
+// Initialize Observer on Load
+document.addEventListener('DOMContentLoaded', () => {
+    const hiddenElements = document.querySelectorAll('.reveal-entry');
+    hiddenElements.forEach((el) => scrollObserver.observe(el));
+});
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('lang') || 'en';
     changeLanguage(savedLang);
@@ -140,3 +166,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
