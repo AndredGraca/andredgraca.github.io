@@ -1,9 +1,10 @@
+/* --- GLOBAL VARIABLES & RESET --- */
 :root {
-    --bg-color: #0b0c10;       /* Very dark grey/black */
-    --card-bg: #1f2833;        /* Dark grey for cards */
-    --text-primary: #c5c6c7;   /* Light grey text */
-    --text-highlight: #fff;    /* White text for headings */
-    --accent-cyan: #66fcf1;    /* Bright Cyan */
+    --bg-color: #0b0c10;       /* Deep Black/Grey */
+    --card-bg: #1f2833;        /* Dark Grey Cards */
+    --text-primary: #c5c6c7;   /* Light Grey Text */
+    --text-highlight: #fff;    /* White Text */
+    --accent-cyan: #66fcf1;    /* Bright Neon Cyan */
     --accent-dark: #45a29e;    /* Dim Teal */
     --font-tech: 'Courier New', Courier, monospace;
     --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -16,9 +17,10 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scroll bars from animations */
 }
 
-/* --- Navigation --- */
+/* --- NAVIGATION --- */
 nav {
     background: rgba(11, 12, 16, 0.95);
     border-bottom: 2px solid var(--accent-dark);
@@ -29,6 +31,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
+    backdrop-filter: blur(5px);
 }
 
 nav ul {
@@ -53,7 +56,6 @@ nav a:hover {
     color: #fff;
 }
 
-/* --- Language Button --- */
 #lang-toggle {
     background: transparent;
     border: 1px solid var(--accent-cyan);
@@ -71,39 +73,30 @@ nav a:hover {
     box-shadow: 0 0 15px var(--accent-cyan);
 }
 
-/* --- Layout Containers --- */
+/* --- MAIN CONTAINERS --- */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
 }
 
+/* --- HOME PAGE GRID (Used in index.html) --- */
 .hero {
     text-align: center;
     padding: 80px 20px;
 }
-
 .hero h1 {
     color: var(--accent-cyan);
     font-family: var(--font-tech);
     font-size: 3rem;
     margin-bottom: 10px;
-    text-shadow: 0 0 5px rgba(102, 252, 241, 0.3);
 }
-
-.hero h2 {
-    color: var(--text-highlight);
-    margin-top: 0;
-}
-
-/* --- Grid System for Cards --- */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 20px;
 }
-
 .card {
     background: var(--card-bg);
     padding: 30px;
@@ -111,81 +104,44 @@ nav a:hover {
     border-left: 4px solid var(--accent-dark);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 20px rgba(102, 252, 241, 0.15);
     border-left-color: var(--accent-cyan);
 }
+.card h3 { color: var(--accent-cyan); font-family: var(--font-tech); margin-top: 0; border-bottom: 1px solid #333; padding-bottom: 10px;}
 
-.card h3 {
-    color: var(--accent-cyan);
-    font-family: var(--font-tech);
-    margin-top: 0;
-    border-bottom: 1px solid #333;
-    padding-bottom: 10px;
-}
+/* --- PROFILE DASHBOARD LAYOUT (The New Structure) --- */
 
-.card h4 {
-    color: var(--text-highlight);
-    margin-bottom: 5px;
-}
-
-.card ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-.card li {
-    margin-bottom: 8px;
-}
-
-/* --- Footer --- */
-footer {
-    text-align: center;
-    padding: 40px;
-    margin-top: 60px;
-    border-top: 1px solid #333;
-    color: #666;
-    font-size: 0.9rem;
-}
-
-footer a {
-    color: var(--accent-cyan);
-    text-decoration: none;
-}
-
-/* --- NEW PROFILE LAYOUT (Dashboard Style) --- */
-
-/* The Main Grid Container */
 .profile-wrapper {
     display: grid;
-    grid-template-columns: 350px 1fr; /* Sidebar fixed width, Content fills rest */
+    grid-template-columns: 350px 1fr; /* Fixed Sidebar + Flexible Content */
     gap: 50px;
     align-items: start;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
-/* --- Left Sidebar (Identity & Stats) --- */
+/* Left Sidebar styling */
 .profile-sidebar {
     background: var(--card-bg);
     padding: 30px;
     border-radius: 12px;
     border: 1px solid #333;
     position: sticky;
-    top: 100px; /* Sticks when scrolling */
+    top: 100px; /* Sticks to top when scrolling */
     text-align: center;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    z-index: 10;
 }
 
 .sidebar-img {
     width: 100%;
-    max-width: 250px;
-    border-radius: 50%; /* Circle shape looks cleaner in sidebar */
+    max-width: 200px;
+    border-radius: 50%;
     border: 3px solid var(--accent-cyan);
+    background: #000; /* Dark bg for PNG transparency */
     box-shadow: 0 0 25px rgba(102, 252, 241, 0.2);
     margin-bottom: 20px;
-    background: #0b0c10;
 }
 
 .sidebar-name {
@@ -203,7 +159,7 @@ footer a {
     letter-spacing: 1px;
 }
 
-/* Education Box inside Sidebar */
+/* "Tech Specs" Box inside Sidebar */
 .tech-specs {
     text-align: left;
     background: rgba(0,0,0,0.3);
@@ -218,26 +174,14 @@ footer a {
     border-bottom: 1px solid #444;
     padding-bottom: 10px;
     margin-top: 0;
+    font-family: var(--font-tech);
 }
 
-.tech-specs ul {
-    list-style: none;
-    padding: 0;
-    font-size: 0.85rem;
-    color: #ccc;
-}
+.tech-specs ul { list-style: none; padding: 0; font-size: 0.85rem; color: #ccc; }
+.tech-specs li { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #222; }
+.tech-specs li:last-child { border-bottom: none; }
 
-.tech-specs li {
-    margin-bottom: 12px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #222;
-}
-
-.tech-specs li:last-child {
-    border-bottom: none;
-}
-
-/* --- Right Content (Story Logs) --- */
+/* Right Content (Logs) */
 .profile-content {
     display: flex;
     flex-direction: column;
@@ -254,12 +198,10 @@ footer a {
 }
 
 .log-entry:hover {
-    transform: translateX(5px);
     border-left-color: var(--accent-cyan);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-/* "System Header" for each log */
 .log-header {
     display: flex;
     justify-content: space-between;
@@ -285,80 +227,44 @@ footer a {
     border-radius: 4px;
 }
 
-.log-text {
-    font-size: 1rem;
-    line-height: 1.7;
-    color: #bbb;
-}
+.log-text { color: #bbb; font-size: 1rem; }
 
-/* Responsive: Stack on mobile */
-@media (max-width: 900px) {
-    .profile-wrapper {
-        grid-template-columns: 1fr;
-    }
-    .profile-sidebar {
-        position: relative;
-        top: 0;
-    }
-}
-
-/* --- ANIMATIONS & RESPONSIVENESS --- */
-
-/* 1. The Scroll Animation (Hidden by default) */
+/* --- ANIMATIONS --- */
 .reveal-entry {
     opacity: 0;
-    transform: translateX(50px); /* Slides in from right */
-    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); /* Smooth ease-out */
+    transform: translateX(50px);
+    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-/* The visible state (Triggered by JS) */
 .reveal-entry.active {
     opacity: 1;
     transform: translateX(0);
 }
 
-/* 2. Typewriter Effect Styles */
-.typing-effect {
-    border-right: 3px solid var(--accent-cyan);
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-    animation: blink-caret 0.75s step-end infinite;
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 40px;
+    margin-top: 60px;
+    border-top: 1px solid #333;
+    color: #666;
+    font-size: 0.9rem;
 }
 
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: var(--accent-cyan) }
-}
-
-/* 3. Mobile Responsiveness (Styling for smaller screens) */
+/* --- RESPONSIVE MEDIA QUERIES --- */
 @media (max-width: 900px) {
     .profile-wrapper {
         grid-template-columns: 1fr; /* Stack vertically */
-        gap: 30px;
-        margin-top: 20px;
     }
-
     .profile-sidebar {
-        position: relative; /* Stop sticking on mobile */
+        position: relative; /* Stop sticking */
         top: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
-        z-index: 10;
     }
-
-    .sidebar-img {
-        max-width: 150px; /* Smaller image on mobile */
-    }
-
-    .log-entry {
-        padding: 20px; /* Less padding on phone screens */
-    }
-
     .log-header {
-        flex-direction: column; /* Stack Title and Log Number */
+        flex-direction: column;
         align-items: flex-start;
         gap: 5px;
     }
