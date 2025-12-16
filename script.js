@@ -13,45 +13,45 @@ const translations = {
         hero_role: "Engenheiro de Cibersegurança",
         hero_sub: "Defesa | Ataque | Automação | Engenharia",
         
-        // --- 6 Core Categories (Used in Index & Skills) ---
-        // 1. SecOps
+        // Categories (Keep existing)
         cat_secops_title: "Operações de Segurança (SecOps)",
-        cat_secops_desc: "Especialista em deteção de ameaças e resposta a incidentes. Redução do MTTR e otimização de SIEM/XDR (ArcSight, Sentinel).",
-        // 2. Engineering
+        cat_secops_desc: "Especialista em deteção de ameaças e resposta a incidentes. Redução do MTTR e otimização de SIEM/XDR.",
         cat_eng_title: "Engenharia e Automação",
-        cat_eng_desc: "Desenvolvimento de Playbooks SOAR e scripts Python. Integração de API (Gitlab, Jira) poupando 15h+ semanais.",
-        // 3. Vulnerability Mgmt
+        cat_eng_desc: "Desenvolvimento de Playbooks SOAR e scripts Python. Integração de API (Gitlab, Jira).",
         cat_vuln_title: "Gestão de Vulnerabilidades",
-        cat_vuln_desc: "Liderança de programas proativos com Tenable.io e Landsweeper. Remediação de +500 vulnerabilidades críticas.",
-        // 4. Network Sec
+        cat_vuln_desc: "Liderança de programas proativos com Tenable.io e Landsweeper. Remediação de +500 vulnerabilidades.",
         cat_net_title: "Segurança de Rede",
-        cat_net_desc: "Defesa de infraestrutura com Darktrace e Palo Alto. Monitorização de tráfego (NDR) e segmentação.",
-        // 5. GRC
+        cat_net_desc: "Defesa de infraestrutura com Darktrace e Palo Alto. Monitorização de tráfego (NDR).",
         cat_grc_title: "GRC e Conformidade",
-        cat_grc_desc: "Adesão a frameworks NIST, ISO27001 e GDPR. Relatórios de auditoria técnica e evidências de conformidade.",
-        // 6. Cloud
+        cat_grc_desc: "Adesão a frameworks NIST, ISO27001 e GDPR. Relatórios de auditoria técnica.",
         cat_cloud_title: "Segurança Cloud e Endpoint",
-        cat_cloud_desc: "Políticas de segurança no Microsoft Defender e Intune. Proteção de ambientes híbridos e onboarding de ativos.",
+        cat_cloud_desc: "Políticas de segurança no Microsoft Defender e Intune. Proteção de ambientes híbridos.",
 
-        // --- Profile Page (Experience) ---
-        page_profile_title: "O Meu Percurso",
-        role_noesis: "Engenheiro de Cibersegurança @ Noesis",
-        date_noesis: "2020 - Presente",
-        exp_lead: "Liderança de Equipa: Redução do MTTR em 15% via formação.",
-        exp_detect: "Otimização de Deteção: Redução de falsos positivos em 30% em plataformas SIEM/XDR.",
-        exp_vuln: "Gestão de Risco: Remediação massiva de vulnerabilidades críticas.",
-        exp_soar: "Automação SOAR: Implementação de playbooks para resposta a incidentes.",
-        exp_cloud: "Endpoint & Cloud: Onboarding de 2000+ endpoints no Microsoft Defender.",
+        // --- PROFILE PAGE STORY (NEW) ---
+        bio_title: "Sobre Mim",
+        bio_subtitle: "Uma jornada de resiliência: Do chão de fábrica à Engenharia de Cibersegurança.",
+        
+        // Section 1: Origins
+        story_start_title: "O Início & A Paixão",
+        story_start_text: "A minha jornada começou na Escola José Saramago em Mafra, no curso profissional de Técnico de Gestão e Programação de Sistemas Informáticos. Foi aqui que descobri a minha paixão pela tecnologia.",
+        
+        // Section 2: The Struggle
+        story_struggle_title: "Resiliência na Crise (2011-2012)",
+        story_struggle_text: "Com a crise financeira de 2011 em Portugal, fui forçado a interromper os estudos. Trabalhei em várias áreas, inclusive fiz um curso de CNC no IEFP. O ponto de viragem aconteceu numa fábrica de queijo: após quase perder a vida três vezes numa semana e ver o tratamento precário dos trabalhadores, decidi que aquela vida não era para mim. Juntei cada Euro que tinha e voltei a estudar.",
+        
+        // Section 3: The Return
+        story_return_title: "O Regresso à Engenharia",
+        story_return_text: "Completei o CET na Universidade Lusófona e segui para a Licenciatura em Engenharia Informática (2019). No meu projeto final, desenvolvi o 'Gaming Out of Depression' (proposto por uma psicóloga): um sistema completo (backend/frontend) estilo Discord com chat de voz e vídeo em tempo real para ajudar pessoas a socializar.",
+        
+        // Section 4: Current Era
+        story_current_title: "A Evolução para Cibersegurança",
+        story_current_text: "Durante a minha pós-graduação em Virtualização e Cloud no ISTEC, entrei na Noesis. Comecei com OutSystems, mas aceitei o desafio de migrar para a Cibersegurança. Com muita formação e prática, tornei-me no profissional sólido que sou hoje — sempre à frente da curva em ameaças e tecnologia.",
 
-        // --- Tools Page ---
-        page_tools_title: "Stack Tecnológica",
-        tool_siem: "SIEM & XDR",
-        tool_vuln: "Gestão de Vuln",
-        tool_auto: "Automação & Dev",
-        tool_net: "Rede & Segurança",
-
-        // --- Certs Page ---
-        page_certs_title: "Certificações",
+        // Education List
+        edu_title: "Formação Académica",
+        edu_1: "Pós-Graduação: Computação na Nuvem e Virtualização (ISTEC)",
+        edu_2: "Licenciatura: Engenharia Informática (Universidade Lusófona)",
+        edu_3: "CET: Tecnologia e Programação de Sistemas de Informação",
 
         // Footer
         footer_contact: "Entre em contacto via Email."
@@ -70,45 +70,45 @@ const translations = {
         hero_role: "Cybersecurity Engineer",
         hero_sub: "Defense | Offense | Automation | Engineering",
 
-        // --- 6 Core Categories ---
-        // 1. SecOps
+        // Categories (Keep existing)
         cat_secops_title: "Security Operations (SecOps)",
-        cat_secops_desc: "Specialist in threat detection and incident response. Reduced MTTR and optimized SIEM/XDR (ArcSight, Sentinel).",
-        // 2. Engineering
+        cat_secops_desc: "Specialist in threat detection and incident response. Reduced MTTR and optimized SIEM/XDR.",
         cat_eng_title: "Engineering & Automation",
-        cat_eng_desc: "Development of SOAR Playbooks and Python scripts. API integration (Gitlab, Jira) saving 15h+ weekly.",
-        // 3. Vulnerability Mgmt
+        cat_eng_desc: "Development of SOAR Playbooks and Python scripts. API integration (Gitlab, Jira).",
         cat_vuln_title: "Vulnerability Management",
-        cat_vuln_desc: "Leading proactive programs using Tenable.io and Landsweeper. Remediation of 500+ critical vulnerabilities.",
-        // 4. Network Sec
+        cat_vuln_desc: "Leading proactive programs using Tenable.io and Landsweeper. Remediation of 500+ vulnerabilities.",
         cat_net_title: "Network Security",
-        cat_net_desc: "Infrastructure defense with Darktrace and Palo Alto. Traffic monitoring (NDR) and segmentation.",
-        // 5. GRC
+        cat_net_desc: "Infrastructure defense with Darktrace and Palo Alto. Traffic monitoring (NDR).",
         cat_grc_title: "GRC & Compliance",
-        cat_grc_desc: "Adherence to NIST, ISO27001, and GDPR frameworks. Technical audit reports and compliance evidence.",
-        // 6. Cloud
+        cat_grc_desc: "Adherence to NIST, ISO27001, and GDPR frameworks. Technical audit reports.",
         cat_cloud_title: "Cloud & Endpoint Security",
-        cat_cloud_desc: "Security policies in Microsoft Defender and Intune. Securing hybrid environments and asset onboarding.",
+        cat_cloud_desc: "Security policies in Microsoft Defender and Intune. Securing hybrid environments.",
 
-        // --- Profile Page (Experience) ---
-        page_profile_title: "My Journey",
-        role_noesis: "Cybersecurity Engineer @ Noesis",
-        date_noesis: "2020 - Present",
-        exp_lead: "Team Leadership: Reduced MTTR by 15% through training.",
-        exp_detect: "Detection Optimization: Reduced false positives by 30% on SIEM/XDR platforms.",
-        exp_vuln: "Risk Management: Massive remediation of critical vulnerabilities.",
-        exp_soar: "SOAR Automation: Implemented playbooks for incident response.",
-        exp_cloud: "Endpoint & Cloud: Onboarding of 2000+ endpoints in Microsoft Defender.",
+        // --- PROFILE PAGE STORY (NEW) ---
+        bio_title: "About Me",
+        bio_subtitle: "A journey of resilience: From the factory floor to Cybersecurity Engineering.",
 
-        // --- Tools Page ---
-        page_tools_title: "Tech Stack",
-        tool_siem: "SIEM & XDR",
-        tool_vuln: "Vuln Management",
-        tool_auto: "Automation & Dev",
-        tool_net: "Network & Security",
+        // Section 1: Origins
+        story_start_title: " The Beginning & The Spark",
+        story_start_text: "My journey started at Escola José Saramago in Mafra, taking a professional course in IT Systems Management & Programming. This is where I found my true passion for technology.",
 
-        // --- Certs Page ---
-        page_certs_title: "Certifications",
+        // Section 2: The Struggle
+        story_struggle_title: "Resilience in Crisis (2011-2012)",
+        story_struggle_text: "Due to the 2011 financial crisis in Portugal, I was forced to pause my studies. I worked blue-collar jobs and took a CNC course. The turning point was at a cheese factory: after nearly losing my life three times in a week and witnessing the poor treatment of workers, I decided that life wasn't for me. I saved every single Euro I had and went back to college.",
+
+        // Section 3: The Return
+        story_return_title: "Return to Engineering",
+        story_return_text: "I completed my CET at Lusófona University followed by a BSc in Computer Engineering (2019). For my final project, I built 'Gaming Out of Depression' (proposed by a psychologist): a full-stack real-time voice/video chat system (Discord-style) designed to help people socialize.",
+
+        // Section 4: Current Era
+        story_current_title: "The Pivot to Cybersecurity",
+        story_current_text: "During my Post-Grad in Virtualization & Cloud at ISTEC, I joined Noesis. I started with OutSystems but accepted a challenge to pivot to Cybersecurity. Through rigorous training and hands-on experience, I molded myself into the solid professional I am today—always staying ahead of the curve.",
+
+        // Education List
+        edu_title: "Education",
+        edu_1: "Post-Grad: Cloud Computing & Virtualization (ISTEC)",
+        edu_2: "BSc: Computer Engineering (Universidade Lusófona)",
+        edu_3: "CET: Information Systems Technology & Programming",
 
         // Footer
         footer_contact: "Get in touch via Email."
@@ -127,7 +127,6 @@ function changeLanguage(lang) {
     });
 }
 
-// Event Listeners
 document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('lang') || 'en';
     changeLanguage(savedLang);
