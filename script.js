@@ -26,29 +26,29 @@ const translations = {
         cat_cloud_title: "Segurança Cloud",
         cat_cloud_desc: "Políticas de segurança no Microsoft Defender e Intune.",
 
-        // --- PROFILE STORY (LOGS) ---
+        // --- PROFILE STORY (LOGS) - EXPANDED TEXT ---
         bio_title: "Sobre Mim",
         bio_subtitle: "Uma jornada de resiliência: Do chão de fábrica à Engenharia de Cibersegurança.",
         
         // Log 1: Origins
         log1_title: "A Origem",
-        log1_text: "Tudo começou na Escola José Saramago em Mafra. Foi no curso profissional de Gestão e Programação de Sistemas Informáticos que toquei na primeira linha de código e descobri a minha paixão. Sabia que era este o meu caminho.",
+        log1_text: "A minha jornada começou na Escola José Saramago em Mafra. Foi durante o Curso Profissional de Gestão e Programação de Sistemas Informáticos que descobri a minha verdadeira vocação. Apesar das dificuldades financeiras iniciais, sabia que queria ser um profissional 'self-made' na área tecnológica e comecei a juntar dinheiro para investir na minha formação superior.",
         
         // Log 2: The Hardship
         log2_title: "A Crise e o Desvio",
-        log2_text: "A crise financeira de 2011 atingiu Portugal com força. Fui obrigado a pausar os estudos e trabalhar em fábricas e escritórios para sobreviver. Em 2012, fiz um curso de CNC no IEFP, mas sentia que não estava onde pertencia.",
+        log2_text: "A crise financeira de 2011 atingiu Portugal com brutalidade. Fui forçado a interromper os estudos e a trabalhar em fábricas e escritórios para sobreviver. Em 2012, tentei um novo rumo com um curso de CNC no IEFP, mas sentia um vazio profissional. Não era o meu chamamento, mas precisava de continuar a lutar.",
         
         // Log 3: The Catalyst (Cheese Factory)
         log3_title: "O Ponto de Viragem",
-        log3_text: "O momento decisivo aconteceu numa fábrica de queijo. As condições eram desumanas e, numa única semana, quase perdi a vida três vezes em acidentes de trabalho. Percebi que aquela vida não era para mim. Juntei cada Euro que tinha poupado, demiti-me e decidi voltar a estudar.",
+        log3_text: "O ponto de rutura aconteceu numa fábrica de queijo. As condições eram desumanas — os trabalhadores eram tratados abaixo da dignidade e, numa única semana, escapei da morte em três acidentes de trabalho distintos. Naquele momento, decidi: 'Esta vida não é para mim'. Juntei cada cêntimo que tinha poupado, demiti-me e investi tudo no meu regresso à universidade.",
         
         // Log 4: The Return & The Project
         log4_title: "O Regresso: Gaming Out of Depression",
-        log4_text: "Voltei à Universidade Lusófona (CET e Licenciatura). O meu projeto final foi o 'Gaming Out of Depression', proposto por uma psicóloga: criei uma plataforma completa (estilo Discord) com chat de voz e vídeo em tempo real para ajudar pessoas isoladas a socializar. Finalizei o curso em 2019.",
+        log4_text: "Regressei à Universidade Lusófona com determinação total (CET e Licenciatura). O meu projeto final, 'Gaming Out of Depression', foi proposto por uma psicóloga: desenvolvi um sistema complexo de Backend e Frontend (estilo Discord) com comunicação de voz e vídeo em tempo real, desenhado especificamente para ajudar pessoas isoladas a socializar.",
 
         // Log 5: The Pivot
         log5_title: "A Evolução na Noesis",
-        log5_text: "Durante a pós-graduação no ISTEC, entrei na Noesis. Comecei a trabalhar com OutSystems, mas quando surgiu o desafio de mudar para Cibersegurança, aceitei sem hesitar. Moldei-me através de formação intensiva e tornei-me no engenheiro sólido que sou hoje.",
+        log5_text: "Durante a pós-graduação em Virtualização e Cloud no ISTEC, ingressei na Noesis. Iniciei em OutSystems, mas quando surgiu o desafio de migrar para a Cibersegurança, aceitei sem hesitar. Através de formação contínua e muito esforço, moldei-me no engenheiro sólido que sou hoje, mantendo-me sempre à frente das novas ameaças e tecnologias.",
 
         // Education Sidebar
         edu_title: "Formação Académica",
@@ -86,29 +86,29 @@ const translations = {
         cat_cloud_title: "Cloud Security",
         cat_cloud_desc: "Security policies in Microsoft Defender and Intune.",
 
-        // --- PROFILE STORY (LOGS) ---
+        // --- PROFILE STORY (LOGS) - EXPANDED TEXT ---
         bio_title: "About Me",
         bio_subtitle: "A journey of resilience: From the factory floor to Cybersecurity Engineering.",
 
         // Log 1
         log1_title: "The Origin",
-        log1_text: "It started at Escola José Saramago in Mafra. During my professional course in IT Systems Management & Programming, I wrote my first lines of code and found my passion. I knew this was my path.",
+        log1_text: "My journey began at Escola José Saramago in Mafra. During the Professional Course in IT Systems Management & Programming, I discovered my true vocation. Despite early financial hurdles, I was determined to become a self-made professional in the tech world and started saving money to fund my higher education.",
 
         // Log 2
         log2_title: "Crisis & Detour",
-        log2_text: "The 2011 financial crisis hit Portugal hard. I was forced to pause my studies and work in factories to survive. In 2012, I took a CNC course at IEFP, but I knew deep down I didn't belong there.",
+        log2_text: "The 2011 financial crisis hit Portugal hard. I was forced to pause my studies and take on various factory and white-collar jobs just to survive. In 2012, I tried a CNC course at IEFP, but I felt professionally unfulfilled. I knew deep down this wasn't my calling, but I had to keep fighting.",
 
         // Log 3
         log3_title: "The Turning Point",
-        log3_text: "The deciding moment happened at a cheese factory. Conditions were inhumane, and in a single week, I nearly lost my life three times in work accidents. I realized that life wasn't for me. I scraped together every single Euro I had saved, quit, and went back to school.",
+        log3_text: "The breaking point happened at a cheese factory. Conditions were inhumane—workers were treated with no dignity, and in a single week, I narrowly escaped death in three separate work accidents. I decided right then: 'This life is not for me.' I scraped together every single Euro I had saved, quit, and invested everything into returning to college.",
 
         // Log 4
         log4_title: "The Return: Gaming Out of Depression",
-        log4_text: "I returned to Lusófona University. My final project was 'Gaming Out of Depression', proposed by a psychologist: I built a full-stack platform (Discord-style) with real-time video/voice chat to help isolated people socialize. I graduated in 2019.",
+        log4_text: "I returned to Lusófona University with total determination (CET & BSc). My final project, 'Gaming Out of Depression' (proposed by a psychologist), was a complex Full-Stack system (Discord-style) featuring real-time voice and video communication, specifically designed to help isolated individuals socialize.",
 
         // Log 5
         log5_title: "The Pivot at Noesis",
-        log5_text: "During my Post-Grad at ISTEC, I joined Noesis. I started with OutSystems, but when the challenge to pivot to Cybersecurity appeared, I took it. Through intense training and experience, I molded myself into the solid engineer I am today.",
+        log5_text: "During my Post-Grad in Cloud & Virtualization at ISTEC, I joined Noesis. I started working with OutSystems, but when the challenge to pivot to Cybersecurity arose, I took it without hesitation. Through continuous training and self-discipline, I molded myself into the solid engineer I am today, always staying ahead of emerging threats.",
 
         // Education Sidebar
         edu_title: "Education",
