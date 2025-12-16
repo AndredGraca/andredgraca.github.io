@@ -11,7 +11,7 @@ const translations = {
         hero_title: "ANDRÉ GRAÇA",
         hero_desc: "Proteção de Infraestruturas & Operações de Segurança.",
 
-        // CARDS (15 Items from CV Experience)
+        // CARDS
         c1_title: "Defesa (SecOps)",
         c1_desc: "Liderança de equipas L1, redução do MTTR em 15% e otimização de deteção em plataformas SIEM/XDR.",
         
@@ -92,7 +92,7 @@ const translations = {
         hero_title: "ANDRÉ GRAÇA",
         hero_desc: "Infrastructure Security & Security Operations.",
 
-        // CARDS (15 Items)
+        // CARDS
         c1_title: "Defense (SecOps)",
         c1_desc: "L1 team leadership, 15% MTTR reduction, and detection optimization on SIEM/XDR platforms.",
         
@@ -172,7 +172,6 @@ function changeLanguage(lang) {
     });
 }
 
-// Scroll Animation Observer
 const observerOptions = { threshold: 0.15, rootMargin: "0px 0px -50px 0px" };
 const scrollObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -192,6 +191,5 @@ document.addEventListener('DOMContentLoaded', () => {
         changeLanguage(currentLang === 'en' ? 'pt' : 'en');
     });
 
-    // Observe reveal elements
     document.querySelectorAll('.reveal-entry, .fade-up').forEach(el => scrollObserver.observe(el));
 });
