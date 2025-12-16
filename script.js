@@ -7,9 +7,9 @@ const translations = {
         btn_lang: "EN",
         
         // HERO
-        hero_badge: "ENGENHEIRO DE CIBERSEGURANÇA",
+        hero_badge: "PORTFOLIO & BIO",
         hero_title: "ANDRÉ GRAÇA",
-        hero_desc: "Portfólio e Biografia", // Updated
+        hero_desc: "ENGENHEIRO DE CIBERSEGURANÇA", // Updated
 
         // CARDS (15 Items)
         c1_title: "Defesa (SecOps)",
