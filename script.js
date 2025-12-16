@@ -11,7 +11,7 @@ const translations = {
         hero_title: "ANDRÉ GRAÇA",
         hero_desc: "Proteção de Infraestruturas & Operações de Segurança.",
 
-        // CARDS
+        // CARDS (15 Items)
         c1_title: "Defesa (SecOps)",
         c1_desc: "Liderança de equipas L1, redução do MTTR em 15% e otimização de deteção em plataformas SIEM/XDR.",
         
