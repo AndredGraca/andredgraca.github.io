@@ -301,3 +301,65 @@ footer a {
         top: 0;
     }
 }
+
+/* --- ANIMATIONS & RESPONSIVENESS --- */
+
+/* 1. The Scroll Animation (Hidden by default) */
+.reveal-entry {
+    opacity: 0;
+    transform: translateX(50px); /* Slides in from right */
+    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); /* Smooth ease-out */
+}
+
+/* The visible state (Triggered by JS) */
+.reveal-entry.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* 2. Typewriter Effect Styles */
+.typing-effect {
+    border-right: 3px solid var(--accent-cyan);
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--accent-cyan) }
+}
+
+/* 3. Mobile Responsiveness (Styling for smaller screens) */
+@media (max-width: 900px) {
+    .profile-wrapper {
+        grid-template-columns: 1fr; /* Stack vertically */
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .profile-sidebar {
+        position: relative; /* Stop sticking on mobile */
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        z-index: 10;
+    }
+
+    .sidebar-img {
+        max-width: 150px; /* Smaller image on mobile */
+    }
+
+    .log-entry {
+        padding: 20px; /* Less padding on phone screens */
+    }
+
+    .log-header {
+        flex-direction: column; /* Stack Title and Log Number */
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
