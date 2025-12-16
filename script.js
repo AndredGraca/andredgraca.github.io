@@ -7,35 +7,28 @@ const translations = {
         btn_lang: "EN",
         
         // HERO
-        hero_status: "SYSTEM: ONLINE // ENCRYPTED",
+        hero_sub: "ENGENHEIRO DE CIBERSEGURANÇA",
         hero_title: "ANDRÉ GRAÇA",
-        hero_role: "Cybersecurity Engineer",
-        hero_tagline: "Proteção de Infraestruturas Críticas & Resposta a Incidentes",
+        hero_desc: "Especialista em Proteção de Infraestruturas, Resposta a Incidentes e Automação de Segurança.",
 
-        // TERMINAL LINES (Simulated Boot)
-        term_line1: "> Initializing Security Protocols...",
-        term_line2: "> Loading Modules: SIEM, SOAR, Python...",
-        term_line3: "> Scanning Threat Intel Feeds...",
-        term_line4: "> ACCESS GRANTED: Welcome, User.",
-
-        // CARDS TITLES
-        card_def_title: "Defesa (Blue Team)",
-        card_def_desc: "Monitorização ativa, SIEM/XDR e Threat Hunting.",
+        // MASTERY CARDS
+        card_1_title: "Defesa (Blue Team)",
+        card_1_desc: "Monitorização ativa de ameaças, engenharia de deteção em SIEM/XDR e resposta rápida a incidentes.",
         
-        card_off_title: "Ataque (Red Team)",
-        card_off_desc: "Mentalidade ofensiva para fortalecer defesas.",
+        card_2_title: "Ataque (Red Team)",
+        card_2_desc: "Utilização de táticas ofensivas e pentesting para identificar falhas e fortalecer as defesas.",
 
-        card_auto_title: "Engenharia & Automação",
-        card_auto_desc: "Scripting Python e Playbooks SOAR para eficiência.",
+        card_3_title: "Automação & Eng.",
+        card_3_desc: "Criação de scripts Python e Playbooks SOAR para eliminar tarefas repetitivas e acelerar respostas.",
 
-        card_vuln_title: "Gestão de Vulnerabilidades",
-        card_vuln_desc: "Identificação e remediação de riscos críticos (Tenable).",
+        card_4_title: "Gestão de Vuln",
+        card_4_desc: "Identificação, análise e remediação de vulnerabilidades críticas em toda a infraestrutura.",
 
-        card_net_title: "Segurança de Rede",
-        card_net_desc: "Defesa de perímetro e análise de tráfego (NDR).",
+        card_5_title: "Segurança de Rede",
+        card_5_desc: "Proteção de perímetro, segmentação de rede e análise de tráfego (NDR/EDR).",
 
-        card_grc_title: "GRC & Compliance",
-        card_grc_desc: "Alinhamento com normas ISO27001, NIST e GDPR.",
+        card_6_title: "GRC & Compliance",
+        card_6_desc: "Alinhamento estratégico com normas internacionais ISO27001, NIST e regulamentos GDPR.",
 
         footer_contact: "Entre em contacto via Email."
     },
@@ -47,35 +40,28 @@ const translations = {
         btn_lang: "PT",
         
         // HERO
-        hero_status: "SYSTEM: ONLINE // ENCRYPTED",
+        hero_sub: "CYBERSECURITY ENGINEER",
         hero_title: "ANDRÉ GRAÇA",
-        hero_role: "Cybersecurity Engineer",
-        hero_tagline: "Critical Infrastructure Protection & Incident Response",
+        hero_desc: "Specialist in Infrastructure Protection, Incident Response, and Security Automation.",
 
-        // TERMINAL LINES
-        term_line1: "> Initializing Security Protocols...",
-        term_line2: "> Loading Modules: SIEM, SOAR, Python...",
-        term_line3: "> Scanning Threat Intel Feeds...",
-        term_line4: "> ACCESS GRANTED: Welcome, User.",
-
-        // CARDS
-        card_def_title: "Defense (Blue Team)",
-        card_def_desc: "Active monitoring, SIEM/XDR and Threat Hunting.",
+        // MASTERY CARDS
+        card_1_title: "Defense (Blue Team)",
+        card_1_desc: "Active threat monitoring, detection engineering on SIEM/XDR, and rapid incident response.",
         
-        card_off_title: "Offense (Red Team)",
-        card_off_desc: "Offensive mindset to build stronger defenses.",
+        card_2_title: "Offense (Red Team)",
+        card_2_desc: "Using offensive tactics and pentesting to identify gaps and harden defenses.",
 
-        card_auto_title: "Engineering & Auto",
-        card_auto_desc: "Python scripting and SOAR Playbooks for efficiency.",
+        card_3_title: "Automation & Eng.",
+        card_3_desc: "Creating Python scripts and SOAR Playbooks to eliminate repetitive tasks and speed up response.",
 
-        card_vuln_title: "Vuln Management",
-        card_vuln_desc: "Identification and remediation of critical risks (Tenable).",
+        card_4_title: "Vuln Management",
+        card_4_desc: "Identification, analysis, and remediation of critical vulnerabilities across the infrastructure.",
 
-        card_net_title: "Network Security",
-        card_net_desc: "Perimeter defense and traffic analysis (NDR).",
+        card_5_title: "Network Security",
+        card_5_desc: "Perimeter protection, network segmentation, and traffic analysis (NDR/EDR).",
 
-        card_grc_title: "GRC & Compliance",
-        card_grc_desc: "Alignment with ISO27001, NIST and GDPR frameworks.",
+        card_6_title: "GRC & Compliance",
+        card_6_desc: "Strategic alignment with international standards ISO27001, NIST, and GDPR regulations.",
 
         footer_contact: "Get in touch via Email."
     }
@@ -89,34 +75,22 @@ function changeLanguage(lang) {
         const key = el.getAttribute('data-i18n');
         if (translations[lang][key]) el.textContent = translations[lang][key];
     });
-    // Re-run terminal animation on lang change
-    runTerminal(lang);
 }
 
-// --- TERMINAL ANIMATION ---
-function runTerminal(lang) {
-    const termContent = document.getElementById('term-content');
-    if(!termContent) return;
-    
-    termContent.innerHTML = ''; // Clear existing
-    const lines = [
-        translations[lang].term_line1,
-        translations[lang].term_line2,
-        translations[lang].term_line3,
-        "<span class='cmd-success'>" + translations[lang].term_line4 + "</span>"
-    ];
+// --- ANIMATION OBSERVER ---
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+};
 
-    let delay = 0;
-    lines.forEach((line, index) => {
-        setTimeout(() => {
-            const p = document.createElement('div');
-            p.className = 'cmd-line';
-            p.innerHTML = `<span class="cmd-keyword">root@cybersec:~$</span> ${line}`;
-            termContent.appendChild(p);
-        }, delay);
-        delay += 800; // Speed of typing
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target); // Play animation once
+        }
     });
-}
+}, observerOptions);
 
 document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('lang') || 'en';
@@ -126,4 +100,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentLang = localStorage.getItem('lang') || 'en';
         changeLanguage(currentLang === 'en' ? 'pt' : 'en');
     });
+
+    // Initialize Animations
+    const animatedElements = document.querySelectorAll('.animate-on-scroll, .mastery-card');
+    animatedElements.forEach(el => observer.observe(el));
 });
