@@ -19,65 +19,68 @@
 
     <div class="container">
         
-        <section class="profile-intro">
-            <div class="profile-img-container">
-                <img src="../images/profileimg.png" alt="André Graça" class="profile-img">
-            </div>
-            <div class="profile-text">
-                <h1 data-i18n="bio_title">About Me</h1>
-                <h3 data-i18n="bio_subtitle">A journey of resilience...</h3>
-            </div>
-        </section>
-
-        <hr style="border-color: #333; margin: 40px 0;">
-
-        <div class="timeline">
+        <div class="profile-wrapper">
             
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h2 data-i18n="story_start_title">The Beginning</h2>
-                    <p data-i18n="story_start_text">Loading story...</p>
+            <aside class="profile-sidebar">
+                <img src="../images/profileimg.png" alt="André Graça" class="sidebar-img">
+                <h1 class="sidebar-name" data-i18n="hero_title">André Graça</h1>
+                <div class="sidebar-role" data-i18n="hero_role">Cybersecurity Engineer</div>
+                
+                <div class="tech-specs">
+                    <h3 data-i18n="edu_title">Education</h3>
+                    <ul>
+                        <li data-i18n="edu_1">Post-Grad: ISTEC</li>
+                        <li data-i18n="edu_2">BSc: Lusófona</li>
+                        <li data-i18n="edu_3">CET: Tech</li>
+                    </ul>
                 </div>
-            </div>
+            </aside>
 
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h2 data-i18n="story_struggle_title">Resilience</h2>
-                    <p data-i18n="story_struggle_text">Loading story...</p>
+            <main class="profile-content">
+                
+                <div class="log-entry" style="border-left-color: var(--accent-cyan);">
+                    <h2 data-i18n="bio_title" style="color: white; margin-top:0;">About Me</h2>
+                    <p data-i18n="bio_subtitle" style="font-style: italic; color: #888;">A journey of resilience...</p>
                 </div>
-            </div>
 
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h2 data-i18n="story_return_title">Return to Engineering</h2>
-                    <p data-i18n="story_return_text">Loading story...</p>
+                <div class="log-entry">
+                    <div class="log-header">
+                        <h2 class="log-title" data-i18n="story_start_title">The Beginning</h2>
+                        <span class="log-number">LOG_01</span>
+                    </div>
+                    <p class="log-text" data-i18n="story_start_text">Loading...</p>
                 </div>
-            </div>
 
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h2 data-i18n="story_current_title">The Pivot</h2>
-                    <p data-i18n="story_current_text">Loading story...</p>
+                <div class="log-entry">
+                    <div class="log-header">
+                        <h2 class="log-title" data-i18n="story_struggle_title">Resilience</h2>
+                        <span class="log-number">LOG_02</span>
+                    </div>
+                    <p class="log-text" data-i18n="story_struggle_text">Loading...</p>
                 </div>
-            </div>
+
+                <div class="log-entry">
+                    <div class="log-header">
+                        <h2 class="log-title" data-i18n="story_return_title">The Return</h2>
+                        <span class="log-number">LOG_03</span>
+                    </div>
+                    <p class="log-text" data-i18n="story_return_text">Loading...</p>
+                </div>
+
+                <div class="log-entry">
+                    <div class="log-header">
+                        <h2 class="log-title" data-i18n="story_current_title">Cybersec Pivot</h2>
+                        <span class="log-number">LOG_04</span>
+                    </div>
+                    <p class="log-text" data-i18n="story_current_text">Loading...</p>
+                </div>
+
+            </main>
 
         </div>
-
-        <hr style="border-color: #333; margin: 40px 0;">
-
-        <div class="card">
-            <h2 data-i18n="edu_title" style="color: var(--accent-cyan); font-family: var(--font-tech);">Education</h2>
-            <ul class="education-list" style="list-style: none; padding: 0;">
-                <li data-i18n="edu_1">Post-Grad: ISTEC</li>
-                <li data-i18n="edu_2">BSc: Lusófona</li>
-                <li data-i18n="edu_3">CET: Tech</li>
-            </ul>
-        </div>
-
     </div>
 
     <footer>
-        <p data-i18n="footer_contact">Get in touch via Email.</p>
         <p>Email: <a href="mailto:andre.d.graca@gmail.com" style="color: var(--accent-cyan);">andre.d.graca@gmail.com</a></p>
     </footer>
 
