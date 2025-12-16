@@ -11,39 +11,51 @@ const translations = {
         hero_title: "ANDRÉ GRAÇA",
         hero_desc: "Proteção de Infraestruturas & Operações de Segurança.",
 
-        // CARDS (11 Items)
+        // CARDS (15 Items from CV Experience)
         c1_title: "Defesa (SecOps)",
-        c1_desc: "Monitorização contínua, deteção de ameaças em tempo real e resposta a incidentes de segurança.",
+        c1_desc: "Liderança de equipas L1, redução do MTTR em 15% e otimização de deteção em plataformas SIEM/XDR.",
         
         c2_title: "Engenharia",
-        c2_desc: "Design e implementação de arquiteturas de segurança resilientes e automação de processos complexos.",
+        c2_desc: "Arquitetura e implementação de playbooks SOAR (Thycotic) e integração via API para automação.",
 
         c3_title: "Security Assessment",
-        c3_desc: "Avaliação abrangente da postura de segurança, análise de risco e testes de penetração.",
+        c3_desc: "Avaliações OWASP e testes para identificar caminhos de ataque (Red Team) e falhas em aplicações.",
 
         c4_title: "Vulnerability Management",
-        c4_desc: "Identificação, classificação e remediação proativa de vulnerabilidades em sistemas e aplicações.",
+        c4_desc: "Programa proativo com Tenable.io e Landsweeper; remediação de +500 vulnerabilidades críticas.",
 
         c5_title: "Network Security",
-        c5_desc: "Proteção de perímetro, segmentação de rede, firewalls e análise profunda de tráfego (NDR).",
+        c5_desc: "Implementação de Darktrace e gestão de segurança de perímetro com Palo Alto.",
 
         c6_title: "Cloud Security",
-        c6_desc: "Segurança nativa em Azure/AWS, gestão de postura (CSPM) e proteção de workloads na nuvem.",
+        c6_desc: "Onboarding de 2000+ endpoints (Defender/Intune) e redução de incidentes de malware em 40%.",
 
         c7_title: "Compliance",
-        c7_desc: "Alinhamento estratégico com normas ISO27001, NIST, GDPR e execução de auditorias técnicas.",
+        c7_desc: "Auditorias técnicas e evidências para PCI DSS, NIS2, GDPR e certificação ISO27001.",
 
         c8_title: "Software",
-        c8_desc: "Gestão e hardening de ferramentas essenciais: SIEM, XDR, EDR e plataformas de colaboração.",
+        c8_desc: "Gestão e integração de soluções complexas: ArcSight, Cortex XDR, Sentinel, Fortify e Sealpath.",
 
         c9_title: "Programming",
-        c9_desc: "Desenvolvimento de scripts em Python e Bash para automação de tarefas e integração de APIs.",
+        c9_desc: "Automação com Python e desenvolvimento Full-Stack para ferramentas de segurança personalizadas.",
 
         c10_title: "IAM",
-        c10_desc: "Gestão de identidades, controlo de acessos privilegiados (PAM) e autenticação multifator robusta.",
+        c10_desc: "Aplicação de políticas unificadas de identidade e acesso no ecossistema Microsoft Security.",
 
         c11_title: "Reporting",
-        c11_desc: "Criação de relatórios técnicos e executivos claros para comunicar riscos e métricas de desempenho.",
+        c11_desc: "Relatórios detalhados com orientações prescritivas (Blue Team) e documentação de ataque.",
+
+        c12_title: "Asset Management",
+        c12_desc: "Visibilidade total e inventário de ativos críticos utilizando Landsweeper e Tenable.",
+
+        c13_title: "Threat Intelligence (CTI)",
+        c13_desc: "Recolha estratégica de informação para antecipar TTPs e fortalecer defesas proativamente.",
+
+        c14_title: "Threat Hunting",
+        c14_desc: "Investigação proativa de ameaças sofisticadas não detetadas por alertas padrão.",
+
+        c15_title: "Digital Forensics",
+        c15_desc: "Análise forense para determinação de causa raiz e reconstrução de incidentes complexos.",
 
         // PROFILE / LOGS
         edu_title: "Formação Académica",
@@ -80,39 +92,51 @@ const translations = {
         hero_title: "ANDRÉ GRAÇA",
         hero_desc: "Infrastructure Security & Security Operations.",
 
-        // CARDS (11 Items)
+        // CARDS (15 Items)
         c1_title: "Defense (SecOps)",
-        c1_desc: "Continuous monitoring, real-time threat detection, and rapid security incident response.",
+        c1_desc: "L1 team leadership, 15% MTTR reduction, and detection optimization on SIEM/XDR platforms.",
         
         c2_title: "Engineering",
-        c2_desc: "Design and implementation of resilient security architectures and complex process automation.",
+        c2_desc: "Architecture and implementation of SOAR playbooks (Thycotic) and API integration for automation.",
 
         c3_title: "Security Assessment",
-        c3_desc: "Comprehensive security posture assessment, penetration testing, and risk analysis.",
+        c3_desc: "OWASP assessments and testing to identify attack paths (Red Team) and application flaws.",
 
         c4_title: "Vulnerability Management",
-        c4_desc: "Proactive identification, classification, and remediation of vulnerabilities in systems and applications.",
+        c4_desc: "Proactive program with Tenable.io and Landsweeper; remediation of 500+ critical vulnerabilities.",
 
         c5_title: "Network Security",
-        c5_desc: "Perimeter protection, network segmentation, firewalls, and deep traffic analysis (NDR).",
+        c5_desc: "Implementation of Darktrace and perimeter security management with Palo Alto.",
 
         c6_title: "Cloud Security",
-        c6_desc: "Native security in Azure/AWS, Cloud Security Posture Management (CSPM), and workload protection.",
+        c6_desc: "Onboarding 2000+ endpoints (Defender/Intune) and reducing malware incidents by 40%.",
 
         c7_title: "Compliance",
-        c7_desc: "Strategic alignment with ISO27001, NIST, GDPR standards, and execution of technical audits.",
+        c7_desc: "Technical audits and evidence for PCI DSS, NIS2, GDPR, and ISO27001 certification.",
 
         c8_title: "Software",
-        c8_desc: "Management and hardening of essential tools: SIEM, XDR, EDR, and collaboration platforms.",
+        c8_desc: "Management and integration of complex solutions: ArcSight, Cortex XDR, Sentinel, Fortify, and Sealpath.",
 
         c9_title: "Programming",
-        c9_desc: "Development of Python and Bash scripts for task automation and API integration.",
+        c9_desc: "Automation with Python and Full-Stack development for custom security tools.",
 
         c10_title: "IAM",
-        c10_desc: "Identity management, Privileged Access Management (PAM), and robust multi-factor authentication.",
+        c10_desc: "Enforcement of unified identity and access policies within the Microsoft Security ecosystem.",
 
         c11_title: "Reporting",
-        c11_desc: "Creation of clear technical and executive reports to communicate risks and performance metrics.",
+        c11_desc: "Detailed reports with prescriptive guidance (Blue Team) and attack documentation.",
+
+        c12_title: "Asset Management",
+        c12_desc: "Full visibility and inventory of critical assets using Landsweeper and Tenable.",
+
+        c13_title: "Threat Intelligence (CTI)",
+        c13_desc: "Strategic information gathering to anticipate TTPs and proactively strengthen defenses.",
+
+        c14_title: "Threat Hunting",
+        c14_desc: "Proactive investigation of sophisticated threats undetected by standard alerts.",
+
+        c15_title: "Digital Forensics",
+        c15_desc: "Forensic analysis for root cause determination and reconstruction of complex incidents.",
 
         // PROFILE / LOGS
         edu_title: "Education",

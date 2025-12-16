@@ -66,7 +66,7 @@ nav a:hover { color: var(--primary-cyan); }
 
 /* --- LAYOUT UTILITIES --- */
 .container {
-    max-width: 1400px; /* Increased width to fit 4 cards comfortably */
+    max-width: 1400px;
     margin: 0 auto;
     padding: 100px 20px 40px;
 }
@@ -112,10 +112,10 @@ nav a:hover { color: var(--primary-cyan); }
     margin: 0 auto;
 }
 
-/* GRID UPDATED FOR 4 COLUMNS */
+/* GRID UPDATED */
 .grid-container {
     display: grid;
-    /* minmax(280px, 1fr) ensures 4 cards fit on a 1200px+ screen */
+    /* This ensures 4 columns on wide screens (1400px container / ~300px card = 4) */
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 25px;
     padding-bottom: 60px;
@@ -124,13 +124,13 @@ nav a:hover { color: var(--primary-cyan); }
 .card {
     background: var(--card-surface);
     border: 1px solid var(--card-border);
-    padding: 30px; /* Slightly reduced padding to save space */
+    padding: 30px;
     position: relative;
     transition: transform 0.3s ease, border-color 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 100%; /* Ensures cards are same height */
+    height: 100%;
 }
 
 .card:hover {
@@ -144,7 +144,7 @@ nav a:hover { color: var(--primary-cyan); }
     fill: var(--primary-cyan);
 }
 
-.card h3 { margin: 0 0 10px 0; color: #fff; font-size: 1.2rem; }
+.card h3 { margin: 0 0 10px 0; color: #fff; font-size: 1.15rem; }
 .card p { color: var(--text-muted); margin: 0; font-size: 0.9rem; }
 
 /* =========================================
@@ -159,7 +159,6 @@ nav a:hover { color: var(--primary-cyan); }
     margin-top: 40px;
 }
 
-/* Sidebar */
 .profile-sidebar {
     background: var(--card-surface);
     border: 1px solid var(--card-border);
@@ -193,7 +192,6 @@ nav a:hover { color: var(--primary-cyan); }
     text-transform: uppercase;
 }
 
-/* Tech Specs */
 .tech-specs {
     text-align: left;
     background: rgba(255, 255, 255, 0.03);
@@ -214,7 +212,6 @@ nav a:hover { color: var(--primary-cyan); }
 .tech-specs li { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #222; }
 .tech-specs li:last-child { border-bottom: none; margin: 0; padding: 0; }
 
-/* Logs / Timeline */
 .profile-content {
     display: flex;
     flex-direction: column;
@@ -269,10 +266,11 @@ nav a:hover { color: var(--primary-cyan); }
 .fade-up { opacity: 0; transform: translateY(30px); animation: fadeInUp 0.8s forwards; }
 @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
 
+/* Stagger delays for better visual effect */
 .delay-1 { animation-delay: 0.1s; }
-.delay-2 { animation-delay: 0.2s; }
-.delay-3 { animation-delay: 0.3s; }
-.delay-4 { animation-delay: 0.4s; }
+.delay-2 { animation-delay: 0.15s; }
+.delay-3 { animation-delay: 0.2s; }
+.delay-4 { animation-delay: 0.25s; }
 
 .reveal-entry { opacity: 0; transform: translateX(30px); transition: all 0.6s ease; }
 .reveal-entry.active { opacity: 1; transform: translateX(0); }
@@ -286,10 +284,6 @@ footer {
     margin-top: 60px;
 }
 footer a { color: var(--primary-cyan); text-decoration: none; }
-
-@media (max-width: 1200px) {
-    .grid-container { grid-template-columns: repeat(3, 1fr); }
-}
 
 @media (max-width: 900px) {
     .grid-container { grid-template-columns: repeat(2, 1fr); }
