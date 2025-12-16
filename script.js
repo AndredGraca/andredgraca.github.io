@@ -11,6 +11,40 @@ const translations = {
         hero_title: "ANDRÉ GRAÇA",
         hero_desc: "Proteção de Infraestruturas & Operações de Segurança.",
 
+        // CARDS (11 Items)
+        c1_title: "Defesa (SecOps)",
+        c1_desc: "Monitorização contínua, deteção de ameaças em tempo real e resposta a incidentes de segurança.",
+        
+        c2_title: "Engenharia",
+        c2_desc: "Design e implementação de arquiteturas de segurança resilientes e automação de processos complexos.",
+
+        c3_title: "Security Assessment",
+        c3_desc: "Avaliação abrangente da postura de segurança, análise de risco e testes de penetração.",
+
+        c4_title: "Vulnerability Management",
+        c4_desc: "Identificação, classificação e remediação proativa de vulnerabilidades em sistemas e aplicações.",
+
+        c5_title: "Network Security",
+        c5_desc: "Proteção de perímetro, segmentação de rede, firewalls e análise profunda de tráfego (NDR).",
+
+        c6_title: "Cloud Security",
+        c6_desc: "Segurança nativa em Azure/AWS, gestão de postura (CSPM) e proteção de workloads na nuvem.",
+
+        c7_title: "Compliance",
+        c7_desc: "Alinhamento estratégico com normas ISO27001, NIST, GDPR e execução de auditorias técnicas.",
+
+        c8_title: "Software",
+        c8_desc: "Gestão e hardening de ferramentas essenciais: SIEM, XDR, EDR e plataformas de colaboração.",
+
+        c9_title: "Programming",
+        c9_desc: "Desenvolvimento de scripts em Python e Bash para automação de tarefas e integração de APIs.",
+
+        c10_title: "IAM",
+        c10_desc: "Gestão de identidades, controlo de acessos privilegiados (PAM) e autenticação multifator robusta.",
+
+        c11_title: "Reporting",
+        c11_desc: "Criação de relatórios técnicos e executivos claros para comunicar riscos e métricas de desempenho.",
+
         // PROFILE / LOGS
         edu_title: "Formação Académica",
         edu_1: "Pós-Graduação: Cloud e Virtualização (ISTEC)",
@@ -32,20 +66,6 @@ const translations = {
         log5_title: "A Evolução Cyber",
         log5_text: "Durante a pós-graduação no ISTEC, ingressei na Noesis. Iniciei em OutSystems, mas quando surgiu o desafio de migrar para a Cibersegurança, aceitei sem hesitar. Através de formação contínua, moldei-me no engenheiro sólido que sou hoje.",
 
-        // CARDS
-        c1_title: "Defesa (SecOps)",
-        c1_desc: "Monitorização 24/7 e resposta a incidentes.",
-        c2_title: "Engenharia",
-        c2_desc: "Automação SOAR e scripting Python.",
-        c3_title: "Ofensiva",
-        c3_desc: "Pentesting e simulação de ataques.",
-        c4_title: "Gestão de Vuln",
-        c4_desc: "Remediação proativa de vulnerabilidades.",
-        c5_title: "Rede",
-        c5_desc: "Defesa de perímetro e firewalling.",
-        c6_title: "GRC",
-        c6_desc: "Conformidade ISO27001 e NIST.",
-
         footer: "Entre em contacto via Email."
     },
     en: {
@@ -59,6 +79,40 @@ const translations = {
         hero_badge: "CYBERSECURITY ENGINEER",
         hero_title: "ANDRÉ GRAÇA",
         hero_desc: "Infrastructure Security & Security Operations.",
+
+        // CARDS (11 Items)
+        c1_title: "Defense (SecOps)",
+        c1_desc: "Continuous monitoring, real-time threat detection, and rapid security incident response.",
+        
+        c2_title: "Engineering",
+        c2_desc: "Design and implementation of resilient security architectures and complex process automation.",
+
+        c3_title: "Security Assessment",
+        c3_desc: "Comprehensive security posture assessment, penetration testing, and risk analysis.",
+
+        c4_title: "Vulnerability Management",
+        c4_desc: "Proactive identification, classification, and remediation of vulnerabilities in systems and applications.",
+
+        c5_title: "Network Security",
+        c5_desc: "Perimeter protection, network segmentation, firewalls, and deep traffic analysis (NDR).",
+
+        c6_title: "Cloud Security",
+        c6_desc: "Native security in Azure/AWS, Cloud Security Posture Management (CSPM), and workload protection.",
+
+        c7_title: "Compliance",
+        c7_desc: "Strategic alignment with ISO27001, NIST, GDPR standards, and execution of technical audits.",
+
+        c8_title: "Software",
+        c8_desc: "Management and hardening of essential tools: SIEM, XDR, EDR, and collaboration platforms.",
+
+        c9_title: "Programming",
+        c9_desc: "Development of Python and Bash scripts for task automation and API integration.",
+
+        c10_title: "IAM",
+        c10_desc: "Identity management, Privileged Access Management (PAM), and robust multi-factor authentication.",
+
+        c11_title: "Reporting",
+        c11_desc: "Creation of clear technical and executive reports to communicate risks and performance metrics.",
 
         // PROFILE / LOGS
         edu_title: "Education",
@@ -80,20 +134,6 @@ const translations = {
 
         log5_title: "The Cyber Pivot",
         log5_text: "During my Post-Grad at ISTEC, I joined Noesis. I started with OutSystems, but when the challenge to pivot to Cybersecurity arose, I took it without hesitation. Through continuous training, I molded myself into the solid engineer I am today.",
-
-        // CARDS
-        c1_title: "Defense (SecOps)",
-        c1_desc: "24/7 monitoring and incident response.",
-        c2_title: "Engineering",
-        c2_desc: "SOAR automation and Python scripting.",
-        c3_title: "Offensive",
-        c3_desc: "Pentesting and attack simulation.",
-        c4_title: "Vuln Management",
-        c4_desc: "Proactive vulnerability remediation.",
-        c5_title: "Network",
-        c5_desc: "Perimeter defense and firewalling.",
-        c6_title: "GRC",
-        c6_desc: "ISO27001 and NIST compliance.",
 
         footer: "Get in touch via Email."
     }
