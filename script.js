@@ -78,7 +78,8 @@ const translations = {
         log5_title: "A Evolução Cyber",
         log5_text: "Durante a pós-graduação no ISTEC, ingressei na Noesis. Iniciei em OutSystems, mas quando surgiu o desafio de migrar para a Cibersegurança, aceitei sem hesitar. Através de formação contínua, moldei-me no engenheiro sólido que sou hoje.",
 
-        footer: "Entre em contacto via Email."
+        // FOOTER UPDATED
+        footer_contact_type: "Teams ou Email:"
     },
     en: {
         nav_home: "Home",
@@ -159,7 +160,8 @@ const translations = {
         log5_title: "The Cyber Pivot",
         log5_text: "During my Post-Grad at ISTEC, I joined Noesis. I started with OutSystems, but when the challenge to pivot to Cybersecurity arose, I took it without hesitation. Through continuous training, I molded myself into the solid engineer I am today.",
 
-        footer: "Get in touch via Email."
+        // FOOTER UPDATED
+        footer_contact_type: "Teams or Email:"
     }
 };
 

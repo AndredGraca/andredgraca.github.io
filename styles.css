@@ -68,7 +68,7 @@ nav a:hover { color: var(--primary-cyan); }
 .container {
     max-width: 1600px;
     margin: 0 auto;
-    /* ALTERADO: Aumentado para 260px para empurrar o conteúdo para baixo da Nav */
+    /* Mantém o padding alto para compensar a nav fixa */
     padding: 260px 20px 40px; 
 }
 
@@ -82,8 +82,8 @@ nav a:hover { color: var(--primary-cyan); }
     align-items: center;
     text-align: center;
     padding-bottom: 50px;
-    /* ALTERADO: Margem extra para garantir visibilidade */
-    margin-top: 40px; 
+    /* ALTERADO: Aumentado para 80px para garantir que o badge não fica tapado */
+    margin-top: 80px; 
     margin-bottom: 20px;
 }
 
@@ -118,7 +118,6 @@ nav a:hover { color: var(--primary-cyan); }
 /* GRID LAYOUT (5 Columns Desktop) */
 .grid-container {
     display: grid;
-    /* Default Responsive Fallback */
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     padding-bottom: 60px;
@@ -167,7 +166,7 @@ nav a:hover { color: var(--primary-cyan); }
     border: 1px solid var(--card-border);
     padding: 30px;
     position: sticky;
-    top: 120px; /* Adjusted for new header height */
+    top: 120px;
     text-align: center;
 }
 
@@ -288,32 +287,8 @@ footer {
 footer a { color: var(--primary-cyan); text-decoration: none; }
 
 /* --- RESPONSIVE GRID (Specific 5-column Logic) --- */
-
-/* Force 5 columns on large desktops */
-@media (min-width: 1400px) {
-    .grid-container {
-        grid-template-columns: repeat(5, 1fr);
-    }
-}
-
-/* 4 columns on laptops */
-@media (max-width: 1399px) {
-    .grid-container {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-/* Tablets */
-@media (max-width: 992px) {
-    .grid-container { grid-template-columns: repeat(3, 1fr); }
-    .profile-wrapper { grid-template-columns: 1fr; }
-}
-
-@media (max-width: 768px) {
-    .grid-container { grid-template-columns: repeat(2, 1fr); }
-    .hero h1 { font-size: 2.5rem; }
-}
-
-@media (max-width: 500px) {
-    .grid-container { grid-template-columns: 1fr; }
-}
+@media (min-width: 1400px) { .grid-container { grid-template-columns: repeat(5, 1fr); } }
+@media (max-width: 1399px) { .grid-container { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 992px) { .grid-container { grid-template-columns: repeat(3, 1fr); } .profile-wrapper { grid-template-columns: 1fr; } }
+@media (max-width: 768px) { .grid-container { grid-template-columns: repeat(2, 1fr); } .hero h1 { font-size: 2.5rem; } }
+@media (max-width: 500px) { .grid-container { grid-template-columns: 1fr; } }
