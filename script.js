@@ -11,53 +11,39 @@ const translations = {
         hero_title: "ANDRÉ GRAÇA",
         hero_desc: "Portfólio e Biografia",
 
-        // CARDS (15 Items)
+        // CARDS
         c1_title: "Defesa (SecOps)",
         c1_desc: "Liderança de equipas L1, redução do MTTR em 15% e otimização de deteção em plataformas SIEM/XDR.",
-        
         c2_title: "Engenharia",
         c2_desc: "Arquitetura e implementação de playbooks SOAR (Thycotic) e integração via API para automação.",
-
         c3_title: "Security Assessment",
         c3_desc: "Avaliações OWASP e testes para identificar caminhos de ataque (Red Team) e falhas em aplicações.",
-
         c4_title: "Vulnerability Management",
         c4_desc: "Programa proativo com Tenable.io e Landsweeper; remediação de +500 vulnerabilidades críticas.",
-
         c5_title: "Network Security",
         c5_desc: "Implementação de Darktrace e gestão de segurança de perímetro com Palo Alto.",
-
         c6_title: "Cloud Security",
         c6_desc: "Onboarding de 2000+ endpoints (Defender/Intune) e redução de incidentes de malware em 40%.",
-
         c7_title: "Compliance",
         c7_desc: "Auditorias técnicas e evidências para PCI DSS, NIS2, GDPR e certificação ISO27001.",
-
         c8_title: "Software",
         c8_desc: "Gestão e integração de soluções complexas: ArcSight, Cortex XDR, Sentinel, Fortify e Sealpath.",
-
         c9_title: "Programming",
         c9_desc: "Automação com Python e desenvolvimento Full-Stack para ferramentas de segurança personalizadas.",
-
         c10_title: "IAM",
         c10_desc: "Aplicação de políticas unificadas de identidade e acesso no ecossistema Microsoft Security.",
-
         c11_title: "Reporting",
         c11_desc: "Relatórios detalhados com orientações prescritivas (Blue Team) e documentação de ataque.",
-
         c12_title: "Asset Management",
         c12_desc: "Visibilidade total e inventário de ativos críticos utilizando Landsweeper e Tenable.",
-
         c13_title: "Threat Intelligence (CTI)",
         c13_desc: "Recolha estratégica de informação para antecipar TTPs e fortalecer defesas proativamente.",
-
         c14_title: "Threat Hunting",
         c14_desc: "Investigação proativa de ameaças sofisticadas não detetadas por alertas padrão.",
-
         c15_title: "Digital Forensics",
         c15_desc: "Análise forense para determinação de causa raiz e reconstrução de incidentes complexos.",
 
-        // PROFILE / LOGS
+        // PROFILE
         edu_title: "Formação Académica",
         edu_1: "Pós-Graduação: Cloud e Virtualização (ISTEC)",
         edu_2: "Licenciatura: Eng. Informática (Lusófona)",
@@ -65,20 +51,15 @@ const translations = {
 
         log1_title: "A Origem",
         log1_text: "A minha jornada começou na Escola José Saramago em Mafra. Foi durante o Curso Profissional de Gestão e Programação de Sistemas Informáticos que descobri a minha verdadeira vocação tecnológica. Apesar das dificuldades financeiras iniciais, sabia que queria ser um profissional 'self-made' na área tecnológica e comecei a juntar dinheiro para investir na minha formação superior.",
-        
         log2_title: "A Crise e o Desvio",
         log2_text: "A crise financeira de 2011 atingiu Portugal com brutalidade. Fui forçado a interromper os estudos e a trabalhar em fábricas e escritórios para sobreviver. Em 2012, tentei um novo rumo com um curso de CNC no IEFP, mas sentia um vazio profissional. Não era o meu chamamento, mas precisava de continuar a lutar.",
-        
         log3_title: "O Ponto de Viragem",
         log3_text: "O ponto de rutura aconteceu numa fábrica de queijo. As condições eram desumanas e, numa única semana, escapei da morte em três acidentes de trabalho distintos. Naquele momento, decidi: 'Esta vida não é para mim'. Juntei cada cêntimo que tinha poupado, demiti-me e investi tudo no meu regresso à universidade.",
-        
         log4_title: "O Regresso",
         log4_text: "Regressei à Universidade Lusófona com determinação total (CET e Licenciatura). O meu projeto final, 'Gaming Out of Depression', foi proposto por uma psicóloga: desenvolvi um sistema complexo de Backend e Frontend (estilo Discord) com comunicação de voz e vídeo em tempo real, desenhado especificamente para ajudar pessoas isoladas a socializar.",
-
         log5_title: "A Evolução Cyber",
         log5_text: "Durante a pós-graduação no ISTEC, ingressei na Noesis. Iniciei em OutSystems, mas quando surgiu o desafio de migrar para a Cibersegurança, aceitei sem hesitar. Através de formação contínua, moldei-me no engenheiro sólido que sou hoje.",
 
-        // FOOTER UPDATED
         footer_contact_type: "Teams ou Email:"
     },
     en: {
@@ -96,50 +77,36 @@ const translations = {
         // CARDS
         c1_title: "Defense (SecOps)",
         c1_desc: "L1 team leadership, 15% MTTR reduction, and detection optimization on SIEM/XDR platforms.",
-        
         c2_title: "Engineering",
         c2_desc: "Architecture and implementation of SOAR playbooks (Thycotic) and API integration for automation.",
-
         c3_title: "Security Assessment",
         c3_desc: "OWASP assessments and testing to identify attack paths (Red Team) and application flaws.",
-
         c4_title: "Vulnerability Management",
         c4_desc: "Proactive program with Tenable.io and Landsweeper; remediation of 500+ critical vulnerabilities.",
-
         c5_title: "Network Security",
         c5_desc: "Implementation of Darktrace and perimeter security management with Palo Alto.",
-
         c6_title: "Cloud Security",
         c6_desc: "Onboarding 2000+ endpoints (Defender/Intune) and reducing malware incidents by 40%.",
-
         c7_title: "Compliance",
         c7_desc: "Technical audits and evidence for PCI DSS, NIS2, GDPR, and ISO27001 certification.",
-
         c8_title: "Software",
         c8_desc: "Management and integration of complex solutions: ArcSight, Cortex XDR, Sentinel, Fortify, and Sealpath.",
-
         c9_title: "Programming",
         c9_desc: "Automation with Python and Full-Stack development for custom security tools.",
-
         c10_title: "IAM",
         c10_desc: "Enforcement of unified identity and access policies within the Microsoft Security ecosystem.",
-
         c11_title: "Reporting",
         c11_desc: "Detailed reports with prescriptive guidance (Blue Team) and attack documentation.",
-
         c12_title: "Asset Management",
         c12_desc: "Full visibility and inventory of critical assets using Landsweeper and Tenable.",
-
         c13_title: "Threat Intelligence (CTI)",
         c13_desc: "Strategic information gathering to anticipate TTPs and proactively strengthen defenses.",
-
         c14_title: "Threat Hunting",
         c14_desc: "Proactive investigation of sophisticated threats undetected by standard alerts.",
-
         c15_title: "Digital Forensics",
         c15_desc: "Forensic analysis for root cause determination and reconstruction of complex incidents.",
 
-        // PROFILE / LOGS
+        // PROFILE
         edu_title: "Education",
         edu_1: "Post-Grad: Cloud & Virtualization (ISTEC)",
         edu_2: "BSc: Computer Engineering (Lusófona)",
@@ -147,20 +114,15 @@ const translations = {
 
         log1_title: "The Origin",
         log1_text: "My journey began at Escola José Saramago in Mafra, where I discovered my true vocation during a Professional Course in IT Systems. Despite early financial hurdles, I was determined to become a self-made professional in the tech world and started saving money to fund my higher education.",
-        
         log2_title: "Crisis & Detour",
         log2_text: "The 2011 financial crisis hit Portugal hard. I was forced to pause my studies and take on various factory jobs just to survive. In 2012, I tried a CNC course at IEFP, but I felt professionally unfulfilled. I knew deep down this wasn't my calling, but I had to keep fighting.",
-        
         log3_title: "The Turning Point",
         log3_text: "The breaking point was at a cheese factory. After nearly three serious accidents in one week and facing inhumane conditions, I decided: 'This life is not for me.' I scraped together every single Euro I had saved, quit, and invested everything into returning to college.",
-        
         log4_title: "The Return",
         log4_text: "I returned to Lusófona University with total focus. My final project, 'Gaming Out of Depression' (proposed by a psychologist), was a complex Full-Stack system (Discord-style) featuring real-time voice and video communication, specifically designed to help isolated individuals socialize.",
-
         log5_title: "The Cyber Pivot",
         log5_text: "During my Post-Grad at ISTEC, I joined Noesis. I started with OutSystems, but when the challenge to pivot to Cybersecurity arose, I took it without hesitation. Through continuous training, I molded myself into the solid engineer I am today.",
 
-        // FOOTER UPDATED
         footer_contact_type: "Teams or Email:"
     }
 };

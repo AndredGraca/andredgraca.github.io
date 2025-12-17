@@ -68,8 +68,8 @@ nav a:hover { color: var(--primary-cyan); }
 .container {
     max-width: 1600px;
     margin: 0 auto;
-    /* Mantém o padding alto para compensar a nav fixa */
-    padding: 260px 20px 40px; 
+    /* CHANGED: Reduced to 120px so Profile page looks normal */
+    padding: 120px 20px 40px; 
 }
 
 /* =========================================
@@ -81,9 +81,9 @@ nav a:hover { color: var(--primary-cyan); }
     flex-direction: column;
     align-items: center;
     text-align: center;
+    /* CHANGED: Added specific top padding to push the Badge down ONLY on Home */
+    padding-top: 150px; 
     padding-bottom: 50px;
-    /* ALTERADO: Aumentado para 80px para garantir que o badge não fica tapado */
-    margin-top: 80px; 
     margin-bottom: 20px;
 }
 
@@ -118,6 +118,7 @@ nav a:hover { color: var(--primary-cyan); }
 /* GRID LAYOUT (5 Columns Desktop) */
 .grid-container {
     display: grid;
+    /* Forces 5 columns on wide screens (approx 250px per card) */
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     padding-bottom: 60px;
@@ -286,7 +287,7 @@ footer {
 }
 footer a { color: var(--primary-cyan); text-decoration: none; }
 
-/* --- RESPONSIVE GRID (Specific 5-column Logic) --- */
+/* --- RESPONSIVE GRID (Force 5 Columns) --- */
 @media (min-width: 1400px) { .grid-container { grid-template-columns: repeat(5, 1fr); } }
 @media (max-width: 1399px) { .grid-container { grid-template-columns: repeat(4, 1fr); } }
 @media (max-width: 992px) { .grid-container { grid-template-columns: repeat(3, 1fr); } .profile-wrapper { grid-template-columns: 1fr; } }
