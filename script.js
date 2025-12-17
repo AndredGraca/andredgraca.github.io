@@ -11,6 +11,14 @@ const translations = {
         hero_title: "ANDRÉ GRAÇA",
         hero_desc: "Portfólio e Biografia",
 
+        // TOOLS CATEGORIES (NEW)
+        tools_title: "Arsenal Tecnológico",
+        cat_siem: "SIEM & Analítica de Dados",
+        cat_endpoint: "Segurança de Endpoint & Rede",
+        cat_appsec: "AppSec & Gestão de Vulnerabilidades",
+        cat_iam: "Identidade, Operações & Intel",
+        cat_dev: "Engenharia & Automação",
+
         // CARDS
         c1_title: "Defesa (SecOps)",
         c1_desc: "Liderança de equipas L1, redução do MTTR em 15% e otimização de deteção em plataformas SIEM/XDR.",
@@ -73,6 +81,14 @@ const translations = {
         hero_badge: "CYBERSECURITY ENGINEER",
         hero_title: "ANDRÉ GRAÇA",
         hero_desc: "Portfolio & Bio",
+
+        // TOOLS CATEGORIES (NEW)
+        tools_title: "Tech Arsenal",
+        cat_siem: "SIEM & Data Analytics",
+        cat_endpoint: "Endpoint & Network Security",
+        cat_appsec: "AppSec & Vulnerability Management",
+        cat_iam: "Identity, Ops & Intel",
+        cat_dev: "Engineering & Automation",
 
         // CARDS
         c1_title: "Defense (SecOps)",

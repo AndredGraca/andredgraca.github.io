@@ -2,55 +2,184 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tools | André Graça</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+
     <nav>
+        <div style="font-weight:bold; font-size:1.2rem; color:white;">AG.</div>
         <ul>
             <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
             <li><a href="../profile/index.html" data-i18n="nav_profile">Profile</a></li>
+            <li><a href="../skills/index.html" data-i18n="nav_skills">Skills</a></li>
         </ul>
         <button id="lang-toggle" data-i18n="btn_lang">PT</button>
     </nav>
 
     <div class="container">
-        <h1 data-i18n="page_tools_title">Tech Stack</h1>
-        <div class="grid">
-            <div class="card">
-                <h3 data-i18n="tool_siem">SIEM & XDR</h3>
-                <ul>
-                    <li>ArcSight</li>
-                    <li>Cortex XDR</li>
-                    <li>Microsoft Sentinel</li>
-                </ul>
+        
+        <header class="hero" style="min-height: auto; padding-top: 50px; padding-bottom: 20px;">
+            <h1 class="fade-up" data-i18n="tools_title">Tech Arsenal</h1>
+        </header>
+
+        <section class="tools-section fade-up delay-1">
+            <h2 data-i18n="cat_siem">SIEM & Analytics</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <img src="../images/arcsight.png" alt="ArcSight" class="tool-img">
+                    <span class="tool-name">ArcSight</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/Sentinel.png" alt="Microsoft Sentinel" class="tool-img">
+                    <span class="tool-name">Sentinel</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/Securonix.png" alt="Securonix" class="tool-img">
+                    <span class="tool-name">Securonix</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/elasticsearch.png" alt="Elasticsearch" class="tool-img">
+                    <span class="tool-name">Elastic</span>
+                </div>
             </div>
-            <div class="card">
-                <h3 data-i18n="tool_vuln">Vuln Management</h3>
-                <ul>
-                    <li>Tenable.io</li>
-                    <li>Landsweeper</li>
-                    <li>OWASP Framework</li>
-                </ul>
+        </section>
+
+        <section class="tools-section fade-up delay-2">
+            <h2 data-i18n="cat_endpoint">Endpoint & Network</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <img src="../images/paloalto.png" alt="Palo Alto" class="tool-img">
+                    <span class="tool-name">Palo Alto</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/checkpoint.png" alt="Check Point" class="tool-img">
+                    <span class="tool-name">Check Point</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/darktrace.png" alt="Darktrace" class="tool-img">
+                    <span class="tool-name">Darktrace</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/defender.png" alt="Microsoft Defender" class="tool-img">
+                    <span class="tool-name">Defender</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/cortex.png" alt="Cortex XDR" class="tool-img">
+                    <span class="tool-name">Cortex XDR</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/H-Endpoint-Horizontal-Light-Background.png" alt="Harmony Endpoint" class="tool-img">
+                    <span class="tool-name">Harmony EP</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/checkpontharmonybrowse.png" alt="Harmony Browse" class="tool-img">
+                    <span class="tool-name">Harmony Browse</span>
+                </div>
             </div>
-            <div class="card">
-                <h3 data-i18n="tool_auto">Automation</h3>
-                <ul>
-                    <li>Thycotic (SOAR)</li>
-                    <li>Python Scripting</li>
-                    <li>Gitlab & Jira API</li>
-                </ul>
+        </section>
+
+        <section class="tools-section fade-up delay-3">
+            <h2 data-i18n="cat_appsec">AppSec & Vuln Mgmt</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <img src="../images/tenablevm.png" alt="Tenable.io" class="tool-img">
+                    <span class="tool-name">Tenable.io</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/nessus.png" alt="Nessus" class="tool-img">
+                    <span class="tool-name">Nessus</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/Lansweeper.png" alt="Lansweeper" class="tool-img">
+                    <span class="tool-name">Lansweeper</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/fortify.png" alt="Fortify" class="tool-img">
+                    <span class="tool-name">Fortify</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/webinspect.png" alt="WebInspect" class="tool-img">
+                    <span class="tool-name">WebInspect</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/SCA.png" alt="SCA" class="tool-img">
+                    <span class="tool-name">SCA</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/owasp.png" alt="OWASP" class="tool-img">
+                    <span class="tool-name">OWASP</span>
+                </div>
             </div>
-            <div class="card">
-                <h3 data-i18n="tool_net">Network & Sec</h3>
-                <ul>
-                    <li>Darktrace</li>
-                    <li>Palo Alto</li>
-                    <li>Fortify & Sealpath</li>
-                </ul>
+        </section>
+
+        <section class="tools-section fade-up delay-4">
+            <h2 data-i18n="cat_iam">Identity & Ops</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <img src="../images/entraid.png" alt="Entra ID" class="tool-img">
+                    <span class="tool-name">Entra ID</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/intune.png" alt="Intune" class="tool-img">
+                    <span class="tool-name">Intune</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/secretserver.png" alt="Secret Server" class="tool-img">
+                    <span class="tool-name">Secret Server</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/jira.png" alt="Jira" class="tool-img">
+                    <span class="tool-name">Jira</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/misp.png" alt="MISP" class="tool-img">
+                    <span class="tool-name">MISP</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/Mitre.png" alt="MITRE ATT&CK" class="tool-img">
+                    <span class="tool-name">MITRE</span>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="tools-section fade-up delay-4">
+            <h2 data-i18n="cat_dev">Engineering & Auto</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <img src="../images/python.png" alt="Python" class="tool-img">
+                    <span class="tool-name">Python</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/powershell.png" alt="PowerShell" class="tool-img">
+                    <span class="tool-name">PowerShell</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/bashscript.png" alt="Bash" class="tool-img">
+                    <span class="tool-name">Bash</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/n8n.png" alt="n8n" class="tool-img">
+                    <span class="tool-name">n8n</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/javascript.png" alt="JavaScript" class="tool-img">
+                    <span class="tool-name">JavaScript</span>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/java.png" alt="Java" class="tool-img">
+                    <span class="tool-name">Java</span>
+                </div>
+            </div>
+        </section>
+
     </div>
+
+    <footer>
+        <p><span data-i18n="footer_contact_type">Teams or Email:</span> <a href="mailto:andre.d.graca@outlook.com" style="color: var(--primary-cyan);">andre.d.graca@outlook.com</a></p>
+    </footer>
+
     <script src="../script.js"></script>
 </body>
 </html>
