@@ -1,54 +1,31 @@
 const translations = {
     pt: {
-        nav_home: "Início",
-        nav_profile: "Perfil",
-        nav_skills: "Competências",
-        nav_tools: "Ferramentas",
-        btn_lang: "EN",
+        nav_home: "Início", nav_profile: "Perfil", nav_skills: "Competências", nav_tools: "Ferramentas", btn_lang: "EN",
+        hero_badge: "ENGENHEIRO DE CIBERSEGURANÇA", hero_title: "ANDRÉ GRAÇA", hero_desc: "Portfólio e Biografia",
         
-        // HERO
-        hero_badge: "ENGENHEIRO DE CIBERSEGURANÇA",
-        hero_title: "ANDRÉ GRAÇA",
-        hero_desc: "Portfólio e Biografia",
+        // Titles (Used in Skills & Tools)
+        c1_title: "Defense (SecOps)", c2_title: "Security Assessment", c3_title: "Vulnerability Management",
+        c4_title: "Network Security", c5_title: "Cloud Security", c6_title: "Compliance",
+        c7_title: "Asset Management", c8_title: "Reporting", c9_title: "Threat Intelligence (CTI)",
+        c10_title: "Programming", c11_title: "IAM",
 
-        // TOOLS TITLE
+        // SKILLS LISTS (Updated with specific tools)
+        c1_desc: "<ul><li>SIEM Arcsight</li><li>SIEM Sentinel</li><li>SIEM Securonix</li><li>SIEM Elasticsearch</li><li>EDR Microsoft Defender</li><li>EDR Cortex XDR</li><li>EDR Sophos</li><li>EDR Checkpoint Harmony Endpoint</li></ul>",
+        c2_desc: "<ul><li>Repositorio Fortify</li><li>DAST Webinspect</li><li>SAST SCA</li></ul>",
+        c3_desc: "<ul><li>Tenable VM</li><li>Nessus</li></ul>",
+        c4_desc: "<ul><li>FW Palo Alto</li><li>FW Checkpoint</li><li>NGFW Darktrace Detect and response</li></ul>",
+        c5_desc: "<ul><li>EDR Defender</li><li>Entra ID</li></ul>",
+        c6_desc: "<ul><li>Tenable.VM</li><li>Nessus</li></ul>",
+        c7_desc: "<ul><li>Landsweeper</li><li>Intune</li></ul>",
+        c8_desc: "<ul><li>Jira</li></ul>",
+        c9_desc: "<ul><li>MISP</li></ul>",
+        c10_desc: "<ul><li>Python</li><li>Bash</li><li>Powershell</li><li>Java</li><li>Javascript</li></ul>",
+        c11_desc: "<ul><li>Secret Server</li></ul>",
+
+        // Tool Titles (Reused where possible, specific ones for Tools page)
         tools_title: "Arsenal Tecnológico",
 
-        // CARDS (15 Items)
-        c1_title: "Defesa (SecOps)",
-        c2_title: "Engenharia",
-        c3_title: "Security Assessment",
-        c4_title: "Vulnerability Management",
-        c5_title: "Network Security",
-        c6_title: "Cloud Security",
-        c7_title: "Compliance",
-        c8_title: "Software",
-        c9_title: "Programming",
-        c10_title: "IAM",
-        c11_title: "Reporting",
-        c12_title: "Asset Management",
-        c13_title: "Threat Intelligence (CTI)",
-        c14_title: "Threat Hunting",
-        c15_title: "Digital Forensics",
-
-        // DESCRIPTIONS FOR INDEX
-        c1_desc: "Liderança de equipas L1, redução do MTTR em 15% e otimização de deteção em plataformas SIEM/XDR.",
-        c2_desc: "Arquitetura e implementação de playbooks SOAR (Thycotic) e integração via API para automação.",
-        c3_desc: "Avaliações OWASP e testes para identificar caminhos de ataque (Red Team) e falhas em aplicações.",
-        c4_desc: "Programa proativo com Tenable.io e Landsweeper; remediação de +500 vulnerabilidades críticas.",
-        c5_desc: "Implementação de Darktrace e gestão de segurança de perímetro com Palo Alto.",
-        c6_desc: "Onboarding de 2000+ endpoints (Defender/Intune) e redução de incidentes de malware em 40%.",
-        c7_desc: "Auditorias técnicas e evidências para PCI DSS, NIS2, GDPR e certificação ISO27001.",
-        c8_desc: "Gestão e integração de soluções complexas: ArcSight, Cortex XDR, Sentinel, Fortify e Sealpath.",
-        c9_desc: "Automação com Python e desenvolvimento Full-Stack para ferramentas de segurança personalizadas.",
-        c10_desc: "Aplicação de políticas unificadas de identidade e acesso no ecossistema Microsoft Security.",
-        c11_desc: "Relatórios detalhados com orientações prescritivas (Blue Team) e documentação de ataque.",
-        c12_desc: "Visibilidade total e inventário de ativos críticos utilizando Landsweeper e Tenable.",
-        c13_desc: "Recolha estratégica de informação para antecipar TTPs e fortalecer defesas proativamente.",
-        c14_desc: "Investigação proativa de ameaças sofisticadas não detetadas por alertas padrão.",
-        c15_desc: "Análise forense para determinação de causa raiz e reconstrução de incidentes complexos.",
-
-        // PROFILE / LOGS
+        // PROFILE
         edu_title: "Formação Académica",
         edu_1: "Pós-Graduação: Cloud e Virtualização (ISTEC)",
         edu_2: "Licenciatura: Eng. Informática (Lusófona)",
@@ -65,73 +42,44 @@ const translations = {
         log5_title: "A Evolução Cyber",
         log5_text: "Durante a pós-graduação no ISTEC, ingressei na Noesis. Iniciei em OutSystems, mas quando surgiu o desafio de migrar para a Cibersegurança, aceitei sem hesitar. Através de formação contínua, moldei-me no engenheiro sólido que sou hoje.",
 
-        footer_contact_type: "Teams ou Email:"
+        footer_contact: "Teams ou Email: andre.d.graca@outlook.com"
     },
     en: {
-        nav_home: "Home",
-        nav_profile: "Profile",
-        nav_skills: "Skills",
-        nav_tools: "Tools",
-        btn_lang: "PT",
+        nav_home: "Home", nav_profile: "Profile", nav_skills: "Skills", nav_tools: "Tools", btn_lang: "PT",
+        hero_badge: "CYBERSECURITY ENGINEER", hero_title: "ANDRÉ GRAÇA", hero_desc: "Portfolio & Bio",
         
-        // HERO
-        hero_badge: "CYBERSECURITY ENGINEER",
-        hero_title: "ANDRÉ GRAÇA",
-        hero_desc: "Portfolio & Bio",
-
-        // TOOLS TITLE
         tools_title: "Tech Arsenal",
 
-        // CARDS
-        c1_title: "Defense (SecOps)",
-        c1_desc: "L1 team leadership, 15% MTTR reduction, and detection optimization on SIEM/XDR platforms.",
-        c2_title: "Engineering",
-        c2_desc: "Architecture and implementation of SOAR playbooks (Thycotic) and API integration for automation.",
-        c3_title: "Security Assessment",
-        c3_desc: "OWASP assessments and testing to identify attack paths (Red Team) and application flaws.",
-        c4_title: "Vulnerability Management",
-        c4_desc: "Proactive program with Tenable.io and Landsweeper; remediation of 500+ critical vulnerabilities.",
-        c5_title: "Network Security",
-        c5_desc: "Implementation of Darktrace and perimeter security management with Palo Alto.",
-        c6_title: "Cloud Security",
-        c6_desc: "Onboarding 2000+ endpoints (Defender/Intune) and reducing malware incidents by 40%.",
-        c7_title: "Compliance",
-        c7_desc: "Technical audits and evidence for PCI DSS, NIS2, GDPR, and ISO27001 certification.",
-        c8_title: "Software",
-        c8_desc: "Management and integration of complex solutions: ArcSight, Cortex XDR, Sentinel, Fortify, and Sealpath.",
-        c9_title: "Programming",
-        c9_desc: "Automation with Python and Full-Stack development for custom security tools.",
-        c10_title: "IAM",
-        c10_desc: "Enforcement of unified identity and access policies within the Microsoft Security ecosystem.",
-        c11_title: "Reporting",
-        c11_desc: "Detailed reports with prescriptive guidance (Blue Team) and attack documentation.",
-        c12_title: "Asset Management",
-        c12_desc: "Full visibility and inventory of critical assets using Landsweeper and Tenable.",
-        c13_title: "Threat Intelligence (CTI)",
-        c13_desc: "Strategic information gathering to anticipate TTPs and proactively strengthen defenses.",
-        c14_title: "Threat Hunting",
-        c14_desc: "Proactive investigation of sophisticated threats undetected by standard alerts.",
-        c15_title: "Digital Forensics",
-        c15_desc: "Forensic analysis for root cause determination and reconstruction of complex incidents.",
+        // Titles
+        c1_title: "Defense (SecOps)", c2_title: "Security Assessment", c3_title: "Vulnerability Management",
+        c4_title: "Network Security", c5_title: "Cloud Security", c6_title: "Compliance",
+        c7_title: "Asset Management", c8_title: "Reporting", c9_title: "Threat Intelligence (CTI)",
+        c10_title: "Programming", c11_title: "IAM",
 
-        // PROFILE
+        // SKILLS LISTS (English Same as PT for tool names)
+        c1_desc: "<ul><li>SIEM Arcsight</li><li>SIEM Sentinel</li><li>SIEM Securonix</li><li>SIEM Elasticsearch</li><li>EDR Microsoft Defender</li><li>EDR Cortex XDR</li><li>EDR Sophos</li><li>EDR Checkpoint Harmony Endpoint</li></ul>",
+        c2_desc: "<ul><li>Repositorio Fortify</li><li>DAST Webinspect</li><li>SAST SCA</li></ul>",
+        c3_desc: "<ul><li>Tenable VM</li><li>Nessus</li></ul>",
+        c4_desc: "<ul><li>FW Palo Alto</li><li>FW Checkpoint</li><li>NGFW Darktrace Detect and response</li></ul>",
+        c5_desc: "<ul><li>EDR Defender</li><li>Entra ID</li></ul>",
+        c6_desc: "<ul><li>Tenable.VM</li><li>Nessus</li></ul>",
+        c7_desc: "<ul><li>Landsweeper</li><li>Intune</li></ul>",
+        c8_desc: "<ul><li>Jira</li></ul>",
+        c9_desc: "<ul><li>MISP</li></ul>",
+        c10_desc: "<ul><li>Python</li><li>Bash</li><li>Powershell</li><li>Java</li><li>Javascript</li></ul>",
+        c11_desc: "<ul><li>Secret Server</li></ul>",
+
         edu_title: "Education",
         edu_1: "Post-Grad: Cloud & Virtualization (ISTEC)",
         edu_2: "BSc: Computer Engineering (Lusófona)",
         edu_3: "CET: Systems Technology (Lusófona)",
+        log1_title: "The Origin", log1_text: "My journey began at Escola José Saramago in Mafra...",
+        log2_title: "Crisis & Detour", log2_text: "The 2011 financial crisis hit Portugal hard...",
+        log3_title: "The Turning Point", log3_text: "The breaking point was at a cheese factory...",
+        log4_title: "The Return", log4_text: "I returned to Lusófona University with total focus...",
+        log5_title: "The Cyber Pivot", log5_text: "Transitioning from OutSystems to Cybersecurity at Noesis...",
 
-        log1_title: "The Origin",
-        log1_text: "My journey began at Escola José Saramago in Mafra, where I discovered my true vocation during a Professional Course in IT Systems. Despite early financial hurdles, I was determined to become a self-made professional in the tech world and started saving money to fund my higher education.",
-        log2_title: "Crisis & Detour",
-        log2_text: "The 2011 financial crisis hit Portugal hard. I was forced to pause my studies and take on various factory jobs just to survive. In 2012, I tried a CNC course at IEFP, but I felt professionally unfulfilled. I knew deep down this wasn't my calling, but I had to keep fighting.",
-        log3_title: "The Turning Point",
-        log3_text: "The breaking point was at a cheese factory. After nearly three serious accidents in one week and facing inhumane conditions, I decided: 'This life is not for me.' I scraped together every single Euro I had saved, quit, and invested everything into returning to college.",
-        log4_title: "The Return",
-        log4_text: "I returned to Lusófona University with total focus. My final project, 'Gaming Out of Depression' (proposed by a psychologist), was a complex Full-Stack system (Discord-style) featuring real-time voice and video communication, specifically designed to help isolated individuals socialize.",
-        log5_title: "The Cyber Pivot",
-        log5_text: "During my Post-Grad at ISTEC, I joined Noesis. I started with OutSystems, but when the challenge to pivot to Cybersecurity arose, I took it without hesitation. Through continuous training, I molded myself into the solid engineer I am today.",
-
-        footer_contact_type: "Teams or Email:"
+        footer_contact: "Teams or Email: andre.d.graca@outlook.com"
     }
 };
 
@@ -140,28 +88,31 @@ function changeLanguage(lang) {
     document.documentElement.lang = lang;
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
-        if (translations[lang][key]) el.textContent = translations[lang][key];
-    });
-}
-
-const observerOptions = { threshold: 0.15, rootMargin: "0px 0px -50px 0px" };
-const scrollObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-            scrollObserver.unobserve(entry.target);
+        if (translations[lang][key]) {
+            // Check if content has HTML tags (like <ul>)
+            if (translations[lang][key].includes('<')) {
+                el.innerHTML = translations[lang][key];
+            } else {
+                el.textContent = translations[lang][key];
+            }
         }
     });
-}, observerOptions);
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('lang') || 'en';
     changeLanguage(savedLang);
-    
     document.getElementById('lang-toggle').addEventListener('click', () => {
         const currentLang = localStorage.getItem('lang') || 'en';
         changeLanguage(currentLang === 'en' ? 'pt' : 'en');
     });
-
-    document.querySelectorAll('.reveal-entry, .fade-up').forEach(el => scrollObserver.observe(el));
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    });
+    document.querySelectorAll('.reveal-entry, .fade-up').forEach(el => observer.observe(el));
 });

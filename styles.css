@@ -14,6 +14,7 @@
 
 body {
     background-color: var(--bg-dark);
+    /* Subtle Grid Background */
     background-image: 
         linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
@@ -68,19 +69,18 @@ nav a:hover { color: var(--primary-cyan); }
 .container {
     max-width: 1600px;
     margin: 0 auto;
-    padding: 120px 20px 40px; 
+    /* Fixed padding so header is never hidden */
+    padding: 240px 20px 60px; 
 }
 
 /* =========================================
-   HOMEPAGE STYLES
+   HERO SECTION
    ========================================= */
-
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 150px; 
     padding-bottom: 50px;
     margin-bottom: 20px;
 }
@@ -113,23 +113,25 @@ nav a:hover { color: var(--primary-cyan); }
     font-weight: 300;
 }
 
-/* GRID LAYOUT (5 Columns Desktop) */
+/* =========================================
+   GRID & CARDS
+   ========================================= */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    /* Responsive Grid */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
     padding-bottom: 60px;
 }
 
 .card {
     background: var(--card-surface);
     border: 1px solid var(--card-border);
-    padding: 25px;
+    padding: 30px;
     position: relative;
     transition: transform 0.3s ease, border-color 0.3s ease;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     height: 100%;
 }
 
@@ -138,25 +140,76 @@ nav a:hover { color: var(--primary-cyan); }
     border-color: var(--primary-cyan);
 }
 
-.icon-box {
-    width: 35px; height: 35px;
-    margin-bottom: 15px;
-    fill: var(--primary-cyan);
+.card h3 { 
+    margin: 0 0 20px 0; 
+    color: #fff; 
+    font-size: 1.2rem; 
+    line-height: 1.3;
+    border-bottom: 1px solid #222;
+    padding-bottom: 10px;
 }
 
-.card h3 { margin: 0 0 10px 0; color: #fff; font-size: 1.1rem; line-height: 1.3; }
-.card p { color: var(--text-muted); margin: 0; font-size: 0.85rem; }
+/* List Styling inside Cards (For Skills) */
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card li {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.card li::before {
+    content: "›";
+    color: var(--primary-cyan);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* =========================================
+   TOOL ICONS (Tools Page)
+   ========================================= */
+.tool-icon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+    justify-content: flex-start;
+}
+
+.mini-tool-img {
+    height: 80px;
+    width: auto;
+    max-width: 140px;
+    object-fit: contain;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    transition: all 0.3s ease;
+}
+
+.mini-tool-img:hover {
+    border-color: var(--primary-cyan);
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+    z-index: 10;
+}
 
 /* =========================================
    PROFILE PAGE STYLES
    ========================================= */
-
 .profile-wrapper {
     display: grid;
     grid-template-columns: 350px 1fr;
     gap: 50px;
     align-items: start;
-    margin-top: 20px;
 }
 
 .profile-sidebar {
@@ -177,20 +230,8 @@ nav a:hover { color: var(--primary-cyan); }
     background: #000;
 }
 
-.sidebar-name {
-    font-size: 1.8rem;
-    color: #fff;
-    margin: 10px 0;
-    font-weight: 700;
-}
-
-.sidebar-role {
-    color: var(--primary-cyan);
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-}
+.sidebar-name { font-size: 1.8rem; color: #fff; margin: 10px 0; font-weight: 700; }
+.sidebar-role { color: var(--primary-cyan); font-family: var(--font-mono); font-size: 0.85rem; margin-bottom: 30px; text-transform: uppercase; }
 
 .tech-specs {
     text-align: left;
@@ -198,25 +239,12 @@ nav a:hover { color: var(--primary-cyan); }
     padding: 20px;
     border-left: 2px solid var(--primary-cyan);
 }
-
-.tech-specs h3 {
-    color: #fff;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    border-bottom: 1px solid #333;
-    padding-bottom: 10px;
-    margin-top: 0;
-}
-
+.tech-specs h3 { color: #fff; font-size: 0.9rem; text-transform: uppercase; border-bottom: 1px solid #333; padding-bottom: 10px; margin-top: 0; }
 .tech-specs ul { list-style: none; padding: 0; font-size: 0.85rem; color: #ccc; }
 .tech-specs li { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #222; }
 .tech-specs li:last-child { border-bottom: none; margin: 0; padding: 0; }
 
-.profile-content {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
+.profile-content { display: flex; flex-direction: column; gap: 25px; }
 
 .log-entry {
     background: var(--card-surface);
@@ -226,87 +254,23 @@ nav a:hover { color: var(--primary-cyan); }
     position: relative;
     transition: all 0.3s ease;
 }
+.log-entry:hover { border-left-color: var(--primary-cyan); transform: translateX(5px); }
 
-.log-entry:hover {
-    border-left-color: var(--primary-cyan);
-    transform: translateX(5px);
-}
-
-.log-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #333;
-    padding-bottom: 10px;
-}
-
-.log-title {
-    color: var(--primary-cyan);
-    font-family: var(--font-mono);
-    margin: 0;
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.log-number {
-    color: #555;
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    border: 1px solid #333;
-    padding: 2px 6px;
-}
-
+.log-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 10px; }
+.log-title { color: var(--primary-cyan); font-family: var(--font-mono); margin: 0; font-size: 1.1rem; font-weight: bold; }
+.log-number { color: #555; font-family: var(--font-mono); font-size: 0.75rem; border: 1px solid #333; padding: 2px 6px; }
 .log-text { color: var(--text-muted); font-size: 1rem; line-height: 1.7; }
-
-/* =========================================
-   TOOLS PAGE STYLES (UPDATED FOR VISIBILITY)
-   ========================================= */
-
-.tool-icon-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 20px;
-    width: 100%;
-    justify-content: center;
-}
-
-/* BIGGER ICONS WITH BACKGROUND */
-.mini-tool-img {
-    height: 60px;          /* Height fixed */
-    width: auto;           
-    min-width: 90px;       /* Ensure width is enough */
-    object-fit: contain;
-    background: #1f1f1f;   /* Darker background for contrast */
-    padding: 8px;
-    border-radius: 6px;
-    border: 1px solid #444;
-    transition: all 0.3s ease;
-}
-
-.mini-tool-img:hover {
-    border-color: var(--primary-cyan);
-    transform: scale(1.1);
-    background: #2a2a2a;
-    box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
-    z-index: 10;
-}
 
 /* =========================================
    ANIMATIONS & FOOTER
    ========================================= */
-
 .fade-up { opacity: 0; transform: translateY(30px); animation: fadeInUp 0.8s forwards; }
 @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
 
-.delay-1 { animation-delay: 0.1s; }
-.delay-2 { animation-delay: 0.15s; }
-.delay-3 { animation-delay: 0.2s; }
-.delay-4 { animation-delay: 0.25s; }
-
 .reveal-entry { opacity: 0; transform: translateX(30px); transition: all 0.6s ease; }
 .reveal-entry.active { opacity: 1; transform: translateX(0); }
+
+.delay-1 { animation-delay: 0.1s; } .delay-2 { animation-delay: 0.15s; } .delay-3 { animation-delay: 0.2s; } .delay-4 { animation-delay: 0.25s; }
 
 footer {
     border-top: 1px solid #222;
@@ -318,9 +282,12 @@ footer {
 }
 footer a { color: var(--primary-cyan); text-decoration: none; }
 
-/* --- RESPONSIVE GRID --- */
+/* Responsive Adjustments */
 @media (min-width: 1400px) { .grid-container { grid-template-columns: repeat(5, 1fr); } }
 @media (max-width: 1399px) { .grid-container { grid-template-columns: repeat(4, 1fr); } }
-@media (max-width: 992px) { .grid-container { grid-template-columns: repeat(3, 1fr); } .profile-wrapper { grid-template-columns: 1fr; } }
+@media (max-width: 992px) { 
+    .grid-container { grid-template-columns: repeat(3, 1fr); } 
+    .profile-wrapper { grid-template-columns: 1fr; } 
+}
 @media (max-width: 768px) { .grid-container { grid-template-columns: repeat(2, 1fr); } .hero h1 { font-size: 2.5rem; } }
 @media (max-width: 500px) { .grid-container { grid-template-columns: 1fr; } }
