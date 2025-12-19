@@ -263,34 +263,33 @@ nav a:hover { color: var(--primary-cyan); }
    TOOLS PAGE STYLES (UPDATED FOR VISIBILITY)
    ========================================= */
 
-/* Main container for icons */
 .tool-icon-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 20px;
     width: 100%;
-    justify-content: center; /* Center icons in the card */
+    justify-content: center;
 }
 
-/* Individual Icon Style - BIGGER NOW */
+/* BIGGER ICONS WITH BACKGROUND */
 .mini-tool-img {
-    height: 70px;          /* Increased height */
-    width: auto;           /* Maintain aspect ratio */
-    max-width: 100px;      /* Prevent extremely wide logos */
+    height: 60px;          /* Height fixed */
+    width: auto;           
+    min-width: 90px;       /* Ensure width is enough */
     object-fit: contain;
-    background: rgba(255,255,255,0.05);
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #333;
+    background: #1f1f1f;   /* Darker background for contrast */
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #444;
     transition: all 0.3s ease;
 }
 
 .mini-tool-img:hover {
     border-color: var(--primary-cyan);
-    transform: scale(1.15);
-    background: rgba(255,255,255,0.1);
-    box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+    transform: scale(1.1);
+    background: #2a2a2a;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
     z-index: 10;
 }
 
