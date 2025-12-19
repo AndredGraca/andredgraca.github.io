@@ -12,10 +12,11 @@
         <div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div>
     </div>
 
-    <nav>
+    <nav id="navbar">
         <div class="logo">AG.</div>
         <ul class="nav-links">
             <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="../profile/index.html" data-i18n="nav_profile">Profile</a></li>
             <li><a href="../skills/index.html" data-i18n="nav_skills">Skills</a></li>
             <li><a href="../tools/index.html" data-i18n="nav_tools">Tools</a></li>
             <li><a href="../certifications/index.html" data-i18n="nav_certs">Certs</a></li>
@@ -25,28 +26,41 @@
 
     <div class="container">
         <div class="section-header">
-            <div class="section-tag" data-i18n="nav_profile">PROFILE</div>
+            <div class="section-tag" data-i18n="profile_tag">PROFILE</div>
             <h2 data-i18n="hero_title">André Graça</h2>
         </div>
 
-        <div class="cards-grid" style="grid-template-columns: 1fr 2fr;">
+        <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
             <div class="card fade-up">
                 <img src="../images/profileimg.png" style="width: 100%; border-radius: 15px; margin-bottom: 2rem;">
                 <h3 data-i18n="edu_title">Education</h3>
-                <ul style="list-style: none; color: var(--text-muted); font-size: 0.9rem;">
+                <ul style="list-style: none; color: var(--text-muted); font-size: 0.9rem; padding: 0;">
                     <li style="margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;" data-i18n="edu_1">Post-Grad: ISTEC</li>
-                    <li data-i18n="edu_2">BSc: Lusófona</li>
+                    <li style="margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;" data-i18n="edu_2">BSc: Lusófona</li>
+                    <li data-i18n="edu_3">CET: Lusófona</li>
                 </ul>
             </div>
 
-            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div style="grid-column: span 2; display: flex; flex-direction: column; gap: 1.5rem;">
                 <div class="card fade-up delay-1">
-                    <h3 data-i18n="log1_title">Origin</h3>
-                    <p data-i18n="log1_text">...</p>
+                    <h3 data-i18n="log1_title">The Origin</h3>
+                    <p data-i18n="log1_text">My journey began...</p>
+                </div>
+                <div class="card fade-up delay-1">
+                    <h3 data-i18n="log2_title">Crisis & Detour</h3>
+                    <p data-i18n="log2_text">The 2011 financial crisis...</p>
+                </div>
+                <div class="card fade-up delay-2" style="border-left: 3px solid var(--primary);">
+                    <h3 data-i18n="log3_title">The Turning Point</h3>
+                    <p data-i18n="log3_text">The breaking point...</p>
                 </div>
                 <div class="card fade-up delay-2">
-                    <h3 data-i18n="log5_title">Cyber Pivot</h3>
-                    <p data-i18n="log5_text">...</p>
+                    <h3 data-i18n="log4_title">The Return</h3>
+                    <p data-i18n="log4_text">I returned to Lusófona...</p>
+                </div>
+                <div class="card fade-up delay-3">
+                    <h3 data-i18n="log5_title">The Cyber Pivot</h3>
+                    <p data-i18n="log5_text">During my Post-Grad...</p>
                 </div>
             </div>
         </div>

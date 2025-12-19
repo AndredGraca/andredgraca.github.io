@@ -12,12 +12,13 @@
         <div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div>
     </div>
 
-    <nav>
+    <nav id="navbar">
         <div class="logo">AG.</div>
         <ul class="nav-links">
             <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
             <li><a href="../profile/index.html" data-i18n="nav_profile">Profile</a></li>
             <li><a href="../skills/index.html" data-i18n="nav_skills">Skills</a></li>
+            <li><a href="../tools/index.html" data-i18n="nav_tools">Tools</a></li>
             <li><a href="../certifications/index.html" data-i18n="nav_certs">Certs</a></li>
         </ul>
         <button class="lang-btn" id="lang-toggle" data-i18n="btn_lang">PT</button>
@@ -25,19 +26,142 @@
 
     <div class="container">
         <div class="section-header">
-            <div class="section-tag">ARSENAL</div>
-            <h2 data-i18n="nav_tools">Security Stack</h2>
+            <div class="section-tag" data-i18n="tools_tag">ARSENAL</div>
+            <h2 data-i18n="tools_title">Security Stack</h2>
         </div>
 
         <div class="cards-grid">
             <div class="card fade-up">
                 <h3 data-i18n="c1_title">Defense</h3>
                 <div class="tool-icon-grid">
-                    <img src="../images/arcsight.png" class="mini-tool-img">
-                    <img src="../images/Sentinel.png" class="mini-tool-img">
+                    <img src="../images/arcsight.png" title="ArcSight" class="mini-tool-img">
+                    <img src="../images/Sentinel.png" title="Sentinel" class="mini-tool-img">
+                    <img src="../images/Securonix.png" title="Securonix" class="mini-tool-img">
+                    <img src="../images/elasticsearch.png" title="Elasticsearch" class="mini-tool-img">
+                    <img src="../images/defender.png" title="Defender" class="mini-tool-img">
+                    <img src="../images/cortex.png" title="Cortex XDR" class="mini-tool-img">
+                    <img src="../images/H-Endpoint-Horizontal-Light-Background.png" title="Harmony EP" class="mini-tool-img">
+                    <img src="../images/checkpontharmonybrowse.png" title="Harmony Browse" class="mini-tool-img">
                 </div>
             </div>
+
+            <div class="card fade-up">
+                <h3 data-i18n="c2_title">Engineering</h3>
+                <div class="tool-icon-grid">
+                    <img src="../images/n8n.png" title="n8n" class="mini-tool-img">
+                    <img src="../images/jira.png" title="Jira" class="mini-tool-img">
+                </div>
             </div>
+
+            <div class="card fade-up">
+                <h3 data-i18n="c3_title">Security Assessment</h3>
+                <div class="tool-icon-grid">
+                    <img src="../images/fortify.png" title="Fortify" class="mini-tool-img">
+                    <img src="../images/webinspect.png" title="WebInspect" class="mini-tool-img">
+                    <img src="../images/SCA.png" title="SCA" class="mini-tool-img">
+                    <img src="../images/owasp.png" title="OWASP" class="mini-tool-img">
+                    <img src="../images/Mitre.png" title="MITRE ATT&CK" class="mini-tool-img">
+                </div>
+            </div>
+
+            <div class="card fade-up">
+                <h3 data-i18n="c4_title">Vuln Management</h3>
+                <div class="tool-icon-grid">
+                    <img src="../images/tenablevm.png" title="Tenable VM" class="mini-tool-img">
+                    <img src="../images/nessus.png" title="Nessus" class="mini-tool-img">
+                </div>
+            </div>
+
+            <div class="card fade-up">
+                <h3 data-i18n="c5_title">Network Security</h3>
+                <div class="tool-icon-grid">
+                    <img src="../images/paloalto.png" title="Palo Alto" class="mini-tool-img">
+                    <img src="../images/checkpoint.png" title="Check Point" class="mini-tool-img">
+                    <img src="../images/darktrace.png" title="Darktrace" class="mini-tool-img">
+                </div>
+            </div>
+
+            <div class="card fade-up">
+                <h3 data-i18n="c6_title">Cloud Security</h3>
+                <div class="tool-icon-grid">
+                    <img src="../images/defender.png" title="Defender" class="mini-tool-img">
+                    <img src="../images/entraid.png" title="Entra ID" class="mini-tool-img">
+                </div>
+            </div>
+
+            <div class="card fade-up">
+                <h3 data-i18n="c7_title">Compliance</h3>
+                <div class="tool-icon-grid">
+                    <img src="../images/tenablevm.png" title="Tenable" class="mini-tool-img">
+                    <img src="../images/nessus.png" title="Nessus" class="mini-tool-img">
+                </div>
+            </div>
+
+            <div class="card fade-up">
+                <h3 data-i18n="c8_title">Software</h3>
+                <div class="tool-icon-grid">
+                    <img src="../images/arcsight.png" title="ArcSight" class="mini-tool-img">
+                    <img src="../images/cortex.png" title="Cortex" class="mini-tool-img">
+                    <img src="../images/Sentinel.png" title="Sentinel" class="mini-tool-img">
+                    <img src="../images/fortify.png" title="Fortify" class="mini-tool-img">
+                </div>
+            </div>
+
+            <div class="card fade-up">
+                <h3 data-i18n="c9_title">Programming</h3>
+                <div class="tool-icon-grid">
+                    <img src="../images/python.png" title="Python" class="mini-tool-img">
+                    <img src="../images/bashscript.png" title="Bash" class="mini-tool-img">
+                    <img src="../images/powershell.png" title="Powershell" class="mini-tool-img">
+                    <img src="../images/java.png" title="Java" class="mini-tool-img">
+                    <img src="../images/javascript.png" title="Javascript" class="mini-tool-img">
+                </div>
+            </div>
+
+            <div class="card fade-up">
+                <h3 data-i18n="c10_title">IAM</h3>
+                <div class="tool-icon-grid">
+                    <img src="../images/secretserver.png" title="Secret Server" class="mini-tool-img">
+                </div>
+            </div>
+
+            <div class="card fade-up">
+                <h3 data-i18n="c11_title">Reporting</h3>
+                <div class="tool-icon-grid">
+                    <img src="../images/jira.png" title="Jira" class="mini-tool-img">
+                </div>
+            </div>
+
+            <div class="card fade-up">
+                <h3 data-i18n="c12_title">Asset Management</h3>
+                <div class="tool-icon-grid">
+                    <img src="../images/Lansweeper.png" title="Lansweeper" class="mini-tool-img">
+                    <img src="../images/intune.png" title="Intune" class="mini-tool-img">
+                </div>
+            </div>
+
+            <div class="card fade-up">
+                <h3 data-i18n="c13_title">Threat Intelligence</h3>
+                <div class="tool-icon-grid">
+                    <img src="../images/misp.png" title="MISP" class="mini-tool-img">
+                </div>
+            </div>
+
+            <div class="card fade-up">
+                <h3 data-i18n="c14_title">Threat Hunting</h3>
+                <div class="tool-icon-grid">
+                    <img src="../images/darktrace.png" title="Darktrace" class="mini-tool-img">
+                    <img src="../images/cortex.png" title="Cortex" class="mini-tool-img">
+                </div>
+            </div>
+
+            <div class="card fade-up">
+                <h3 data-i18n="c15_title">Digital Forensics</h3>
+                <div class="tool-icon-grid">
+                    <img src="../images/cortex.png" title="Cortex Forensics" class="mini-tool-img">
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
