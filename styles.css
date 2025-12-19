@@ -260,33 +260,37 @@ nav a:hover { color: var(--primary-cyan); }
 .log-text { color: var(--text-muted); font-size: 1rem; line-height: 1.7; }
 
 /* =========================================
-   TOOLS PAGE STYLES (UPDATED)
+   TOOLS PAGE STYLES (UPDATED FOR VISIBILITY)
    ========================================= */
 
-/* Mini-grid for icons inside the main cards */
+/* Main container for icons */
 .tool-icon-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 15px;
+    gap: 15px;
+    margin-top: 20px;
     width: 100%;
+    justify-content: center; /* Center icons in the card */
 }
 
+/* Individual Icon Style - BIGGER NOW */
 .mini-tool-img {
-    width: 45px;
-    height: 45px;
+    height: 70px;          /* Increased height */
+    width: auto;           /* Maintain aspect ratio */
+    max-width: 100px;      /* Prevent extremely wide logos */
     object-fit: contain;
-    background: rgba(255,255,255,0.03);
-    padding: 6px;
-    border-radius: 6px;
+    background: rgba(255,255,255,0.05);
+    padding: 10px;
+    border-radius: 8px;
     border: 1px solid #333;
     transition: all 0.3s ease;
 }
 
 .mini-tool-img:hover {
     border-color: var(--primary-cyan);
-    transform: scale(1.1);
-    background: rgba(255,255,255,0.08);
+    transform: scale(1.15);
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
     z-index: 10;
 }
 

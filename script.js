@@ -11,39 +11,41 @@ const translations = {
         hero_title: "ANDRÉ GRAÇA",
         hero_desc: "Portfólio e Biografia",
 
-        // TOOLS
+        // TOOLS TITLE
         tools_title: "Arsenal Tecnológico",
 
-        // CARDS (Used in both Index & Tools)
+        // CARDS (15 Items)
         c1_title: "Defesa (SecOps)",
-        c1_desc: "Liderança de equipas L1, redução do MTTR em 15% e otimização de deteção em plataformas SIEM/XDR.",
         c2_title: "Engenharia",
-        c2_desc: "Arquitetura e implementação de playbooks SOAR (Thycotic) e integração via API para automação.",
         c3_title: "Security Assessment",
-        c3_desc: "Avaliações OWASP e testes para identificar caminhos de ataque (Red Team) e falhas em aplicações.",
         c4_title: "Vulnerability Management",
-        c4_desc: "Programa proativo com Tenable.io e Landsweeper; remediação de +500 vulnerabilidades críticas.",
         c5_title: "Network Security",
-        c5_desc: "Implementação de Darktrace e gestão de segurança de perímetro com Palo Alto.",
         c6_title: "Cloud Security",
-        c6_desc: "Onboarding de 2000+ endpoints (Defender/Intune) e redução de incidentes de malware em 40%.",
         c7_title: "Compliance",
-        c7_desc: "Auditorias técnicas e evidências para PCI DSS, NIS2, GDPR e certificação ISO27001.",
         c8_title: "Software",
-        c8_desc: "Gestão e integração de soluções complexas: ArcSight, Cortex XDR, Sentinel, Fortify e Sealpath.",
         c9_title: "Programming",
-        c9_desc: "Automação com Python e desenvolvimento Full-Stack para ferramentas de segurança personalizadas.",
         c10_title: "IAM",
-        c10_desc: "Aplicação de políticas unificadas de identidade e acesso no ecossistema Microsoft Security.",
         c11_title: "Reporting",
-        c11_desc: "Relatórios detalhados com orientações prescritivas (Blue Team) e documentação de ataque.",
         c12_title: "Asset Management",
-        c12_desc: "Visibilidade total e inventário de ativos críticos utilizando Landsweeper e Tenable.",
         c13_title: "Threat Intelligence (CTI)",
-        c13_desc: "Recolha estratégica de informação para antecipar TTPs e fortalecer defesas proativamente.",
         c14_title: "Threat Hunting",
-        c14_desc: "Investigação proativa de ameaças sofisticadas não detetadas por alertas padrão.",
         c15_title: "Digital Forensics",
+
+        // DESCRIPTIONS FOR INDEX
+        c1_desc: "Liderança de equipas L1, redução do MTTR em 15% e otimização de deteção em plataformas SIEM/XDR.",
+        c2_desc: "Arquitetura e implementação de playbooks SOAR (Thycotic) e integração via API para automação.",
+        c3_desc: "Avaliações OWASP e testes para identificar caminhos de ataque (Red Team) e falhas em aplicações.",
+        c4_desc: "Programa proativo com Tenable.io e Landsweeper; remediação de +500 vulnerabilidades críticas.",
+        c5_desc: "Implementação de Darktrace e gestão de segurança de perímetro com Palo Alto.",
+        c6_desc: "Onboarding de 2000+ endpoints (Defender/Intune) e redução de incidentes de malware em 40%.",
+        c7_desc: "Auditorias técnicas e evidências para PCI DSS, NIS2, GDPR e certificação ISO27001.",
+        c8_desc: "Gestão e integração de soluções complexas: ArcSight, Cortex XDR, Sentinel, Fortify e Sealpath.",
+        c9_desc: "Automação com Python e desenvolvimento Full-Stack para ferramentas de segurança personalizadas.",
+        c10_desc: "Aplicação de políticas unificadas de identidade e acesso no ecossistema Microsoft Security.",
+        c11_desc: "Relatórios detalhados com orientações prescritivas (Blue Team) e documentação de ataque.",
+        c12_desc: "Visibilidade total e inventário de ativos críticos utilizando Landsweeper e Tenable.",
+        c13_desc: "Recolha estratégica de informação para antecipar TTPs e fortalecer defesas proativamente.",
+        c14_desc: "Investigação proativa de ameaças sofisticadas não detetadas por alertas padrão.",
         c15_desc: "Análise forense para determinação de causa raiz e reconstrução de incidentes complexos.",
 
         // PROFILE / LOGS
@@ -77,7 +79,7 @@ const translations = {
         hero_title: "ANDRÉ GRAÇA",
         hero_desc: "Portfolio & Bio",
 
-        // TOOLS
+        // TOOLS TITLE
         tools_title: "Tech Arsenal",
 
         // CARDS
