@@ -2,15 +2,17 @@ const translations = {
     pt: {
         nav_home: "Início", nav_profile: "Perfil", nav_skills: "Competências", nav_tools: "Ferramentas", btn_lang: "EN",
         hero_badge: "ENGENHEIRO DE CIBERSEGURANÇA", hero_title: "ANDRÉ GRAÇA", hero_desc: "Portfólio e Biografia",
-
-        // Títulos das Caixas (Index e Tools)
+        
+        // Titles (Used in Home & Tools)
         c1_title: "Defense (SecOps)", c2_title: "Engineering", c3_title: "Security Assessment",
         c4_title: "Vulnerability Management", c5_title: "Network Security", c6_title: "Cloud Security",
         c7_title: "Compliance", c8_title: "Software", c9_title: "Programming", c10_title: "IAM",
         c11_title: "Reporting", c12_title: "Asset Management", c13_title: "Threat Intelligence (CTI)",
         c14_title: "Threat Hunting", c15_title: "Digital Forensics",
+        
+        tools_title: "Arsenal Tecnológico",
 
-        // Descrições (Apenas para o Index)
+        // Descriptions (For Home Page)
         c1_desc: "Monitorização e resposta a incidentes (SIEM/XDR).",
         c2_desc: "Automação SOAR e scripts de segurança.",
         c3_desc: "Avaliações OWASP e DAST/SAST.",
@@ -27,7 +29,7 @@ const translations = {
         c14_desc: "Investigação proativa de ameaças.",
         c15_desc: "Análise forense e causa raiz.",
 
-        // Perfil
+        // Profile
         edu_title: "Formação Académica",
         edu_1: "Pós-Graduação: Cloud e Virtualização (ISTEC)",
         edu_2: "Licenciatura: Eng. Informática (Lusófona)",
@@ -43,6 +45,8 @@ const translations = {
     en: {
         nav_home: "Home", nav_profile: "Profile", nav_skills: "Skills", nav_tools: "Tools", btn_lang: "PT",
         hero_badge: "CYBERSECURITY ENGINEER", hero_title: "ANDRÉ GRAÇA", hero_desc: "Portfolio & Bio",
+        
+        tools_title: "Tech Arsenal",
 
         c1_title: "Defense (SecOps)", c2_title: "Engineering", c3_title: "Security Assessment",
         c4_title: "Vulnerability Management", c5_title: "Network Security", c6_title: "Cloud Security",
