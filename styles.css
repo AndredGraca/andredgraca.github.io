@@ -14,7 +14,7 @@
 
 body {
     background-color: var(--bg-dark);
-    /* Padrão de Grelha Subtil */
+    /* Subtle Grid Background */
     background-image: 
         linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
@@ -69,12 +69,12 @@ nav a:hover { color: var(--primary-cyan); }
 .container {
     max-width: 1600px;
     margin: 0 auto;
-    /* Padding alto para garantir que o conteúdo não fica atrás da Nav */
-    padding: 240px 20px 40px; 
+    /* Balanced padding to clear Nav but not break Profile */
+    padding: 140px 20px 40px; 
 }
 
 /* =========================================
-   HERO SECTION
+   HERO SECTION (Common)
    ========================================= */
 .hero {
     display: flex;
@@ -118,8 +118,8 @@ nav a:hover { color: var(--primary-cyan); }
    ========================================= */
 .grid-container {
     display: grid;
-    /* Ajusta automaticamente as colunas, mínimo de 300px */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* Responsive grid: min 280px to fit well on PC */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 25px;
     padding-bottom: 60px;
 }
@@ -127,7 +127,7 @@ nav a:hover { color: var(--primary-cyan); }
 .card {
     background: var(--card-surface);
     border: 1px solid var(--card-border);
-    padding: 30px;
+    padding: 25px;
     position: relative;
     transition: transform 0.3s ease, border-color 0.3s ease;
     display: flex;
@@ -156,7 +156,7 @@ nav a:hover { color: var(--primary-cyan); }
 }
 
 /* =========================================
-   TOOL ICONS (Specific for Tools Page)
+   TOOL ICONS (High Visibility Fix)
    ========================================= */
 .tool-icon-grid {
     display: flex;
@@ -166,32 +166,35 @@ nav a:hover { color: var(--primary-cyan); }
 }
 
 .mini-tool-img {
-    height: 60px;          /* Tamanho maior para visibilidade */
+    height: 55px;          /* Good size for icons */
     width: auto;
-    max-width: 100px;
+    max-width: 120px;
     object-fit: contain;
-    background: #1a1a1a;   /* Fundo escuro para contraste */
-    padding: 8px;
-    border-radius: 6px;
-    border: 1px solid #333;
+    /* White background with opacity ensures dark logos are visible */
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #444;
     transition: all 0.3s ease;
 }
 
 .mini-tool-img:hover {
-    border-color: var(--primary-cyan);
     transform: scale(1.15);
-    background: #252525;
+    background: #fff;
+    border-color: var(--primary-cyan);
     z-index: 10;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
 }
 
 /* =========================================
-   PROFILE PAGE STYLES
+   PROFILE PAGE STYLES (Restored)
    ========================================= */
 .profile-wrapper {
     display: grid;
     grid-template-columns: 350px 1fr;
     gap: 50px;
     align-items: start;
+    /* Removed extra margin that was pushing it too far down */
 }
 
 .profile-sidebar {
@@ -265,7 +268,11 @@ footer {
 footer a { color: var(--primary-cyan); text-decoration: none; }
 
 /* Responsive Adjustments */
-@media (max-width: 900px) {
-    .profile-wrapper { grid-template-columns: 1fr; }
-    .grid-container { grid-template-columns: 1fr; }
+@media (min-width: 1400px) { .grid-container { grid-template-columns: repeat(5, 1fr); } }
+@media (max-width: 1399px) { .grid-container { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 992px) { 
+    .grid-container { grid-template-columns: repeat(3, 1fr); } 
+    .profile-wrapper { grid-template-columns: 1fr; } 
 }
+@media (max-width: 768px) { .grid-container { grid-template-columns: repeat(2, 1fr); } .hero h1 { font-size: 2.5rem; } }
+@media (max-width: 500px) { .grid-container { grid-template-columns: 1fr; } }
