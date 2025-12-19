@@ -69,12 +69,12 @@ nav a:hover { color: var(--primary-cyan); }
 .container {
     max-width: 1600px;
     margin: 0 auto;
-    /* Fixed padding so header is never hidden */
-    padding: 240px 20px 60px; 
+    /* Balanced padding to clear Nav but not break Profile */
+    padding: 140px 20px 40px; 
 }
 
 /* =========================================
-   HERO SECTION
+   HERO SECTION (Common)
    ========================================= */
 .hero {
     display: flex;
@@ -114,12 +114,12 @@ nav a:hover { color: var(--primary-cyan); }
 }
 
 /* =========================================
-   GRID & CARDS
+   GRID & CARDS (Home & Tools)
    ========================================= */
 .grid-container {
     display: grid;
-    /* Responsive Grid */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* Responsive grid: min 280px to fit well on PC */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 25px;
     padding-bottom: 60px;
 }
@@ -127,7 +127,7 @@ nav a:hover { color: var(--primary-cyan); }
 .card {
     background: var(--card-surface);
     border: 1px solid var(--card-border);
-    padding: 30px;
+    padding: 25px;
     position: relative;
     transition: transform 0.3s ease, border-color 0.3s ease;
     display: flex;
@@ -141,7 +141,7 @@ nav a:hover { color: var(--primary-cyan); }
 }
 
 .card h3 { 
-    margin: 0 0 20px 0; 
+    margin: 0 0 15px 0; 
     color: #fff; 
     font-size: 1.2rem; 
     line-height: 1.3;
@@ -149,67 +149,52 @@ nav a:hover { color: var(--primary-cyan); }
     padding-bottom: 10px;
 }
 
-/* List Styling inside Cards (For Skills) */
-.card ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.card li {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    margin-bottom: 8px;
-    padding-left: 15px;
-    position: relative;
-}
-
-.card li::before {
-    content: "›";
-    color: var(--primary-cyan);
-    position: absolute;
-    left: 0;
-    font-weight: bold;
+.card p { 
+    color: var(--text-muted); 
+    margin: 0; 
+    font-size: 0.9rem; 
 }
 
 /* =========================================
-   TOOL ICONS (Tools Page)
+   TOOL ICONS (High Visibility Fix)
    ========================================= */
 .tool-icon-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 15px;
-    justify-content: flex-start;
 }
 
 .mini-tool-img {
-    height: 80px;
+    height: 55px;          /* Good size for icons */
     width: auto;
-    max-width: 140px;
+    max-width: 120px;
     object-fit: contain;
-    background: #ffffff;
-    padding: 10px;
-    border-radius: 8px;
+    /* White background with opacity ensures dark logos are visible */
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 5px;
+    border-radius: 4px;
     border: 1px solid #444;
     transition: all 0.3s ease;
 }
 
 .mini-tool-img:hover {
+    transform: scale(1.15);
+    background: #fff;
     border-color: var(--primary-cyan);
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
     z-index: 10;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
 }
 
 /* =========================================
-   PROFILE PAGE STYLES
+   PROFILE PAGE STYLES (Restored)
    ========================================= */
 .profile-wrapper {
     display: grid;
     grid-template-columns: 350px 1fr;
     gap: 50px;
     align-items: start;
+    /* Removed extra margin that was pushing it too far down */
 }
 
 .profile-sidebar {
