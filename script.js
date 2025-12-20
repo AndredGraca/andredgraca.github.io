@@ -1,6 +1,5 @@
 const translations = {
     pt: {
-        // NAV
         nav_home: "Início",
         nav_impact: "Impacto",
         nav_expertise: "Especialidade",
@@ -10,53 +9,36 @@ const translations = {
         nav_contact: "Contato",
         nav_certs: "Certificações",
         btn_lang: "EN",
-        
-        // HERO SECTION
         hero_badge: "ENGENHEIRO DE CIBERSEGURANÇA",
         hero_title: "André Graça", 
         hero_subtitle: "Construindo Defesas Digitais Resilientes",
         hero_desc: "Especializado em SecOps, inteligência de ameaças e engenharia de segurança. Protegendo organizações através de estratégias de defesa proativas e soluções de segurança de ponta.",
         btn_explore: "Explorar Trabalho",
         btn_contact: "Entrar em Contato",
-
-        // STATS
         stat_vuln_label: "Vulnerabilidades Resolvidas",
         stat_malware_label: "Redução de Malware",
         stat_endpoints_label: "Endpoints Seguros",
         stat_mttr_label: "Melhoria no MTTR",
-
-        // TITULOS GERAIS
         expert_tag: "COMPETÊNCIAS PRINCIPAIS",
         expert_title: "Expertise em Segurança",
         expert_desc: "Capacidades abrangentes de cibersegurança em defesa, engenharia e inteligência de ameaças.",
-        
         skills_badge: "EXPERTISE TÉCNICA",
         skills_title: "Competências e Capacidades",
         skills_desc: "Detalhamento técnico das áreas de atuação e impacto profissional.",
-
         tools_tag: "ARSENAL",
         tools_title: "Stack de Segurança",
-
-        // --- EXPERTISE CARDS (MAIN PAGE - EXPANDIDO PELO CV) ---
         card_secops_title: "Operações de Segurança",
         card_secops_desc: "Liderança de equipas L1 e otimização de deteção em SIEM/XDR (ArcSight, Sentinel), reduzindo falsos positivos em 30%.",
-
         card_eng_title: "Engenharia & Automação",
         card_eng_desc: "Arquitetura de playbooks SOAR (Thycotic) e integrações API, poupando +15 horas de trabalho manual semanal.",
-
         card_intel_title: "Inteligência de Ameaças",
         card_intel_desc: "Recolha estratégica para antecipar TTPs e fortalecer defesas proativamente contra ameaças globais.",
-
         card_vuln_title: "Gestão de Vulnerabilidades",
         card_vuln_desc: "Programa proativo com Tenable.io e Landsweeper, remediando +500 vulnerabilidades críticas.",
-
         card_cloud_title: "Segurança Cloud & Endpoint",
         card_cloud_desc: "Onboarding de 2000+ endpoints (Defender/Intune) e redução de 40% em incidentes de malware.",
-
         card_grc_title: "Compliance & GRC",
         card_grc_desc: "Auditorias e evidências técnicas para conformidade com normas críticas como PCI DSS, NIS2 e GDPR.",
-
-        // SKILLS & TOOLS CARDS (PÁGINAS DEDICADAS)
         c1_title: "Defesa (SecOps)",
         c1_desc: "Liderança de equipas L1, redução do MTTR em 15% e otimização de deteção em plataformas SIEM/XDR.",
         c2_title: "Engenharia",
@@ -87,8 +69,6 @@ const translations = {
         c14_desc: "Investigação proativa de ameaças sofisticadas não detetadas por alertas padrão.",
         c15_title: "Digital Forensics",
         c15_desc: "Análise forense para determinação de causa raiz e reconstrução de incidentes complexos.",
-
-        // PROFILE
         profile_tag: "PERFIL",
         edu_title: "Formação Académica",
         edu_1: "Pós-Graduação: Cloud e Virtualização (ISTEC)",
@@ -107,7 +87,6 @@ const translations = {
         footer_text: "Teams ou Email:"
     },
     en: {
-        // NAV
         nav_home: "Home",
         nav_impact: "Impact",
         nav_expertise: "Expertise",
@@ -117,53 +96,36 @@ const translations = {
         nav_contact: "Contact",
         nav_certs: "Certs",
         btn_lang: "PT",
-        
-        // HERO SECTION
         hero_badge: "CYBERSECURITY ENGINEER",
         hero_title: "André Graça",
         hero_subtitle: "Building Resilient Digital Defenses",
         hero_desc: "Specialized in SecOps, threat intelligence, and security engineering. Protecting organizations through proactive defense strategies and cutting-edge security solutions.",
         btn_explore: "Explore Work",
         btn_contact: "Get In Touch",
-
-        // STATS
         stat_vuln_label: "Vulnerabilities Resolved",
         stat_malware_label: "Malware Reduction",
         stat_endpoints_label: "Endpoints Secured",
         stat_mttr_label: "MTTR Improvement",
-
-        // HEADERS
         expert_tag: "CORE COMPETENCIES",
         expert_title: "Security Expertise",
         expert_desc: "Comprehensive cybersecurity capabilities across defense, engineering, and threat intelligence.",
-        
         skills_badge: "TECHNICAL EXPERTISE",
         skills_title: "Skills & Capabilities",
         skills_desc: "Detailed technical breakdown of operational areas and professional impact.",
-
         tools_tag: "ARSENAL",
         tools_title: "Security Stack",
-
-        // --- EXPERTISE CARDS (MAIN PAGE - EXPANDED) ---
         card_secops_title: "Security Operations",
         card_secops_desc: "Leading L1 teams and optimizing detection on SIEM/XDR platforms (ArcSight, Sentinel), reducing false positives by 30%.",
-
         card_eng_title: "Engineering & Automation",
         card_eng_desc: "Architecting SOAR playbooks (Thycotic) and API integrations, saving 15+ hours of manual work weekly.",
-
         card_intel_title: "Threat Intelligence",
         card_intel_desc: "Strategic gathering to anticipate TTPs and proactively strengthen defenses against global threats.",
-
         card_vuln_title: "Vulnerability Management",
         card_vuln_desc: "Proactive program using Tenable.io and Landsweeper, remediating 500+ critical vulnerabilities.",
-
         card_cloud_title: "Cloud & Endpoint Security",
         card_cloud_desc: "Onboarding 2000+ endpoints (Defender/Intune) and reducing malware incidents by 40%.",
-
         card_grc_title: "Compliance & GRC",
         card_grc_desc: "Technical audits and evidence for compliance with critical frameworks like PCI DSS, NIS2, and GDPR.",
-
-        // SKILLS & TOOLS CARDS (DEDICATED PAGES)
         c1_title: "Defense (SecOps)",
         c1_desc: "Leading L1 teams with 15% MTTR reduction and optimizing detection across SIEM/XDR platforms including ArcSight, Cortex XDR, and Sentinel.",
         c2_title: "Security Engineering",
@@ -194,8 +156,6 @@ const translations = {
         c14_desc: "Proactive investigation of sophisticated threats undetected by standard alerts.",
         c15_title: "Digital Forensics",
         c15_desc: "Forensic analysis for root cause determination and reconstruction of complex incidents.",
-
-        // PROFILE
         profile_tag: "PROFILE",
         edu_title: "Education",
         edu_1: "Post-Grad: Cloud & Virtualization (ISTEC)",
@@ -263,6 +223,27 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 nav.classList.remove('scrolled');
             }
+        });
+    }
+
+    // --- LÓGICA DO MENU MOBILE ---
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (hamburger && navLinks) {
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('toggle');
+        });
+
+        // Fechar o menu ao clicar num link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    hamburger.classList.remove('toggle');
+                }
+            });
         });
     }
 });
