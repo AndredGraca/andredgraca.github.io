@@ -1,4 +1,4 @@
-/* --- VARIÁVEIS GLOBAIS --- */
+/* --- GLOBAL VARIABLES --- */
 :root {
     --primary: #00f0ff;
     --secondary: #7b2ff7;
@@ -21,7 +21,7 @@ body {
     scroll-behavior: smooth;
 }
 
-/* --- ANIMAÇÃO DE FUNDO --- */
+/* --- BACKGROUND ANIMATION --- */
 .bg-animation { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.4; pointer-events: none; }
 .grid-bg {
     position: absolute; width: 100%; height: 100%;
@@ -36,13 +36,13 @@ body {
 .orb3 { width: 600px; height: 600px; background: radial-gradient(circle, var(--accent), transparent); bottom: -15%; left: 40%; animation-delay: -10s; }
 @keyframes float { 0%, 100% { transform: translate(0, 0) scale(1); } 25% { transform: translate(50px, -50px) scale(1.1); } 50% { transform: translate(-30px, 30px) scale(0.9); } 75% { transform: translate(30px, 50px) scale(1.05); } }
 
-/* --- NAVEGAÇÃO --- */
+/* --- NAVIGATION --- */
 nav {
-    position: fixed; top: 0; width: 100%; background: rgba(10, 10, 10, 0.8);
+    position: fixed; top: 0; width: 100%; background: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(20px); border-bottom: 1px solid rgba(0, 240, 255, 0.2);
     padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; transition: all 0.3s;
 }
-nav.scrolled { padding: 0.7rem 5%; background: rgba(10, 10, 10, 0.95); }
+nav.scrolled { padding: 0.7rem 5%; background: rgba(10, 10, 10, 0.98); }
 
 .logo {
     font-size: 1.8rem; font-weight: 700; background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -50,7 +50,6 @@ nav.scrolled { padding: 0.7rem 5%; background: rgba(10, 10, 10, 0.95); }
     text-decoration: none;
 }
 
-/* Links Desktop */
 .nav-links { display: flex; gap: 2rem; list-style: none; }
 .nav-links a { color: var(--text); text-decoration: none; font-weight: 500; transition: color 0.3s; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
 .nav-links a:hover { color: var(--primary); }
@@ -58,41 +57,30 @@ nav.scrolled { padding: 0.7rem 5%; background: rgba(10, 10, 10, 0.95); }
 .lang-btn {
     background: linear-gradient(135deg, var(--primary), var(--secondary)); border: none; color: white;
     padding: 0.5rem 1.5rem; border-radius: 25px; cursor: pointer; font-weight: 600; transition: all 0.3s;
-    z-index: 1002; 
+    z-index: 1002;
 }
 
-/* --- HAMBURGER MENU (MOBILE) --- */
+/* --- HAMBURGER MENU --- */
 .hamburger {
-    display: none; /* Escondido em PC */
+    display: none;
     cursor: pointer;
-    z-index: 1003; /* Acima de tudo */
-    padding: 10px; /* Área de toque maior */
+    z-index: 1003;
+    padding: 10px;
 }
-
 .hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background: var(--primary);
-    margin: 5px 0;
-    transition: all 0.3s ease;
-    border-radius: 2px;
+    display: block; width: 25px; height: 3px; background: var(--primary); margin: 5px 0; transition: all 0.3s ease; border-radius: 2px;
 }
-
-/* Animação do X */
 .hamburger.toggle span:nth-child(1) { transform: rotate(-45deg) translate(-5px, 6px); }
 .hamburger.toggle span:nth-child(2) { opacity: 0; }
 .hamburger.toggle span:nth-child(3) { transform: rotate(45deg) translate(-5px, -6px); }
 
-/* --- GERAL --- */
-.hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 5%; position: relative; z-index: 1; }
+/* --- CONTAINERS & HEADERS --- */
 .container { max-width: 1400px; margin: 0 auto; padding: 120px 5% 50px; position: relative; z-index: 1; }
-
 .section-header { text-align: center; margin-bottom: 4rem; }
 .section-tag { display: inline-block; padding: 0.5rem 1.5rem; background: rgba(0, 240, 255, 0.1); border: 1px solid var(--primary); border-radius: 20px; color: var(--primary); font-size: 0.75rem; letter-spacing: 2px; margin-bottom: 1rem; }
 .section-header h2 { font-size: 3rem; margin-bottom: 1rem; background: linear-gradient(135deg, #fff, var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-/* --- CARDS --- */
+/* --- CARDS GRID --- */
 .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
 .card {
     background: rgba(26, 26, 26, 0.6); backdrop-filter: blur(20px); border: 1px solid rgba(0, 240, 255, 0.1);
@@ -106,58 +94,29 @@ nav.scrolled { padding: 0.7rem 5%; background: rgba(10, 10, 10, 0.95); }
 .card h3 { color: #fff; margin-bottom: 1rem; font-size: 1.25rem; }
 .card p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; }
 
-/* --- ELEMENTOS DIVERSOS --- */
-.btn-primary { display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; border-radius: 30px; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; text-decoration: none; font-weight: 600; }
-.cta-buttons { display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap; }
-.btn-secondary { padding: 1rem 2rem; border-radius: 30px; border: 1px solid rgba(255,255,255,0.2); color: white; text-decoration: none; }
-.hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1.5rem; border: 1px solid var(--primary); border-radius: 20px; color: var(--primary); font-size: 0.8rem; margin-bottom: 1.5rem; background: rgba(0,240,255,0.05); }
-.status-dot { width: 8px; height: 8px; background: var(--primary); border-radius: 50%; }
-.hero h1 { font-size: clamp(3rem, 8vw, 6rem); font-weight: 900; background: linear-gradient(135deg, #fff, var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; }
-.hero-subtitle { font-size: 1.5rem; color: var(--text-muted); margin-bottom: 1.5rem; }
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; max-width: 1200px; margin: 4rem auto; width: 100%; padding: 0 5%; }
-.stat-card { background: rgba(26,26,26,0.6); padding: 2rem; border-radius: 20px; border: 1px solid rgba(0,240,255,0.2); text-align: center; }
-.stat-number { font-size: 2.5rem; font-weight: bold; color: var(--primary); }
-.fade-up { opacity: 0; transform: translateY(30px); animation: fadeInUp 0.8s forwards; }
-.delay-1 { animation-delay: 0.1s; } .delay-2 { animation-delay: 0.2s; } .delay-3 { animation-delay: 0.3s; }
-@keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
-footer { text-align: center; padding: 4rem 5%; border-top: 1px solid rgba(0, 240, 255, 0.1); color: var(--text-muted); margin-top: auto; }
-footer a { color: var(--primary); text-decoration: none; }
+/* --- TOOLS SPECIFIC --- */
 .tool-icon-grid { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 1rem; }
 .mini-tool-img { height: 40px; background: #222; padding: 8px; border-radius: 8px; border: 1px solid #333; object-fit: contain; }
 
-/* --- MEDIA QUERY PARA MOBILE --- */
+/* --- ANIMATIONS --- */
+.fade-up { opacity: 0; transform: translateY(30px); animation: fadeInUp 0.8s forwards; }
+.delay-1 { animation-delay: 0.1s; } .delay-2 { animation-delay: 0.2s; } .delay-3 { animation-delay: 0.3s; } .delay-4 { animation-delay: 0.4s; }
+@keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+
+/* --- FOOTER --- */
+footer { text-align: center; padding: 4rem 5%; border-top: 1px solid rgba(0, 240, 255, 0.1); color: var(--text-muted); margin-top: auto; }
+footer a { color: var(--primary); text-decoration: none; }
+
+/* --- MOBILE RESPONSIVE --- */
 @media (max-width: 768px) {
     .hamburger { display: block; }
-    
     .nav-links {
-        position: fixed;
-        right: -100%;
-        top: 0;
-        height: 100vh;
-        width: 100%;
-        background-color: rgba(10, 10, 10, 0.98); /* Fundo quase sólido */
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: right 0.4s ease-in-out;
-        z-index: 1001; 
+        position: fixed; right: -100%; top: 0; height: 100vh; width: 100%;
+        background-color: rgba(10, 10, 10, 0.98); flex-direction: column;
+        align-items: center; justify-content: center; transition: right 0.4s ease-in-out; z-index: 1001;
     }
-
-    .nav-links.active {
-        right: 0;
-    }
-
-    .nav-links li {
-        margin: 1.5rem 0;
-        opacity: 0;
-    }
-
-    .nav-links.active li {
-        opacity: 1;
-        transition: opacity 0.5s ease 0.2s;
-    }
-
-    .nav-links a {
-        font-size: 1.5rem;
-    }
+    .nav-links.active { right: 0; }
+    .nav-links li { margin: 1.5rem 0; opacity: 0; }
+    .nav-links.active li { opacity: 1; transition: opacity 0.5s ease 0.2s; }
+    .nav-links a { font-size: 1.5rem; }
 }
