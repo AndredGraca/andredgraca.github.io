@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- LÓGICA DO MENU MOBILE ---
+    // --- MOBILE MENU LOGIC ---
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
 
@@ -236,7 +236,6 @@ document.addEventListener('DOMContentLoaded', () => {
             hamburger.classList.toggle('toggle');
         });
 
-        // Fechar o menu ao clicar num link
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 if (navLinks.classList.contains('active')) {
