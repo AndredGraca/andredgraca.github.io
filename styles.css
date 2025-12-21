@@ -50,7 +50,6 @@ nav.scrolled { padding: 0.7rem 5%; background: rgba(10, 10, 10, 0.98); }
     text-decoration: none; cursor: pointer;
 }
 
-/* Links em Desktop */
 .nav-links { display: flex; gap: 2rem; list-style: none; }
 .nav-links a { color: var(--text); text-decoration: none; font-weight: 500; transition: color 0.3s; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
 .nav-links a:hover { color: var(--primary); }
@@ -61,23 +60,25 @@ nav.scrolled { padding: 0.7rem 5%; background: rgba(10, 10, 10, 0.98); }
     z-index: 1002;
 }
 
-/* --- HAMBURGER MENU (SOLUÇÃO PARA DESKTOP) --- */
-.hamburger {
-    display: none; /* Escondido por defeito (Desktop) */
-    cursor: pointer;
-    z-index: 1003;
-    padding: 10px;
-}
-.hamburger span {
-    display: block; width: 25px; height: 3px; background: var(--primary); margin: 5px 0; transition: all 0.3s ease; border-radius: 2px;
-}
-/* Animação do X */
+/* --- HAMBURGER MENU (ESCONDIDO EM DESKTOP) --- */
+.hamburger { display: none; cursor: pointer; z-index: 1003; padding: 10px; }
+.hamburger span { display: block; width: 25px; height: 3px; background: var(--primary); margin: 5px 0; transition: all 0.3s ease; border-radius: 2px; }
 .hamburger.toggle span:nth-child(1) { transform: rotate(-45deg) translate(-5px, 6px); }
 .hamburger.toggle span:nth-child(2) { opacity: 0; }
 .hamburger.toggle span:nth-child(3) { transform: rotate(45deg) translate(-5px, -6px); }
 
-/* --- HERO TYPOGRAPHY (CORRIGIDO GRADIENTE) --- */
-.hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 5%; position: relative; z-index: 1; }
+/* --- HERO TYPOGRAPHY (POSIÇÃO AJUSTADA) --- */
+.hero { 
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; /* Mudado de center para flex-start */
+    align-items: center; 
+    text-align: center; 
+    padding: 160px 5% 0; /* Padding superior para alinhar com Profile */
+    position: relative; 
+    z-index: 1; 
+}
 
 .hero-badge {
     display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1.8rem;
@@ -90,7 +91,6 @@ nav.scrolled { padding: 0.7rem 5%; background: rgba(10, 10, 10, 0.98); }
     font-size: clamp(3rem, 10vw, 8rem);
     font-weight: 900;
     margin-bottom: 1.5rem;
-    /* Gradiente Restaurado */
     background: linear-gradient(135deg, #fff 0%, var(--primary) 50%, var(--secondary) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -160,22 +160,14 @@ nav.scrolled { padding: 0.7rem 5%; background: rgba(10, 10, 10, 0.98); }
 footer { text-align: center; padding: 4rem 5%; border-top: 1px solid rgba(0, 240, 255, 0.1); color: var(--text-muted); margin-top: auto; }
 footer a { color: var(--primary); text-decoration: none; }
 
-/* --- MOBILE RESPONSIVE (CORREÇÃO DE SOBREPOSIÇÃO) --- */
+/* --- MOBILE RESPONSIVE --- */
 @media (max-width: 768px) {
-    .hamburger { display: block; } /* Mostra X só no telemóvel */
-    
+    .hamburger { display: block; }
     .nav-links {
         position: fixed; right: -100%; top: 0; height: 100vh; width: 100%;
-        background-color: rgba(10, 10, 10, 0.98); 
-        flex-direction: column;
-        align-items: center; 
-        
-        /* CORREÇÃO CRÍTICA: Empurra os links para baixo */
-        justify-content: flex-start; 
-        padding-top: 120px; 
-        
-        transition: right 0.4s ease-in-out; 
-        z-index: 1001;
+        background-color: rgba(10, 10, 10, 0.98); flex-direction: column;
+        align-items: center; justify-content: flex-start; padding-top: 120px;
+        transition: right 0.4s ease-in-out; z-index: 1001;
     }
     .nav-links.active { right: 0; }
     .nav-links li { margin: 1.5rem 0; opacity: 0; }
