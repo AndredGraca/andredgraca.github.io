@@ -14,9 +14,13 @@
 
     <nav id="navbar">
         <a href="../index.html" class="logo">AG.</a>
+
         <div class="hamburger">
-            <span></span><span></span><span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+
         <ul class="nav-links">
             <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
             <li><a href="../profile/index.html" data-i18n="nav_profile">Profile</a></li>
@@ -34,8 +38,9 @@
         </div>
 
         <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+            
             <div class="card fade-up">
-                <img src="../images/profileimg.png" style="width: 100%; border-radius: 15px; margin-bottom: 2rem;">
+                <img src="../images/profileimg.png" style="width: 100%; border-radius: 15px; margin-bottom: 2rem; object-fit: cover;">
                 <h3 data-i18n="edu_title">Education</h3>
                 <ul style="list-style: none; color: var(--text-muted); font-size: 0.9rem; padding: 0;">
                     <li style="margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;" data-i18n="edu_1">Post-Grad: ISTEC</li>
@@ -43,12 +48,39 @@
                     <li data-i18n="edu_3">CET: Lusófona</li>
                 </ul>
             </div>
+
             <div style="grid-column: span 2; display: flex; flex-direction: column; gap: 1.5rem;">
-                <div class="card fade-up delay-1"><h3 data-i18n="log1_title">The Origin</h3><p data-i18n="log1_text">...</p></div>
-                <div class="card fade-up delay-1"><h3 data-i18n="log2_title">Crisis & Detour</h3><p data-i18n="log2_text">...</p></div>
-                <div class="card fade-up delay-2" style="border-left: 3px solid var(--primary);"><h3 data-i18n="log3_title">The Turning Point</h3><p data-i18n="log3_text">...</p></div>
-                <div class="card fade-up delay-2"><h3 data-i18n="log4_title">The Return</h3><p data-i18n="log4_text">...</p></div>
-                <div class="card fade-up delay-3"><h3 data-i18n="log5_title">The Cyber Pivot</h3><p data-i18n="log5_text">...</p></div>
+                
+                <div class="card fade-up delay-1">
+                    <h3 data-i18n="log1_title">The Origin</h3>
+                    <p data-i18n="log1_text">My journey began...</p>
+                </div>
+
+                <div class="card fade-up delay-1">
+                    <h3 data-i18n="log2_title">Crisis & Detour</h3>
+                    <p data-i18n="log2_text">The 2011 financial crisis...</p>
+                </div>
+
+                <div class="card fade-up delay-2" style="border-left: 3px solid var(--primary);">
+                    <h3 data-i18n="log3_title">The Turning Point</h3>
+                    <p data-i18n="log3_text">The breaking point...</p>
+                </div>
+
+                <div class="card fade-up delay-2">
+                    <h3 data-i18n="log4_title">The Return</h3>
+                    <p data-i18n="log4_text">I returned to Lusófona...</p>
+                </div>
+
+                <div class="card fade-up delay-3">
+                    <h3 data-i18n="log5_title">The Cyber Pivot</h3>
+                    <p data-i18n="log5_text">During my Post-Grad...</p>
+                </div>
+
+                <div class="card fade-up delay-3" style="border-left: 3px solid var(--accent);">
+                    <h3 data-i18n="log6_title">Adaptability</h3>
+                    <p data-i18n="log6_text">I believe my best quality...</p>
+                </div>
+
             </div>
         </div>
     </div>

@@ -4,12 +4,13 @@ const translations = {
         nav_home: "Início", nav_impact: "Impacto", nav_expertise: "Especialidade", nav_skills: "Competências", nav_tools: "Ferramentas", nav_profile: "Perfil", nav_contact: "Contato", nav_certs: "Certificações", btn_lang: "EN",
         hero_badge: "ENGENHEIRO DE CIBERSEGURANÇA", hero_title: "André Graça", hero_subtitle: "Construindo Defesas Digitais Resilientes", hero_desc: "Especializado em SecOps, inteligência de ameaças e engenharia de segurança.",
         btn_explore: "Explorar Trabalho", btn_contact: "Entrar em Contato",
-        expert_tag: "COMPETÊNCIAS PRINCIPAIS", expert_title: "Expertise em Segurança", expert_desc: "Capacidades abrangentes de cibersegurança.",
+        stat_vuln_label: "Vulnerabilidades Resolvidas", stat_malware_label: "Redução de Malware", stat_endpoints_label: "Endpoints Seguros", stat_mttr_label: "Melhoria no MTTR",
+        expert_tag: "COMPETÊNCIAS PRINCIPAIS", expert_title: "Expertise em Segurança", expert_desc: "Capacidades abrangentes de cibersegurança em defesa, engenharia e inteligência de ameaças.",
         
         // SKILLS PAGE
         skills_badge: "EXPERTISE TÉCNICA", skills_title: "Competências e Capacidades", skills_desc: "Clique nos cartões para expandir os detalhes técnicos.",
 
-        // --- CONTEÚDO DETALHADO (PT) ---
+        // --- SKILLS COMPLETO (PT) ---
         c1_title: "Defesa (SecOps)",
         c1_full: "Com uma trajetória consolidada em SecOps, desenvolvi uma visão holística das operações de defesa ao atuar progressivamente nos níveis L1, L2 e L3.\nA minha experiência iniciou-se na linha de frente, garantindo a deteção rápida e triagem precisa de alertas (L1). Evoluí para a análise tática e correlação de eventos de segurança (L2), validando incidentes reais e eliminando falsos positivos. Atualmente, possuo competência avançada (L3) para liderar investigações de incidentes complexos, realizar threat hunting proativo e conduzir análises de causa raiz. O meu foco é garantir não apenas a resolução de incidentes, mas a melhoria contínua dos processos de deteção e resposta.",
 
@@ -64,13 +65,30 @@ const translations = {
         c18_title: "Adaptabilidade",
         c18_full: "Se tivesse de escolher a minha melhor qualidade, seria a adaptabilidade.\nAcredito que, em Cibersegurança, a única constante é a mudança. Por isso, mantenho uma postura profissional destemida perante o desconhecido. Nunca recusei um desafio técnico ou uma nova responsabilidade; pelo contrário, encaro cada proposta complexa com eficiência e foco total na solução.\nSeja a aprender uma nova linguagem de programação, a implementar uma ferramenta nunca antes usada ou a gerir uma crise de segurança, garanto sempre o mesmo nível de empenho e sucesso. O meu compromisso é simples: dar o meu melhor para resolver o problema, seja ele qual for.",
 
-        // PROFILE & TOOLS (Manter as traduções existentes para tools/profile)
-        tools_title: "Stack de Segurança",
-        tools_tag: "ARSENAL",
-        profile_tag: "PERFIL",
-        edu_title: "Formação",
-        edu_1: "Pós-Graduação ISTEC", edu_2: "Licenciatura Lusófona", edu_3: "CET Lusófona",
-        log1_title: "Origem", log1_text: "Início...", footer_text: "Teams ou Email:"
+        // PROFILE CARDS
+        tools_title: "Stack de Segurança", tools_tag: "ARSENAL",
+        profile_tag: "PERFIL", edu_title: "Formação Académica",
+        edu_1: "Pós-Graduação: Cloud e Virtualização (ISTEC)",
+        edu_2: "Licenciatura: Eng. Informática (Lusófona)",
+        edu_3: "CET: Tecnologia de Sistemas (Lusófona)",
+        log1_title: "A Origem", log1_text: "A minha jornada começou na Escola José Saramago em Mafra. Foi durante o Curso Profissional de Gestão e Programação de Sistemas Informáticos que descobri a minha verdadeira vocação tecnológica. Apesar das dificuldades financeiras iniciais, sabia que queria ser um profissional 'self-made' na área tecnológica e comecei a juntar dinheiro para investir na minha formação superior.",
+        log2_title: "A Crise e o Desvio", log2_text: "A crise financeira de 2011 atingiu Portugal com brutalidade. Fui forçado a interromper os estudos e a trabalhar em fábricas e escritórios para sobreviver. Em 2012, tentei um novo rumo com um curso de CNC no IEFP, mas sentia um vazio profissional. Não era o meu chamamento, mas precisava de continuar a lutar.",
+        log3_title: "O Ponto de Viragem", log3_text: "O ponto de rutura aconteceu numa fábrica de queijo. As condições eram desumanas e, numa única semana, escapei da morte em três acidentes de trabalho distintos. Naquele momento, decidi: 'Esta vida não é para mim'. Juntei cada cêntimo que tinha poupado, demiti-me e investi tudo no meu regresso à universidade.",
+        log4_title: "O Regresso", log4_text: "Regressei à Universidade Lusófona com determinação total. O meu projeto final, 'Gaming Out of Depression', foi proposto por uma psicóloga: desenvolvi um sistema complexo de Backend e Frontend (estilo Discord) com comunicação de voz e vídeo em tempo real, desenhado especificamente para ajudar pessoas isoladas a socializar.",
+        log5_title: "A Evolução Cyber", log5_text: "Durante a pós-graduação no ISTEC, ingressei na Noesis. Iniciei em OutSystems, mas quando surgiu o desafio de migrar para a Cibersegurança, aceitei sem hesitar. Através de formação contínua, moldei-me no engenheiro sólido que sou hoje.",
+        
+        // NOVO LOG DE PERFIL
+        log6_title: "Adaptabilidade & Compromisso", log6_text: "Penso que a minha melhor qualidade é a habilidade de me adaptar a qualquer desafio que me é lançado, sem medo e com eficiência. Nunca recusei um desafio novo; qualquer que seja a proposta, darei sempre o melhor de mim e concluí-la-ei com sucesso.",
+        
+        footer_text: "Teams ou Email:",
+        
+        // HOME CARDS
+        card_secops_title: "Operações de Segurança", card_secops_desc: "Liderança de equipas L1 e otimização de deteção em SIEM/XDR (ArcSight, Sentinel), reduzindo falsos positivos em 30%.",
+        card_eng_title: "Engenharia & Automação", card_eng_desc: "Arquitetura de playbooks SOAR (Thycotic) e integrações API, poupando +15 horas de trabalho manual semanal.",
+        card_intel_title: "Inteligência de Ameaças", card_intel_desc: "Recolha estratégica para antecipar TTPs e fortalecer defesas proativamente contra ameaças globais.",
+        card_vuln_title: "Gestão de Vulnerabilidades", card_vuln_desc: "Programa proativo com Tenable.io e Landsweeper, remediando +500 vulnerabilidades críticas.",
+        card_cloud_title: "Segurança Cloud & Endpoint", card_cloud_desc: "Onboarding de 2000+ endpoints (Defender/Intune) e redução de 40% em incidentes de malware.",
+        card_grc_title: "Compliance & GRC", card_grc_desc: "Auditorias e evidências técnicas para conformidade com normas críticas como PCI DSS, NIS2 e GDPR."
     },
     en: {
         // NAV
@@ -84,10 +102,10 @@ const translations = {
 
         // --- DETAILED CONTENT (EN TRANSLATION) ---
         c1_title: "Defense (SecOps)",
-        c1_full: "With a consolidated career in SecOps, I developed a holistic view of defense operations across L1, L2, and L3 levels. Starting on the front lines with rapid detection and triage (L1), I evolved to tactical analysis and event correlation (L2). Currently, I possess advanced competence (L3) to lead complex incident investigations, perform proactive threat hunting, and conduct root cause analysis, ensuring continuous improvement of detection processes.",
+        c1_full: "With a consolidated career in SecOps, I developed a holistic view of defense operations across L1, L2, and L3 levels.\nMy experience began on the front lines, ensuring rapid detection and precise triage of alerts (L1). I evolved to tactical analysis and event correlation (L2), validating real incidents and eliminating false positives. Currently, I possess advanced competence (L3) to lead complex incident investigations, perform proactive threat hunting, and conduct root cause analysis. My focus is ensuring not just incident resolution, but the continuous improvement of detection and response processes.",
 
         c2_title: "Security Engineering",
-        c2_full: "My career involves building technological foundations for effective defense. I have hands-on experience in end-to-end implementation of SIEM and EDR platforms for both cloud and on-prem environments. Acting as a Detection Engineer, I create and refine detection rules based on threat intelligence and develop automations (via scripts or SOAR) to reduce manual workload for SOC teams.",
+        c2_full: "My career involves building technological foundations for effective defense. I have hands-on experience in end-to-end implementation of SIEM and EDR platforms for both cloud and on-prem environments. Acting as a Detection Engineer, I create and refine detection rules based on threat intelligence and develop automations (via scripts or SOAR) that reduce manual workload for SOC teams.",
 
         c3_title: "Security Assessment",
         c3_full: "I operate at the intersection of technical vulnerability analysis and compliance management (GRC). I actively participate in security assessments using DAST and SAST to identify flaws, working alongside client teams to prioritize and resolve vulnerabilities. On the governance side, I manage vulnerability platforms and ensure compliance reporting aligns with ISO 27001 and NIS2 standards.",
@@ -114,7 +132,7 @@ const translations = {
         c10_full: "Focused on operational hygiene and privilege protection. I structure user lifecycle management and implement PAM solutions like Secret Server with automatic credential injection, eliminating the risk of password sharing or phishing for privileged accounts.",
 
         c11_title: "Reporting",
-        c11_full: "I developed a robust reporting methodology. Operationally, I produce detailed Incident and Forensic reports. For management, I create Executive Reports that filter technical noise to present real risk and return on investment.",
+        c11_full: "I developed a robust reporting methodology. Operationally, I produce detailed Incident and Forensic reports with irrefutable technical evidence. For management, I create Executive Reports that filter technical noise to present real risk and ROI, allowing decision-makers to act with clarity.",
 
         c12_title: "Asset Management",
         c12_full: "Security starts with visibility. I use Lansweeper and Microsoft Entra to ensure no device (Shadow IT) goes unnoticed. I classify assets by risk and criticality to fine-tune contextualized security policies.",
@@ -132,29 +150,45 @@ const translations = {
         c16_full: "My goal is to prevent incidents. I implement robust policies adjusted to client reality and create functional dashboards to monitor security status in real-time, validating the effectiveness of preventive measures.",
 
         c17_title: "AI Tools",
-        c17_full: "I believe AI amplifies analyst capabilities. I actively integrate LLM-based tools into my workflow for troubleshooting and automation. I maintain a personal lab focused on AI Agents to test how artificial intelligence can solve real-world security challenges.",
+        c17_full: "I believe AI amplifies analyst capabilities. I actively integrate LLM-based tools into my workflow for troubleshooting and automation. I maintain a personal lab focused on AI Agents to test how artificial intelligence can practically solve real-world security challenges.",
 
         c18_title: "Adaptability",
-        c18_full: "Change is the only constant in Cybersecurity. I maintain a fearless professional posture towards the unknown, facing every technical challenge with a focus on solution. Whether learning a new language or managing a crisis, I guarantee total commitment.",
+        c18_full: "If I had to choose my best quality, it would be adaptability. Change is the only constant in Cybersecurity. I maintain a fearless posture towards the unknown, facing every technical challenge with a focus on solution. Whether learning a new language or managing a crisis, I guarantee total commitment.",
 
         // PROFILE & TOOLS
-        tools_title: "Security Stack",
-        tools_tag: "ARSENAL",
-        profile_tag: "PROFILE",
-        edu_title: "Education",
+        tools_title: "Security Stack", tools_tag: "ARSENAL",
+        profile_tag: "PROFILE", edu_title: "Education",
         edu_1: "Post-Grad ISTEC", edu_2: "BSc Lusófona", edu_3: "CET Lusófona",
-        log1_title: "Origin", log1_text: "Started...", footer_text: "Teams or Email:"
+        log1_title: "Origin", log1_text: "My journey began at Escola José Saramago in Mafra, where I discovered my true vocation during a Professional Course in IT Systems. Despite early financial hurdles, I was determined to become a self-made professional in the tech world and started saving money to fund my higher education.",
+        log2_title: "Crisis & Detour", log2_text: "The 2011 financial crisis hit Portugal hard. I was forced to pause my studies and take on various factory jobs just to survive. In 2012, I tried a CNC course at IEFP, but I felt professionally unfulfilled. I knew deep down this wasn't my calling, but I had to keep fighting.",
+        log3_title: "The Turning Point", log3_text: "The breaking point was at a cheese factory. After nearly three serious accidents in one week and facing inhumane conditions, I decided: 'This life is not for me.' I scraped together every single Euro I had saved, quit, and invested everything into returning to college.",
+        log4_title: "The Return", log4_text: "I returned to Lusófona University with total focus. My final project, 'Gaming Out of Depression', was a complex Full-Stack system (Discord-style) featuring real-time voice and video communication, specifically designed to help isolated individuals socialize.",
+        log5_title: "The Cyber Pivot", log5_text: "During my Post-Grad at ISTEC, I joined Noesis. I started with OutSystems, but when the challenge to pivot to Cybersecurity arose, I took it without hesitation. Through continuous training, I molded myself into the solid engineer I am today.",
+        
+        // NOVO LOG (EN)
+        log6_title: "Adaptability & Commitment", log6_text: "I believe my best quality is the ability to adapt to any challenge thrown at me, fearlessly and efficiently. I have never refused a new challenge; whatever the proposal, I will always give my best and complete it successfully.",
+        
+        footer_text: "Teams or Email:",
+        
+        // HOME CARDS
+        card_secops_title: "Security Operations", card_secops_desc: "Leading L1 teams and optimizing detection on SIEM/XDR platforms (ArcSight, Sentinel), reducing false positives by 30%.",
+        card_eng_title: "Engineering & Automation", card_eng_desc: "Architecting SOAR playbooks (Thycotic) and API integrations, saving 15+ hours of manual work weekly.",
+        card_intel_title: "Threat Intelligence", card_intel_desc: "Strategic gathering to anticipate TTPs and proactively strengthen defenses against global threats.",
+        card_vuln_title: "Vulnerability Management", card_vuln_desc: "Proactive program using Tenable.io and Landsweeper, remediating 500+ critical vulnerabilities.",
+        card_cloud_title: "Cloud & Endpoint Security", card_cloud_desc: "Onboarding 2000+ endpoints (Defender/Intune) and reducing malware incidents by 40%.",
+        card_grc_title: "Compliance & GRC", card_grc_desc: "Technical audits and evidence for compliance with critical frameworks like PCI DSS, NIS2, and GDPR."
     }
 };
 
-// ... [MANTENHA A LÓGICA DE FUNÇÕES JS AQUI (changeLanguage, scrollObserver, Menu Mobile)] ...
+// ... [MANTENHA A LÓGICA DE JAVASCRIPT EXISTENTE AQUI] ...
 function changeLanguage(lang) {
     localStorage.setItem('lang', lang);
     document.documentElement.lang = lang;
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (translations[lang][key]) {
-            el.innerText = translations[lang][key]; // Use innerText to respect line breaks
+            // Use innerText para respeitar as quebras de linha (\n) do texto longo
+            el.innerText = translations[lang][key]; 
         }
     });
     const btn = document.getElementById('lang-toggle');
