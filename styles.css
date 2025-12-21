@@ -76,10 +76,12 @@ nav.scrolled { padding: 0.7rem 5%; background: rgba(10, 10, 10, 0.98); }
     min-height: 100vh; 
     display: flex; 
     flex-direction: column; 
+    /* Mantém flex-start mas permite que o conteúdo flua naturalmente */
     justify-content: flex-start; 
     align-items: center; 
     text-align: center; 
-    padding: 140px 5% 0; 
+    /* Padding ajustado para dar espaço ao menu */
+    padding: 140px 5% 50px; 
     position: relative; 
     z-index: 1; 
 }
@@ -120,37 +122,17 @@ nav.scrolled { padding: 0.7rem 5%; background: rgba(10, 10, 10, 0.98); }
 
 .status-dot { width: 8px; height: 8px; background: var(--primary); border-radius: 50%; }
 
-/* --- GERAL --- */
-.container { max-width: 1400px; margin: 0 auto; padding: 120px 5% 50px; position: relative; z-index: 1; }
-.section-header { text-align: center; margin-bottom: 4rem; }
-.section-tag { display: inline-block; padding: 0.5rem 1.5rem; background: rgba(0, 240, 255, 0.1); border: 1px solid var(--primary); border-radius: 20px; color: var(--primary); font-size: 0.75rem; letter-spacing: 2px; margin-bottom: 1rem; }
-.section-header h2 { font-size: 3rem; margin-bottom: 1rem; background: linear-gradient(135deg, #fff, var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-.section-header p { color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
-
-/* --- CARDS --- */
-.cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-.card {
-    background: rgba(26, 26, 26, 0.6); backdrop-filter: blur(20px); border: 1px solid rgba(0, 240, 255, 0.1);
-    border-radius: 20px; padding: 2.5rem; transition: all 0.4s; position: relative; overflow: hidden;
-    display: flex; flex-direction: column; align-items: flex-start; text-align: left;
-}
-.card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--primary), var(--secondary)); transform: scaleX(0); transition: transform 0.4s; }
-.card:hover { transform: translateY(-10px); border-color: var(--primary); box-shadow: 0 20px 60px rgba(0, 240, 255, 0.2); }
-.card:hover::before { transform: scaleX(1); }
-.card-icon { width: 60px; height: 60px; fill: var(--primary); margin-bottom: 1.5rem; background: rgba(0,240,255,0.1); padding: 12px; border-radius: 12px; }
-.card h3 { color: #fff; margin-bottom: 1rem; font-size: 1.4rem; font-weight: 700; }
-.card p { color: var(--text-muted); font-size: 1rem; line-height: 1.7; }
-
-/* --- STATS (CORRIGIDO PARA CENTRALIZAR CAIXAS) --- */
+/* --- STATS (POSICIONADOS E CENTRALIZADOS) --- */
 .stats { 
     display: flex; 
-    justify-content: center; /* Centraliza o grupo de caixas */
-    flex-wrap: wrap; /* Permite quebrar linha em ecrãs pequenos */
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-wrap: wrap; 
     gap: 2rem; 
     max-width: 1200px; 
-    margin: 0 auto 6rem; 
     width: 100%; 
-    padding: 0 5%; 
+    /* Margem superior para separar dos botões */
+    margin-top: 5rem; 
+    margin-bottom: 2rem;
 }
 
 .stat-card { 
@@ -159,7 +141,7 @@ nav.scrolled { padding: 0.7rem 5%; background: rgba(10, 10, 10, 0.98); }
     border-radius: 20px; 
     border: 1px solid rgba(0,240,255,0.2); 
     text-align: center;
-    /* Tamanho controlado para ficarem bonitas lado a lado */
+    /* Tamanho fixo relativo para garantir uniformidade */
     flex: 1 1 200px; 
     max-width: 250px; 
     display: flex;
@@ -176,6 +158,27 @@ nav.scrolled { padding: 0.7rem 5%; background: rgba(10, 10, 10, 0.98); }
 
 .stat-number { font-size: 3rem; font-weight: 900; background: linear-gradient(135deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.5rem; }
 .stat-label { color: var(--text-muted); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+
+/* --- GERAL & SECTIONS --- */
+.container { max-width: 1400px; margin: 0 auto; padding: 50px 5% 50px; position: relative; z-index: 1; }
+.section-header { text-align: center; margin-bottom: 4rem; }
+.section-tag { display: inline-block; padding: 0.5rem 1.5rem; background: rgba(0, 240, 255, 0.1); border: 1px solid var(--primary); border-radius: 20px; color: var(--primary); font-size: 0.75rem; letter-spacing: 2px; margin-bottom: 1rem; }
+.section-header h2 { font-size: 3rem; margin-bottom: 1rem; background: linear-gradient(135deg, #fff, var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.section-header p { color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+
+/* --- CARDS GRID --- */
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+.card {
+    background: rgba(26, 26, 26, 0.6); backdrop-filter: blur(20px); border: 1px solid rgba(0, 240, 255, 0.1);
+    border-radius: 20px; padding: 2.5rem; transition: all 0.4s; position: relative; overflow: hidden;
+    display: flex; flex-direction: column; align-items: flex-start; text-align: left;
+}
+.card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--primary), var(--secondary)); transform: scaleX(0); transition: transform 0.4s; }
+.card:hover { transform: translateY(-10px); border-color: var(--primary); box-shadow: 0 20px 60px rgba(0, 240, 255, 0.2); }
+.card:hover::before { transform: scaleX(1); }
+.card-icon { width: 60px; height: 60px; fill: var(--primary); margin-bottom: 1.5rem; background: rgba(0,240,255,0.1); padding: 12px; border-radius: 12px; }
+.card h3 { color: #fff; margin-bottom: 1rem; font-size: 1.4rem; font-weight: 700; }
+.card p { color: var(--text-muted); font-size: 1rem; line-height: 1.7; }
 
 /* --- BOTÕES --- */
 .btn-primary, .btn-secondary { padding: 1.2rem 2.8rem; border-radius: 30px; text-decoration: none; font-weight: 600; transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.5rem; }
@@ -211,6 +214,7 @@ footer a { color: var(--primary); text-decoration: none; }
     .nav-links li { margin: 1.5rem 0; opacity: 0; }
     .nav-links.active li { opacity: 1; transition: opacity 0.5s ease 0.2s; }
     .nav-links a { font-size: 1.5rem; }
+    
     .cta-buttons { flex-direction: column; width: 100%; max-width: 300px; }
-    .hero { padding: 130px 5% 0; }
+    .hero { padding: 130px 5% 50px; }
 }
