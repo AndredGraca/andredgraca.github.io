@@ -178,14 +178,12 @@ const translations = {
 function changeLanguage(lang) {
     localStorage.setItem('lang', lang);
     document.documentElement.lang = lang;
-    
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (translations[lang][key]) {
             el.textContent = translations[lang][key];
         }
     });
-
     const btn = document.getElementById('lang-toggle');
     if(btn) btn.textContent = translations[lang].btn_lang;
 }
@@ -229,20 +227,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- MOBILE MENU LOGIC ---
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
+    const logo = document.querySelector('.logo');
 
     if (hamburger && navLinks) {
+        function closeMenu() {
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('toggle');
+            }
+        }
+
+        // Toggle com o hamburger
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             hamburger.classList.toggle('toggle');
         });
 
+        // Fechar ao clicar num link
         document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                if (navLinks.classList.contains('active')) {
-                    navLinks.classList.remove('active');
-                    hamburger.classList.remove('toggle');
-                }
-            });
+            link.addEventListener('click', closeMenu);
         });
+
+        // Fechar ao clicar no logo
+        if (logo) {
+            logo.addEventListener('click', closeMenu);
+        }
     }
 });
