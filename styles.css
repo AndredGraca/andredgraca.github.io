@@ -14,7 +14,6 @@
 
 html {
     scroll-behavior: smooth;
-    /* CORREÇÃO IMPORTANTE: Garante que os links (como Impacto) não ficam escondidos atrás da barra */
     scroll-padding-top: 100px;
 }
 
@@ -65,29 +64,21 @@ nav.scrolled { padding: 0.7rem 5%; background: rgba(10, 10, 10, 0.98); }
     z-index: 1002;
 }
 
-/* --- HAMBURGER MENU (MOBILE) --- */
-.hamburger {
-    display: none; /* Garante que está INVISÍVEL no Desktop */
-    cursor: pointer;
-    z-index: 1003;
-    padding: 10px;
-}
-.hamburger span {
-    display: block; width: 25px; height: 3px; background: var(--primary); margin: 5px 0; transition: all 0.3s ease; border-radius: 2px;
-}
+/* --- HAMBURGER MENU --- */
+.hamburger { display: none; cursor: pointer; z-index: 1003; padding: 10px; }
+.hamburger span { display: block; width: 25px; height: 3px; background: var(--primary); margin: 5px 0; transition: all 0.3s ease; border-radius: 2px; }
 .hamburger.toggle span:nth-child(1) { transform: rotate(-45deg) translate(-5px, 6px); }
 .hamburger.toggle span:nth-child(2) { opacity: 0; }
 .hamburger.toggle span:nth-child(3) { transform: rotate(45deg) translate(-5px, -6px); }
 
-/* --- HERO TYPOGRAPHY (CORRIGIDO: 140px) --- */
+/* --- HERO --- */
 .hero { 
     min-height: 100vh; 
     display: flex; 
     flex-direction: column; 
-    justify-content: flex-start; /* Alinhamento ao topo */
+    justify-content: flex-start; 
     align-items: center; 
     text-align: center; 
-    /* AJUSTE FINO: 140px é o ponto ideal entre "colado" e "longe" */
     padding: 140px 5% 0; 
     position: relative; 
     z-index: 1; 
@@ -150,9 +141,39 @@ nav.scrolled { padding: 0.7rem 5%; background: rgba(10, 10, 10, 0.98); }
 .card h3 { color: #fff; margin-bottom: 1rem; font-size: 1.4rem; font-weight: 700; }
 .card p { color: var(--text-muted); font-size: 1rem; line-height: 1.7; }
 
-/* --- STATS --- */
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto 6rem; width: 100%; padding: 0 5%; }
-.stat-card { background: rgba(26,26,26,0.6); padding: 2rem; border-radius: 20px; border: 1px solid rgba(0,240,255,0.2); text-align: center; }
+/* --- STATS (CORRIGIDO PARA CENTRALIZAR CAIXAS) --- */
+.stats { 
+    display: flex; 
+    justify-content: center; /* Centraliza o grupo de caixas */
+    flex-wrap: wrap; /* Permite quebrar linha em ecrãs pequenos */
+    gap: 2rem; 
+    max-width: 1200px; 
+    margin: 0 auto 6rem; 
+    width: 100%; 
+    padding: 0 5%; 
+}
+
+.stat-card { 
+    background: rgba(26,26,26,0.6); 
+    padding: 2rem; 
+    border-radius: 20px; 
+    border: 1px solid rgba(0,240,255,0.2); 
+    text-align: center;
+    /* Tamanho controlado para ficarem bonitas lado a lado */
+    flex: 1 1 200px; 
+    max-width: 250px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
 .stat-number { font-size: 3rem; font-weight: 900; background: linear-gradient(135deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.5rem; }
 .stat-label { color: var(--text-muted); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
 
@@ -179,26 +200,17 @@ footer a { color: var(--primary); text-decoration: none; }
 
 /* --- MOBILE RESPONSIVE --- */
 @media (max-width: 768px) {
-    .hamburger { display: block; } /* Hamburger só visível aqui */
-    
+    .hamburger { display: block; }
     .nav-links {
         position: fixed; right: -100%; top: 0; height: 100vh; width: 100%;
-        background-color: rgba(10, 10, 10, 0.98); 
-        flex-direction: column;
-        align-items: center; 
-        /* Justify flex-start + padding evita que os links fiquem debaixo do botão X */
-        justify-content: flex-start; 
-        padding-top: 120px; 
-        transition: right 0.4s ease-in-out; 
-        z-index: 1001;
+        background-color: rgba(10, 10, 10, 0.98); flex-direction: column;
+        align-items: center; justify-content: flex-start; padding-top: 120px;
+        transition: right 0.4s ease-in-out; z-index: 1001;
     }
     .nav-links.active { right: 0; }
     .nav-links li { margin: 1.5rem 0; opacity: 0; }
     .nav-links.active li { opacity: 1; transition: opacity 0.5s ease 0.2s; }
     .nav-links a { font-size: 1.5rem; }
-    
     .cta-buttons { flex-direction: column; width: 100%; max-width: 300px; }
-    
-    /* Ajuste Hero para mobile */
     .hero { padding: 130px 5% 0; }
 }
