@@ -221,3 +221,67 @@ footer a { color: var(--primary); text-decoration: none; }
     .hero { padding: 130px 5% 0; }
     .container { padding: 140px 5% 50px; }
 }
+
+/* --- [MANTENHA TODO O CÓDIGO CSS ANTERIOR] --- */
+
+/* --- SKILLS CARD EXPANSION --- */
+.skill-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Estado Expandido */
+.skill-card.expanded {
+    background-color: rgba(0, 240, 255, 0.08); /* Destaque subtil */
+    border-color: var(--primary);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+/* O texto escondido */
+.skill-desc {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-out, opacity 0.4s ease-in, margin-top 0.3s;
+    margin-top: 0;
+    font-size: 0.95rem;
+    color: #ccc; /* Cor de texto mais legível para leitura longa */
+    line-height: 1.8;
+    text-align: left;
+    white-space: pre-line; /* Respeita as quebras de linha do texto */
+    padding-right: 10px;
+}
+
+/* Quando expandido, mostra o texto */
+.skill-card.expanded .skill-desc {
+    max-height: 1000px; /* Altura suficiente para o texto longo */
+    opacity: 1;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Indicador visual (+) */
+.skill-card h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-card h3::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: var(--primary);
+    transition: transform 0.3s;
+    margin-left: 10px;
+}
+
+.skill-card.expanded h3::after {
+    content: '−'; /* Sinal de menos */
+    transform: rotate(180deg);
+    color: var(--accent);
+}
